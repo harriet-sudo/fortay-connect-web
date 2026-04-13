@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 260 15% 97%;
+    --foreground: 260 40% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 55% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 55% 13%;
+
+    --primary: 176 75% 50%;
+    --primary-foreground: 260 55% 13%;
+
+    --secondary: 260 20% 96%;
+    --secondary-foreground: 260 55% 13%;
+
+    --muted: 260 15% 95%;
+    --muted-foreground: 260 10% 45%;
+
+    --accent: 176 75% 50%;
+    --accent-foreground: 260 55% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 15% 90%;
+    --input: 260 15% 90%;
+    --ring: 176 75% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 260 5.3% 26.1%;
+    --sidebar-primary: 176 75% 50%;
+    --sidebar-primary-foreground: 260 55% 13%;
+    --sidebar-accent: 260 20% 96%;
+    --sidebar-accent-foreground: 260 55% 13%;
+    --sidebar-border: 260 15% 90%;
+    --sidebar-ring: 176 75% 50%;
+
+    --navy: 260 55% 13%;
+    --teal: 174 73% 50%;
+    --teal-light: 174 50% 95%;
+    --slate: 260 10% 45%;
+    --purple: 268 55% 45%;
+    --purple-light: 268 40% 93%;
+    --purple-dark: 264 50% 33%;
+    --purple-pale: 268 40% 96%;
+    --light-blue: 222 83% 55%;
+  }
+
+  .dark {
+    --background: 260 55% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 260 45% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 260 45% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 176 75% 50%;
+    --primary-foreground: 260 55% 8%;
+
+    --secondary: 260 30% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 260 30% 18%;
+    --muted-foreground: 260 15% 65%;
+
+    --accent: 176 75% 50%;
+    --accent-foreground: 260 55% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 25% 22%;
+    --input: 260 25% 22%;
+    --ring: 176 75% 50%;
+
+    --sidebar-background: 260 55% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 176 75% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 30% 18%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 260 25% 22%;
+    --sidebar-ring: 176 75% 50%;
+
+    --navy: 210 40% 98%;
+    --teal: 176 75% 50%;
+    --teal-light: 176 30% 15%;
+    --slate: 260 15% 65%;
+    --purple: 262 68% 60%;
+    --purple-light: 270 40% 20%;
+    --purple-dark: 262 68% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  /* Centre all section pill/bubble labels site-wide.
+     These are identified by the combination of rounded-full + uppercase + tracking-widest */
+  .rounded-full.uppercase.tracking-widest {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
