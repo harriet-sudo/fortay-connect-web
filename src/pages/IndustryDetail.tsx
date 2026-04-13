@@ -1,6 +1,6 @@
-import { useParams, Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building2, ShoppingCart, Factory, Scale, ArrowLeft } from "lucide-react";
@@ -93,21 +93,19 @@ const industryData: Record<string, {
   },
 };
 
-const IndustryDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+const IndustryDetail = ({ slug }: { slug: string }) => {
+  // slug received via props
   const industry = slug ? industryData[slug] : null;
 
   if (!industry) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-20 text-center">
           <h1 className="font-display text-3xl font-bold">Industry not found</h1>
-          <Link to="/industries" className="mt-4 inline-block text-primary hover:underline">
+          <Link href="/industries" className="mt-4 inline-block text-primary hover:underline">
             ← Back to Industries
           </Link>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -116,13 +114,12 @@ const IndustryDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <main>
         {/* Hero */}
         <section className="bg-foreground py-20 text-background">
           <div className="container">
             <Link
-              to="/industries"
+              href="/industries"
               className="mb-6 inline-flex items-center gap-1 text-sm text-background/60 hover:text-background"
             >
               <ArrowLeft className="h-4 w-4" /> All Industries
@@ -227,13 +224,12 @@ const IndustryDetail = () => {
                 </a>
               </Button>
               <Button asChild variant="teal" size="lg">
-                <Link to="/assessment">Take the CX Assessment</Link>
+                <Link href="/assessment">Take the CX Assessment</Link>
               </Button>
             </div>
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

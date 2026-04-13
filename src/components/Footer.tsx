@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
-import certsStrip from "@/assets/certs-strip.png";
-import zoomLogo from "@/assets/logos/zoom.png";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
-import gotoLogo from "@/assets/logos/goto.png";
-import dialpadLogo from "@/assets/logos/dialpad.png";
-import niceLogo from "@/assets/logos/nice.png";
-import msTeamsLogo from "@/assets/logos/ms-teams.svg";
+import Link from "next/link";
+const logo = "/assets/logo.png";
+const certsStrip = "/assets/certs-strip.png";
+const zoomLogo = "/assets/logos/zoom.png";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
+const gotoLogo = "/assets/logos/goto.png";
+const dialpadLogo = "/assets/logos/dialpad.png";
+const niceLogo = "/assets/logos/nice.png";
+const msTeamsLogo = "/assets/logos/ms-teams.svg";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -24,31 +24,31 @@ const Footer = () => (
         <div>
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-background/40">Services</h4>
           <ul className="space-y-2 text-sm text-background/60">
-            <li><Link to="/services/cx-ai-advisory" className="hover:text-primary transition-colors">CX & AI Advisory</Link></li>
-            <li><Link to="/services/technology-selection" className="hover:text-primary transition-colors">Technology Selection</Link></li>
-            <li><Link to="/services/deployment" className="hover:text-primary transition-colors">Deployment Services</Link></li>
-            <li><Link to="/services/managed-services" className="hover:text-primary transition-colors">Managed Services</Link></li>
+            <li><Link href="/services/cx-ai-advisory" className="hover:text-primary transition-colors">CX & AI Advisory</Link></li>
+            <li><Link href="/services/technology-selection" className="hover:text-primary transition-colors">Technology Selection</Link></li>
+            <li><Link href="/services/deployment" className="hover:text-primary transition-colors">Deployment Services</Link></li>
+            <li><Link href="/services/managed-services" className="hover:text-primary transition-colors">Managed Services</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-background/40">Industries</h4>
           <ul className="space-y-2 text-sm text-background/60">
-            <li><Link to="/industries/financial-services" className="hover:text-primary transition-colors">Financial Services</Link></li>
-            <li><Link to="/industries/retail" className="hover:text-primary transition-colors">Retail</Link></li>
-            <li><Link to="/industries/manufacturing" className="hover:text-primary transition-colors">Manufacturing</Link></li>
-            <li><Link to="/industries/legal" className="hover:text-primary transition-colors">Legal</Link></li>
+            <li><Link href="/industries/financial-services" className="hover:text-primary transition-colors">Financial Services</Link></li>
+            <li><Link href="/industries/retail" className="hover:text-primary transition-colors">Retail</Link></li>
+            <li><Link href="/industries/manufacturing" className="hover:text-primary transition-colors">Manufacturing</Link></li>
+            <li><Link href="/industries/legal" className="hover:text-primary transition-colors">Legal</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-background/40">Company</h4>
           <ul className="space-y-2 text-sm text-background/60">
-            <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-            <li><Link to="/case-studies" className="hover:text-primary transition-colors">Case Studies</Link></li>
-            <li><Link to="/insights" className="hover:text-primary transition-colors">Insights</Link></li>
-            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-            <li><Link to="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
+            <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+            <li><Link href="/case-studies" className="hover:text-primary transition-colors">Case Studies</Link></li>
+            <li><Link href="/insights" className="hover:text-primary transition-colors">Insights</Link></li>
+            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+            <li><Link href="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
             
           </ul>
         </div>
@@ -56,10 +56,10 @@ const Footer = () => (
         <div>
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-background/40">Tools</h4>
           <ul className="space-y-2 text-sm text-background/60">
-            <li><Link to="/assessment" className="hover:text-primary transition-colors">CX Readiness Assessment</Link></li>
-            <li><Link to="/roi-calculator" className="hover:text-primary transition-colors">ROI Calculator</Link></li>
+            <li><Link href="/assessment" className="hover:text-primary transition-colors">CX Readiness Assessment</Link></li>
+            <li><Link href="/roi-calculator" className="hover:text-primary transition-colors">ROI Calculator</Link></li>
             <li><a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Book a Walkthrough</a></li>
-            <li><Link to="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
+            <li><Link href="/glossary" className="hover:text-primary transition-colors">Glossary</Link></li>
           </ul>
         </div>
       </div>

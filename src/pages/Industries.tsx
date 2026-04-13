@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Building2, ShoppingCart, Factory, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -64,7 +64,6 @@ const industries = [
 
 const Industries = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* Hero */}
       <section className="bg-foreground py-20 text-background">
@@ -127,7 +126,7 @@ const Industries = () => (
                 </div>
                 <div className="mt-6">
                   <Link
-                    to={`/industries/${industry.slug}`}
+                    href={`/industries/${industry.slug}`}
                     className="text-sm font-medium text-primary hover:underline"
                   >
                     Learn more →
@@ -163,7 +162,6 @@ const Industries = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

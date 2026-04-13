@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ShieldCheck, Scale, FlaskConical, Clock, MapPin, Puzzle } from "lucide-react";
 import DecorativeCircle from "@/components/DecorativeCircle";

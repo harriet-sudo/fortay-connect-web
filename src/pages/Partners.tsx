@@ -1,16 +1,16 @@
-import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, CheckCircle2 } from "lucide-react";
 import DecorativeCircle from "@/components/DecorativeCircle";
 
-import zoomLogo from "@/assets/logos/zoom.png";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
-import gotoLogo from "@/assets/logos/goto.svg";
-import dialpadLogo from "@/assets/logos/dialpad.svg";
-import ujetLogo from "@/assets/logos/ujet.svg";
+const zoomLogo = "/assets/logos/zoom.png";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
+const gotoLogo = "/assets/logos/goto.svg";
+const dialpadLogo = "/assets/logos/dialpad.svg";
+const ujetLogo = "/assets/logos/ujet.svg";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -107,7 +107,6 @@ const whyFortay = [
 
 const Partners = () => (
   <>
-    <Navbar />
     <main>
       {/* ── HERO ── */}
       <section className="relative overflow-hidden bg-foreground py-28 md:py-36 text-background">
@@ -153,7 +152,7 @@ const Partners = () => (
               </a>
             </Button>
             <Button size="lg" variant="teal" asChild className="rounded-full">
-              <Link to="/assessment">Take the AI Readiness Assessment</Link>
+              <Link href="/assessment">Take the AI Readiness Assessment</Link>
             </Button>
           </motion.div>
         </div>
@@ -193,7 +192,7 @@ const Partners = () => (
                 variants={fadeUp}
               >
                 <Link
-                  to={p.route}
+                  href={p.route}
                   className={`group flex h-full flex-col rounded-2xl border ${p.cardAccent} bg-card p-8 transition-all duration-300 hover:shadow-xl`}
                 >
                   {/* Logo + tier */}
@@ -302,7 +301,6 @@ const Partners = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </>
 );
 

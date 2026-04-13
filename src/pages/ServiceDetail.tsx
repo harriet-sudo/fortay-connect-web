@@ -1,9 +1,9 @@
+"use client";
+
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import TrustedBySection from "@/components/TrustedBySection";
 import ProcessSection from "@/components/home/ProcessSection";
-import { useParams, Link } from "react-router-dom";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle2, ChevronDown, Quote, Star } from "lucide-react";
 import DecorativeCircle from "@/components/DecorativeCircle";
@@ -418,25 +418,22 @@ const FAQBlock = ({ faqs }: { faqs: { q: string; a: string }[] }) => {
 
 // ─── Main page ───────────────────────────────────────────────────────────────
 
-const ServiceDetail = () => {
-  const { slug } = useParams();
+const ServiceDetail = ({ slug }: { slug: string }) => {
+  // slug received via props
   const service = serviceData[slug || ""];
 
   if (!service) {
     return (
       <>
-        <Navbar />
         <main className="flex min-h-[60vh] items-center justify-center">
           <p className="text-muted-foreground">Service not found.</p>
         </main>
-        <Footer />
       </>
     );
   }
 
   return (
     <>
-      <Navbar />
       <main>
 
         {/* ── HERO ── */}
@@ -468,7 +465,7 @@ const ServiceDetail = () => {
                     <ArrowRight className="h-4 w-4" />
                   </a>
                   <Link
-                    to="/contact"
+                    href="/contact"
                     className="inline-flex items-center gap-2 rounded-full border border-background/20 bg-background/10 px-7 py-3 text-sm font-bold text-background transition-all hover:bg-background/20"
                   >
                     Book a strategy call
@@ -604,7 +601,7 @@ const ServiceDetail = () => {
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <Link
-                  to="/assessment"
+                  href="/assessment"
                   className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white transition-all hover:bg-white/20"
                 >
                   Take the free assessment
@@ -621,7 +618,6 @@ const ServiceDetail = () => {
         <FAQBlock faqs={service.faqs} />
 
       </main>
-      <Footer />
     </>
   );
 };

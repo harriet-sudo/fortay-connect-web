@@ -1,14 +1,14 @@
-import { useParams, Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Shield, Zap, Globe, HeadphonesIcon, BarChart3, Phone, Video, MessageSquare, Bot, Brain } from "lucide-react";
 import { motion } from "framer-motion";
 
-import zoomLogo from "@/assets/logos/zoom.png";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
-import gotoLogo from "@/assets/logos/goto.svg";
-import dialpadLogo from "@/assets/logos/dialpad.svg";
+const zoomLogo = "/assets/logos/zoom.png";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
+const gotoLogo = "/assets/logos/goto.svg";
+const dialpadLogo = "/assets/logos/dialpad.svg";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -161,28 +161,25 @@ const fadeUp = {
   visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5 } }),
 };
 
-const PartnerDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+const PartnerDetail = ({ slug }: { slug: string }) => {
+  // slug received via props
   const partner = partners[slug || ""];
 
   if (!partner) {
     return (
       <div className="min-h-screen flex flex-col">
-        <Navbar />
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold mb-4">Partner Not Found</h1>
-            <Button asChild><Link to="/about">Back to Company</Link></Button>
+            <Button asChild><Link href="/about">Back to Company</Link></Button>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className={`relative overflow-hidden bg-gradient-to-br ${partner.heroGradient} py-24 md:py-32`}>
@@ -309,7 +306,6 @@ const PartnerDetail = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

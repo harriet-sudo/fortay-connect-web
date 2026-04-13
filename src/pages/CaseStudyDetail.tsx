@@ -1,7 +1,8 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { ArrowLeft, Building2, Calendar, Quote, Tag, CheckCircle2 } from "lucide-react";
 import { getCaseStudy } from "@/data/caseStudies";
@@ -19,20 +20,19 @@ const Section = ({ label, children }: { label: string; children: React.ReactNode
   </motion.div>
 );
 
-const CaseStudyDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
+const CaseStudyDetail = ({ slug }: { slug: string }) => {
+  // slug received via props
+  const router = useRouter();
   const cs = getCaseStudy(slug ?? "");
 
   useEffect(() => {
-    if (!cs) navigate("/case-studies", { replace: true });
-  }, [cs, navigate]);
+    if (!cs) router.replace("/case-studies");
+  }, [cs, router]);
 
   if (!cs) return null;
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden bg-foreground py-24">
@@ -40,7 +40,7 @@ const CaseStudyDetail = () => {
           <DecorativeCircle color="purple" variant="disc" className="-bottom-20 -left-10 opacity-10" size="h-60 w-60" />
           <div className="container relative z-10">
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <Link to="/case-studies" className="mb-8 inline-flex items-center gap-2 text-sm text-background/50 transition-colors hover:text-primary">
+              <Link href="/case-studies" className="mb-8 inline-flex items-center gap-2 text-sm text-background/50 transition-colors hover:text-primary">
                 <ArrowLeft className="h-4 w-4" /> Back to Case Studies
               </Link>
             </motion.div>
@@ -149,7 +149,7 @@ const CaseStudyDetail = () => {
                     Book a Strategy Call
                   </a>
                   <Link
-                    to="/case-studies"
+                    href="/case-studies"
                     className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-muted"
                   >
                     <ArrowLeft className="h-4 w-4" /> More Case Studies
@@ -161,7 +161,6 @@ const CaseStudyDetail = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

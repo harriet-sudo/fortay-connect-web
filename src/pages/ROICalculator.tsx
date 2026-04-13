@@ -1,10 +1,9 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import { motion } from "framer-motion";
 
 const ROICalculator = () => (
   <>
-    <Navbar />
     <main className="py-24">
       <div className="container">
         <motion.div className="mx-auto max-w-2xl text-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -19,7 +18,6 @@ const ROICalculator = () => (
         </motion.div>
       </div>
     </main>
-    <Footer />
   </>
 );
 

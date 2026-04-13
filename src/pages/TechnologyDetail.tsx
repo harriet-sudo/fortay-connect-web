@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import { useParams } from "react-router-dom";
+"use client";
+
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -65,25 +65,22 @@ const technologyData: Record<string, { title: string; description: string; featu
   },
 };
 
-const TechnologyDetail = () => {
-  const { slug } = useParams();
+const TechnologyDetail = ({ slug }: { slug: string }) => {
+  // slug received via props
   const tech = technologyData[slug || ""];
 
   if (!tech) {
     return (
       <>
-        <Navbar />
         <main className="flex min-h-[60vh] items-center justify-center">
           <p className="text-muted-foreground">Technology not found.</p>
         </main>
-        <Footer />
       </>
     );
   }
 
   return (
     <>
-      <Navbar />
       <main className="py-24">
         <div className="container">
           <motion.div className="mx-auto max-w-3xl" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -108,7 +105,6 @@ const TechnologyDetail = () => {
           </motion.div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

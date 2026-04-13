@@ -1,16 +1,16 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import PageFAQSection from "@/components/PageFAQSection";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import alcumusLogo from "@/assets/logos/alcumus.webp";
-import ashtonsLogo from "@/assets/logos/ashtons-legal.webp";
-import astonVillaLogo from "@/assets/logos/aston-villa.webp";
-import caAutoFinanceLogo from "@/assets/logos/ca-auto-finance.webp";
-import dextLogo from "@/assets/logos/dext.webp";
-import ineosLogo from "@/assets/logos/ineos.webp";
-import nottinghamForestLogo from "@/assets/logos/nottingham-forest.png";
-import pkfLogo from "@/assets/logos/pkf.png";
-import gardenCourtLogo from "@/assets/logos/garden-court-chambers.svg";
+const alcumusLogo = "/assets/logos/alcumus.webp";
+const ashtonsLogo = "/assets/logos/ashtons-legal.webp";
+const astonVillaLogo = "/assets/logos/aston-villa.webp";
+const caAutoFinanceLogo = "/assets/logos/ca-auto-finance.webp";
+const dextLogo = "/assets/logos/dext.webp";
+const ineosLogo = "/assets/logos/ineos.webp";
+const nottinghamForestLogo = "/assets/logos/nottingham-forest.png";
+const pkfLogo = "/assets/logos/pkf.png";
+const gardenCourtLogo = "/assets/logos/garden-court-chambers.svg";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import DecorativeCircle from "@/components/DecorativeCircle";
@@ -123,14 +123,13 @@ const faqs = [
 
 const AIVirtualAgentsTechnologyPage = () =>
 <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
         <DecorativeCircle color="teal" className="-top-32 -right-32 opacity-20" />
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
         <div className="container relative z-10">
-          <Link to="/technology" className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
+          <Link href="/technology" className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
             <ArrowLeft className="h-4 w-4" /> All Technology
           </Link>
           <motion.div initial="hidden" animate="visible" variants={stagger} className="max-w-3xl">
@@ -160,7 +159,7 @@ const AIVirtualAgentsTechnologyPage = () =>
                 </a>
               </Button>
               <Button size="lg" variant="teal" asChild>
-                <Link to="/assessment">
+                <Link href="/assessment">
                   <ClipboardCheck className="mr-2 h-4 w-4" /> AI & CX Readiness Assessment
                 </Link>
               </Button>
@@ -532,7 +531,6 @@ const AIVirtualAgentsTechnologyPage = () =>
       />
       
     </main>
-    <Footer />
   </div>;
 
 

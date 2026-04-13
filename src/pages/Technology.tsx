@@ -1,7 +1,7 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Bot, Headset, Sparkles, Users, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,6 @@ const technologies = [
 
 const Technology = () => (
   <>
-    <Navbar />
     <main>
       {/* Hero */}
       <section className="relative overflow-hidden bg-foreground py-24 text-background">
@@ -57,7 +56,7 @@ const Technology = () => (
                       <h3 className="mb-3 font-display text-xl font-bold text-foreground">{t.title}</h3>
                       <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{t.description}</p>
                       <Button variant="ghost" asChild className={`p-0 ${accentBtn} hover:${accentBtn}/80`}>
-                        <Link to={`/technology/${t.slug}`}>Learn more <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                        <Link href={`/technology/${t.slug}`}>Learn more <ArrowRight className="ml-1 h-4 w-4" /></Link>
                       </Button>
                     </CardContent>
                   </Card>
@@ -68,7 +67,6 @@ const Technology = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </>
 );
 

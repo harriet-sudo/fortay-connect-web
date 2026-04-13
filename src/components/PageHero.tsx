@@ -1,6 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import DecorativeCircle from "@/components/DecorativeCircle";
 import { type LucideIcon } from "lucide-react";
@@ -52,7 +54,7 @@ const PageHero = ({
       <div className="container relative z-10">
         {backLink && (
           <Link
-            to={backLink.to}
+            href={backLink.to}
             className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" /> {backLink.label}
@@ -117,7 +119,7 @@ const PageHero = ({
                 </Button>
               ) : (
                 <Button size="lg" asChild className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20 font-semibold">
-                  <Link to={primaryCTA.to!}>{primaryCTA.label} <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <Link href={primaryCTA.to!}>{primaryCTA.label} <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               )
             )}
@@ -131,7 +133,7 @@ const PageHero = ({
                 </Button>
               ) : (
                 <Button size="lg" variant="outline" asChild className="rounded-full border-background/20 text-background hover:bg-background/10 backdrop-blur-sm">
-                  <Link to={secondaryCTA.to!}>
+                  <Link href={secondaryCTA.to!}>
                     {SecondaryIcon && <SecondaryIcon className="mr-2 h-4 w-4" />}
                     {secondaryCTA.label}
                   </Link>

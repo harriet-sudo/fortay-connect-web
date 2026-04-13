@@ -1,6 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Play, TrendingUp, Cpu, Users, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import DecorativeCircle from "@/components/DecorativeCircle";
 
 const HERO_VIDEO_URL = "";
@@ -110,14 +112,14 @@ const SoundFamiliarSection = () => (
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-purple px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-purple/30 transition-all hover:brightness-110"
             >
               Book a strategy call
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              to="/assessment"
+              href="/assessment"
               className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-teal/20 transition-all hover:bg-teal/90"
             >
               Take the assessment

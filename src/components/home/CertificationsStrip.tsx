@@ -1,4 +1,4 @@
-import certsStrip from "@/assets/certs-strip.png";
+const certsStrip = "/assets/certs-strip.png";
 
 const CertificationsStrip = () => (
   <section className="border-t border-border/40 bg-muted/50 py-10">

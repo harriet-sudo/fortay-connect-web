@@ -1,17 +1,20 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import DecorativeCircle from "@/components/DecorativeCircle";
-import alcumusLogo from "@/assets/logos/alcumus.webp";
-import ashtonsLogo from "@/assets/logos/ashtons-legal.webp";
-import astonVillaLogo from "@/assets/logos/aston-villa.webp";
-import caAutoFinanceLogo from "@/assets/logos/ca-auto-finance.webp";
-import dextLogo from "@/assets/logos/dext.webp";
-import ineosLogo from "@/assets/logos/ineos.webp";
-import nottinghamForestLogo from "@/assets/logos/nottingham-forest.png";
-import pkfLogo from "@/assets/logos/pkf.png";
-import gardenCourtLogo from "@/assets/logos/garden-court-chambers.svg";
+
+const alcumusLogo = "/assets/logos/alcumus.webp";
+const ashtonsLogo = "/assets/logos/ashtons-legal.webp";
+const astonVillaLogo = "/assets/logos/aston-villa.webp";
+const caAutoFinanceLogo = "/assets/logos/ca-auto-finance.webp";
+const dextLogo = "/assets/logos/dext.webp";
+const ineosLogo = "/assets/logos/ineos.webp";
+const nottinghamForestLogo = "/assets/logos/nottingham-forest.png";
+const pkfLogo = "/assets/logos/pkf.png";
+const gardenCourtLogo = "/assets/logos/garden-court-chambers.svg";
 
 const clients = [
   { name: "Alcumus", src: alcumusLogo },
@@ -134,7 +137,7 @@ const HeroSection = () => (
             <ArrowRight className="h-4 w-4" />
           </a>
           <Link
-            to="/assessment"
+            href="/assessment"
             className="inline-flex items-center gap-2 rounded-full bg-teal px-8 py-3.5 text-base font-semibold text-white shadow-md shadow-teal/20 transition-all hover:bg-teal/90"
           >
             Take the CX Assessment

@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Briefcase, Users, Zap, Globe, Heart, ArrowRight } from "lucide-react";
@@ -51,7 +51,6 @@ const benefits = [
 
 const Careers = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* Hero */}
       <section className="bg-foreground py-20 text-background">
@@ -180,7 +179,6 @@ const Careers = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

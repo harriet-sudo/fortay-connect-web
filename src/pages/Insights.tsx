@@ -1,47 +1,47 @@
+"use client";
+
 import { useState, useMemo, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Search, ChevronDown, Mail, Filter } from "lucide-react";
 import { toast } from "sonner";
 
 // Blog cover images
-import imgUc2026 from "@/assets/blog/uc-2026.jpg";
-import imgLegalAi from "@/assets/blog/legal-ai.jpg";
-import imgZoomCxCert from "@/assets/blog/zoom-cx-cert.jpg";
-import imgAiCxEmotion from "@/assets/blog/ai-cx-emotion.jpg";
-import imgCloseSales from "@/assets/blog/close-sales.jpg";
-import imgSentiment from "@/assets/blog/sentiment-analysis.jpg";
-import imgChatbotAgent from "@/assets/blog/chatbot-vs-agent.jpg";
-import imgAiMeeting from "@/assets/blog/ai-meeting-assistant.jpg";
-import imgZoomAiCompanion from "@/assets/blog/zoom-ai-companion-new.jpg";
-import imgOmnichannel from "@/assets/blog/omnichannel-cx.jpg";
-import imgAiSales from "@/assets/blog/ai-sales-analytics.jpg";
-import imgCxProd from "@/assets/blog/cx-productivity.jpg";
-import imgZoomPlat from "@/assets/blog/zoom-platinum.jpg";
-import imgUcProvider from "@/assets/blog/uc-provider.jpg";
-import imgAiCompanion from "@/assets/blog/ai-companion-zoom.jpg";
-import imgUcContract from "@/assets/blog/uc-contract.jpg";
-import imgCxHubs from "@/assets/blog/cx-hubs.jpg";
-import imgTeams from "@/assets/blog/teams-telephony.jpg";
-import imgRecruitment from "@/assets/blog/recruitment-cloud.jpg";
-import imgRcGold from "@/assets/blog/ringcentral-gold.jpg";
-import imgZoomPhone from "@/assets/blog/zoom-phone.jpg";
-import imgCloudCc from "@/assets/blog/cloud-cc.jpg";
-import imgAvayaLunch from "@/assets/blog/avaya-lunch.jpg";
-import imgMitelRc from "@/assets/blog/mitel-rc.jpg";
-import imgConference from "@/assets/blog/conference.jpg";
-import imgMsRc from "@/assets/logos/ringcentral.png";
-import imgCloudJourney from "@/assets/blog/cloud-journey.jpg";
-import imgRaceDay from "@/assets/blog/race-day.jpg";
-import imgMichelin from "@/assets/blog/michelin.jpg";
-import imgWpChatbot from "@/assets/blog/wp-chatbot-checklist.jpg";
-import imgWpConnectivity from "@/assets/blog/wp-connectivity-blueprint.jpg";
-import imgWpOmnichannel from "@/assets/blog/wp-omnichannel-service.jpg";
-import imgWpPbxCloud from "@/assets/blog/wp-pbx-to-cloud.jpg";
-import imgWpCxRoadmap from "@/assets/blog/wp-cx-roadmap.jpg";
-import imgWpAboutFortay from "@/assets/blog/wp-about-fortay.jpg";
+const imgUc2026 = "/assets/blog/uc-2026.jpg";
+const imgLegalAi = "/assets/blog/legal-ai.jpg";
+const imgZoomCxCert = "/assets/blog/zoom-cx-cert.jpg";
+const imgAiCxEmotion = "/assets/blog/ai-cx-emotion.jpg";
+const imgCloseSales = "/assets/blog/close-sales.jpg";
+const imgSentiment = "/assets/blog/sentiment-analysis.jpg";
+const imgChatbotAgent = "/assets/blog/chatbot-vs-agent.jpg";
+const imgAiMeeting = "/assets/blog/ai-meeting-assistant.jpg";
+const imgZoomAiCompanion = "/assets/blog/zoom-ai-companion-new.jpg";
+const imgOmnichannel = "/assets/blog/omnichannel-cx.jpg";
+const imgAiSales = "/assets/blog/ai-sales-analytics.jpg";
+const imgCxProd = "/assets/blog/cx-productivity.jpg";
+const imgZoomPlat = "/assets/blog/zoom-platinum.jpg";
+const imgUcProvider = "/assets/blog/uc-provider.jpg";
+const imgAiCompanion = "/assets/blog/ai-companion-zoom.jpg";
+const imgUcContract = "/assets/blog/uc-contract.jpg";
+const imgCxHubs = "/assets/blog/cx-hubs.jpg";
+const imgTeams = "/assets/blog/teams-telephony.jpg";
+const imgRecruitment = "/assets/blog/recruitment-cloud.jpg";
+const imgRcGold = "/assets/blog/ringcentral-gold.jpg";
+const imgZoomPhone = "/assets/blog/zoom-phone.jpg";
+const imgCloudCc = "/assets/blog/cloud-cc.jpg";
+const imgAvayaLunch = "/assets/blog/avaya-lunch.jpg";
+const imgMitelRc = "/assets/blog/mitel-rc.jpg";
+const imgConference = "/assets/blog/conference.jpg";
+const imgMsRc = "/assets/logos/ringcentral.png";
+const imgCloudJourney = "/assets/blog/cloud-journey.jpg";
+const imgRaceDay = "/assets/blog/race-day.jpg";
+const imgMichelin = "/assets/blog/michelin.jpg";
+const imgWpChatbot = "/assets/blog/wp-chatbot-checklist.jpg";
+const imgWpConnectivity = "/assets/blog/wp-connectivity-blueprint.jpg";
+const imgWpOmnichannel = "/assets/blog/wp-omnichannel-service.jpg";
+const imgWpPbxCloud = "/assets/blog/wp-pbx-to-cloud.jpg";
+const imgWpCxRoadmap = "/assets/blog/wp-cx-roadmap.jpg";
+const imgWpAboutFortay = "/assets/blog/wp-about-fortay.jpg";
 
 type Post = {
   title: string;
@@ -369,7 +369,7 @@ const TagBadge = ({ tag }: { tag: string }) => (
 const INITIAL_COUNT = 11;
 
 const Insights = () => {
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   const [search, setSearch] = useState("");
   const [showAll, setShowAll] = useState(false);
   const [category, setCategory] = useState("all");
@@ -428,7 +428,6 @@ const Insights = () => {
 
   return (
     <>
-      <Navbar />
       <main className="py-24">
         <div className="container">
           <motion.div
@@ -611,7 +610,6 @@ const Insights = () => {
 
           {/* Subscribe section removed — moved to top */}
       </main>
-      <Footer />
     </>
   );
 };

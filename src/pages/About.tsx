@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import DecorativeCircle from "@/components/DecorativeCircle";
 import { motion } from "framer-motion";
 import { ArrowRight, Quote, Users, Target, Shield, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import teamBanner from "@/assets/team/team-banner.jpg";
-import harrietImg from "@/assets/team/harriet-forrest.webp";
-import markImg from "@/assets/team/mark-taylor.webp";
+const teamBanner = "/assets/team/team-banner.jpg";
+const harrietImg = "/assets/team/harriet-forrest.webp";
+const markImg = "/assets/team/mark-taylor.webp";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -52,7 +52,6 @@ const stats = [
 
 const About = () =>
 <>
-    <Navbar />
     <main>
       {/* ── HERO BANNER ── */}
       <section className="relative overflow-hidden">
@@ -292,7 +291,6 @@ const About = () =>
         </div>
       </section>
     </main>
-    <Footer />
   </>;
 
 

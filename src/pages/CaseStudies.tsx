@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import PageHero from "@/components/PageHero";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Building2, Calendar, Tag, BookOpen } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import DecorativeCircle from "@/components/DecorativeCircle";
-import gotoLogo from "@/assets/logos/goto.png";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
+const gotoLogo = "/assets/logos/goto.png";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
 
 const partnerColor: Record<string, string> = {
   "GoToConnect": "text-primary bg-primary/10 border-primary/20",
@@ -23,7 +23,6 @@ const fadeUp = {
 
 const CaseStudies = () => (
   <>
-    <Navbar />
     <main>
       <PageHero
         category="Case Studies"
@@ -48,7 +47,7 @@ const CaseStudies = () => (
                 variants={fadeUp}
               >
                 <Link
-                  to={`/case-studies/${cs.slug}`}
+                  href={`/case-studies/${cs.slug}`}
                   className="group flex h-full flex-col rounded-2xl border border-border/50 bg-card p-8 shadow-sm transition-all duration-200 hover:border-primary/30 hover:shadow-md"
                 >
                   {/* Tags row */}
@@ -93,7 +92,6 @@ const CaseStudies = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </>
 );
 

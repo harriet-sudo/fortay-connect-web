@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import HeroSection from "@/components/home/HeroSection";
 import SoundFamiliarSection from "@/components/home/SoundFamiliarSection";
 import SocialProofSection from "@/components/home/SocialProofSection";
@@ -13,7 +13,6 @@ import AssessmentTeaser from "@/components/home/AssessmentTeaser";
 
 const Index = () => (
   <>
-    <Navbar />
     <main>
       <HeroSection />
       <SoundFamiliarSection />
@@ -26,7 +25,6 @@ const Index = () => (
       <CTASection />
       <FAQSection />
     </main>
-    <Footer />
   </>
 );
 

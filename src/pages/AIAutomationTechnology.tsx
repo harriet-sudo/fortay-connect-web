@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import SocialProofSection from "@/components/home/SocialProofSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import { motion } from "framer-motion";
@@ -215,7 +215,6 @@ const workflowNodes = [
 
 const AIAutomationTechnologyPage = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
@@ -223,7 +222,7 @@ const AIAutomationTechnologyPage = () => (
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
         <div className="container relative z-10">
           <Link
-            to="/technology"
+            href="/technology"
             className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" /> All Technology
@@ -288,7 +287,7 @@ const AIAutomationTechnologyPage = () => (
                 </a>
               </Button>
               <Button size="lg" variant="teal" asChild>
-                <Link to="/assessment">
+                <Link href="/assessment">
                   <ClipboardCheck className="mr-2 h-4 w-4" />
                   AI & CX Readiness Assessment
                 </Link>
@@ -831,7 +830,6 @@ const AIAutomationTechnologyPage = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

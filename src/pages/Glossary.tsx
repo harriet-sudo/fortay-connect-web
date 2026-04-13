@@ -1,6 +1,6 @@
+"use client";
+
 import { useState, useMemo } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -72,7 +72,6 @@ const Glossary = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <main>
         {/* Hero */}
         <section className="bg-foreground py-20 text-background">
@@ -196,7 +195,6 @@ const Glossary = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

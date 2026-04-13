@@ -1,7 +1,9 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ArrowRight, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import DecorativeCircle from "@/components/DecorativeCircle";
 
 const steps = [
@@ -44,7 +46,7 @@ const AssessmentTeaser = () => (
           </ul>
           <div className="mt-8">
             <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/assessment">
+              <Link href="/assessment">
                 Take the CX Assessment
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

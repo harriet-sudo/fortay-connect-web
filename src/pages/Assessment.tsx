@@ -1,6 +1,6 @@
+"use client";
+
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -270,7 +270,6 @@ const Assessment = () => {
 
   return (
     <>
-      <Navbar />
       <main className="relative min-h-screen overflow-hidden bg-background py-24">
         <DecorativeCircle color="teal" className="-top-32 -right-24 opacity-20" />
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-20 opacity-20" size="h-56 w-56 md:h-80 md:w-80" />
@@ -520,7 +519,7 @@ const Assessment = () => {
                   </p>
                   <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                     <Button size="lg" asChild>
-                      <a href="https://meetings.hubspot.com/mark-taylor80" target="_blank" rel="noopener noreferrer">
+                      <a href="https://meetings.hubspot.com/fortayconnect" target="_blank" rel="noopener noreferrer">
                         Book a Strategy Session
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
@@ -535,7 +534,6 @@ const Assessment = () => {
           </AnimatePresence>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

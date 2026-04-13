@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import SocialProofSection from "@/components/home/SocialProofSection";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -33,14 +33,14 @@ import {
   DollarSign,
 } from "lucide-react";
 
-import astonVillaLogo from "@/assets/logos/aston-villa.webp";
-import ineosLogo from "@/assets/logos/ineos.webp";
-import pkfLogo from "@/assets/logos/pkf.png";
-import alcumusLogo from "@/assets/logos/alcumus.webp";
-import caAutoLogo from "@/assets/logos/ca-auto-finance.webp";
-import dextLogo from "@/assets/logos/dext.webp";
-import ashtonsLegalLogo from "@/assets/logos/ashtons-legal.webp";
-import nottinghamForestLogo from "@/assets/logos/nottingham-forest.png";
+const astonVillaLogo = "/assets/logos/aston-villa.webp";
+const ineosLogo = "/assets/logos/ineos.webp";
+const pkfLogo = "/assets/logos/pkf.png";
+const alcumusLogo = "/assets/logos/alcumus.webp";
+const caAutoLogo = "/assets/logos/ca-auto-finance.webp";
+const dextLogo = "/assets/logos/dext.webp";
+const ashtonsLegalLogo = "/assets/logos/ashtons-legal.webp";
+const nottinghamForestLogo = "/assets/logos/nottingham-forest.png";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -219,7 +219,6 @@ const ctaExploring = [
 
 const ManufacturingIndustryPage = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* Hero */}
       <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
@@ -227,7 +226,7 @@ const ManufacturingIndustryPage = () => (
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
         <div className="container relative z-10">
           <Link
-            to="/industries"
+            href="/industries"
             className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" /> All Industries
@@ -684,7 +683,7 @@ const ManufacturingIndustryPage = () => (
               Book a free 30-minute audit and we'll show you exactly where AI can drive efficiency across your operations.
             </p>
             <a
-              href="https://meetings.hubspot.com/fortay"
+              href="https://meetings.hubspot.com/fortayconnect"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
@@ -895,7 +894,6 @@ const ManufacturingIndustryPage = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

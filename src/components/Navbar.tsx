@@ -1,7 +1,10 @@
+"use client";
+
 import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+const logo = "/assets/logo.png";
 
 const navLinks = [
 {
@@ -65,7 +68,7 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,7 +86,7 @@ const Navbar = () => {
       hidden && "-translate-y-full"
     )}>
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0">
           <img src={logo} alt="Fortay Connect" className="h-8 w-auto md:h-10" />
         </Link>
 
@@ -98,10 +101,10 @@ const Navbar = () => {
               onMouseLeave={() => setOpenDropdown(null)}>
 
                 <Link
-                  to={link.to}
+                  href={link.to}
                   className={cn(
                     "whitespace-nowrap rounded-md px-2 py-2 text-xs font-medium transition-colors hover:text-primary sm:px-3 sm:text-sm",
-                    location.pathname.startsWith(link.to) || link.children.some(c => location.pathname.startsWith(c.to))
+                    pathname.startsWith(link.to) || link.children.some(c => pathname.startsWith(c.to))
                       ? "text-primary"
                       : "text-background/70"
                   )}>
@@ -113,7 +116,7 @@ const Navbar = () => {
                       child.children ?
                       <div key={child.to} className="group/sub relative">
                         <Link
-                          to={child.to}
+                          href={child.to}
                           className="flex items-center justify-between rounded-lg px-3 py-2 text-sm text-background/60 transition-colors hover:bg-background/10 hover:text-primary">
                           {child.label}
                           <span className="text-xs opacity-50">›</span>
@@ -122,7 +125,7 @@ const Navbar = () => {
                           {child.children.map((sub) =>
                             <Link
                               key={sub.to}
-                              to={sub.to}
+                              href={sub.to}
                               className="block rounded-lg px-3 py-2 text-sm text-background/60 transition-colors hover:bg-background/10 hover:text-primary">
                               {sub.label}
                             </Link>
@@ -132,7 +135,7 @@ const Navbar = () => {
                       :
                       <Link
                         key={child.to}
-                        to={child.to}
+                        href={child.to}
                         className="block rounded-lg px-3 py-2 text-sm text-background/60 transition-colors hover:bg-background/10 hover:text-primary">
                         {child.label}
                       </Link>
@@ -143,10 +146,10 @@ const Navbar = () => {
 
             <Link
               key={link.to}
-              to={link.to}
+              href={link.to}
               className={cn(
                 "whitespace-nowrap rounded-md px-2 py-2 text-xs font-medium transition-colors hover:text-primary sm:px-3 sm:text-sm",
-                location.pathname === link.to
+                pathname === link.to
                   ? "text-primary"
                   : "text-background/70"
               )}>

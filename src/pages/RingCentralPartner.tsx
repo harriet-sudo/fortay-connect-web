@@ -1,8 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import PageFAQSection from "@/components/PageFAQSection";
-import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight, CheckCircle, Phone, MessageSquare, Bot,
@@ -17,10 +17,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import DecorativeCircle from "@/components/DecorativeCircle";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
-import rcGoldImg from "@/assets/blog/ringcentral-gold.jpg";
-import msRcImg from "@/assets/blog/ms-ringcentral.jpg";
-import mitelRcImg from "@/assets/blog/mitel-rc.jpg";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
+const rcGoldImg = "/assets/blog/ringcentral-gold.jpg";
+const msRcImg = "/assets/blog/ms-ringcentral.jpg";
+const mitelRcImg = "/assets/blog/mitel-rc.jpg";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -204,7 +204,6 @@ const AIInnovationTabs = () => {
 const RingCentralPartner = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-1">
 
         {/* ── HERO ── */}
@@ -273,7 +272,7 @@ const RingCentralPartner = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-background/20 text-background hover:bg-background/10" asChild>
-                  <Link to="/contact">Speak to a Specialist</Link>
+                  <Link href="/contact">Speak to a Specialist</Link>
                 </Button>
               </div>
             </motion.div>
@@ -549,7 +548,7 @@ const RingCentralPartner = () => {
             <div className="grid gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
               {insightCards.map((card, i) => (
                 <motion.div key={card.slug} custom={i} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                  <Link to={`/insights/${card.slug}`}
+                  <Link href={`/insights/${card.slug}`}
                     className="group block rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 hover:shadow-md transition-all">
                     <div className="aspect-video overflow-hidden bg-muted">
                       <img src={card.img} alt={card.title}
@@ -643,7 +642,6 @@ const RingCentralPartner = () => {
         
 
       </main>
-      <Footer />
     </div>
   );
 };

@@ -1,13 +1,15 @@
+"use client";
+
 import { motion } from "framer-motion";
 
-import zoomLogo from "@/assets/logos/zoom.png";
-import ringcentralLogo from "@/assets/logos/ringcentral.png";
-import polyaiLogo from "@/assets/logos/polyai.svg";
-import niceLogo from "@/assets/logos/nice.png";
-import gotoLogo from "@/assets/logos/goto.svg";
-import boostaiLogo from "@/assets/logos/boostai.svg";
-import ujetLogo from "@/assets/logos/ujet.svg";
-import dialpadLogo from "@/assets/logos/dialpad.svg";
+const zoomLogo = "/assets/logos/zoom.png";
+const ringcentralLogo = "/assets/logos/ringcentral.png";
+const polyaiLogo = "/assets/logos/polyai.svg";
+const niceLogo = "/assets/logos/nice.png";
+const gotoLogo = "/assets/logos/goto.svg";
+const boostaiLogo = "/assets/logos/boostai.svg";
+const ujetLogo = "/assets/logos/ujet.svg";
+const dialpadLogo = "/assets/logos/dialpad.svg";
 
 const defaultPartners: { name: string; src: string }[] = [
   { name: "Zoom", src: zoomLogo },

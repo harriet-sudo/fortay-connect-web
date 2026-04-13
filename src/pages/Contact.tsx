@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,7 +28,6 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
       <main className="py-24">
         <div className="container">
           <div className="mx-auto grid max-w-5xl gap-16 md:grid-cols-2">
@@ -91,7 +90,6 @@ const Contact = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

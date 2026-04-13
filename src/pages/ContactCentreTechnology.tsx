@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import PageFAQSection from "@/components/PageFAQSection";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import DecorativeCircle from "@/components/DecorativeCircle";
@@ -76,7 +76,6 @@ const faqs = [
 export default function ContactCentreTechnology() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20"
@@ -116,7 +115,7 @@ export default function ContactCentreTechnology() {
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book CX Strategy Session</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                <Link to="/assessment">Take CX Assessment</Link>
+                <Link href="/assessment">Take CX Assessment</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -194,7 +193,7 @@ export default function ContactCentreTechnology() {
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a CX Strategy Session</a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/assessment">Take the CX Assessment</Link>
+                <Link href="/assessment">Take the CX Assessment</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -202,7 +201,6 @@ export default function ContactCentreTechnology() {
       </section>
 
       <PageFAQSection title="Contact Centre FAQs" faqs={faqs} />
-      <Footer />
     </div>
   );
 }

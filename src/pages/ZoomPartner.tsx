@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import PageFAQSection from "@/components/PageFAQSection";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight, CheckCircle, Phone, Video, MessageSquare, Bot,
@@ -15,7 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import DecorativeCircle from "@/components/DecorativeCircle";
-import zoomLogo from "@/assets/logos/zoom.png";
+const zoomLogo = "/assets/logos/zoom.png";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -81,7 +81,6 @@ const SectionPill = ({ children }: { children: React.ReactNode }) => (
 const ZoomPartner = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-1">
 
         {/* ── HERO — matches bg-foreground dark hero used site-wide ── */}
@@ -145,7 +144,7 @@ const ZoomPartner = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-background/20 text-background hover:bg-background/10" asChild>
-                  <Link to="/contact">Speak to a Specialist</Link>
+                  <Link href="/contact">Speak to a Specialist</Link>
                 </Button>
               </div>
             </motion.div>
@@ -455,7 +454,6 @@ const ZoomPartner = () => {
         </section>
 
       </main>
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client";
+
+import Link from "next/link";
 import SocialProofSection from "@/components/home/SocialProofSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import { motion } from "framer-motion";
@@ -28,14 +28,14 @@ import {
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
-import astonVillaLogo from "@/assets/logos/aston-villa.webp";
-import ineosLogo from "@/assets/logos/ineos.webp";
-import pkfLogo from "@/assets/logos/pkf.png";
-import alcumusLogo from "@/assets/logos/alcumus.webp";
-import caAutoLogo from "@/assets/logos/ca-auto-finance.webp";
-import dextLogo from "@/assets/logos/dext.webp";
-import ashtonsLegalLogo from "@/assets/logos/ashtons-legal.webp";
-import nottinghamForestLogo from "@/assets/logos/nottingham-forest.png";
+const astonVillaLogo = "/assets/logos/aston-villa.webp";
+const ineosLogo = "/assets/logos/ineos.webp";
+const pkfLogo = "/assets/logos/pkf.png";
+const alcumusLogo = "/assets/logos/alcumus.webp";
+const caAutoLogo = "/assets/logos/ca-auto-finance.webp";
+const dextLogo = "/assets/logos/dext.webp";
+const ashtonsLegalLogo = "/assets/logos/ashtons-legal.webp";
+const nottinghamForestLogo = "/assets/logos/nottingham-forest.png";
 
 const clientLogos = [
   { name: "Aston Villa", src: astonVillaLogo },
@@ -157,7 +157,6 @@ const ctaExploring = [
 
 const FinancialServicesPage = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
     <main>
       {/* Hero — full-width dark with decorative circles */}
       <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
@@ -165,7 +164,7 @@ const FinancialServicesPage = () => (
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
         <div className="container relative z-10">
           <Link
-            to="/industries"
+            href="/industries"
             className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" /> All Industries
@@ -679,7 +678,6 @@ const FinancialServicesPage = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 
