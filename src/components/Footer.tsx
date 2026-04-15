@@ -3,8 +3,8 @@ const logo = "/assets/logo.png";
 const certsStrip = "/assets/certs-strip.png";
 const zoomLogo = "/assets/logos/zoom.png";
 const ringcentralLogo = "/assets/logos/ringcentral.png";
-const gotoLogo = "/assets/logos/goto.png";
-const dialpadLogo = "/assets/logos/dialpad.png";
+const gotoLogo = "/assets/logos/goto.svg";
+const dialpadLogo = "/assets/logos/dialpad.svg";
 const niceLogo = "/assets/logos/nice.png";
 const msTeamsLogo = "/assets/logos/ms-teams.svg";
 
@@ -13,7 +13,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 const Footer = () => (
   <footer className="bg-foreground text-background">
     <div className="container py-16">
-      <div className="grid gap-12 md:grid-cols-4">
+      <div className="grid gap-12 md:grid-cols-5">
         <div className="md:col-span-1">
           <img src={logo} alt="Fortay Connect" className="h-8 w-auto brightness-0 invert" />
           <p className="mt-4 text-sm text-background/60">
@@ -64,45 +64,51 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* Certifications strip */}
-      <div className="mt-12 border-t border-background/10 pt-10">
-        <p className="mb-5 text-center text-xs font-semibold uppercase tracking-widest text-background/30">
-          Our Certifications &amp; Partner Accreditations
-        </p>
-        <div className="flex items-center justify-center">
-          <img
-            src={certsStrip}
-            alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
-            className="max-h-28 w-full max-w-3xl object-contain"
-          />
+      {/* Certifications & Partner logos — on a clean light panel */}
+      <div className="mt-12 rounded-md bg-white/95 px-8 py-8">
+        <div className="grid gap-8 md:grid-cols-2 md:items-center">
+          {/* Certifications */}
+          <div>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
+              Our Certifications &amp; Partner Accreditations
+            </p>
+            <div className="flex items-center">
+              <img
+                src={certsStrip}
+                alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Technology Alliances */}
+          <div>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
+              Certified Partner — Technology Alliances
+            </p>
+            <div className="flex flex-wrap items-center gap-6">
+              {[
+                { src: zoomLogo, alt: "Zoom" },
+                { src: ringcentralLogo, alt: "RingCentral" },
+                { src: gotoLogo, alt: "GoTo" },
+                { src: dialpadLogo, alt: "Dialpad" },
+                { src: niceLogo, alt: "NICE" },
+                { src: msTeamsLogo, alt: "Microsoft Teams" },
+              ].map(({ src, alt }) => (
+                <img
+                  key={alt}
+                  src={src}
+                  alt={alt}
+                  className="h-7 w-auto opacity-70 transition-opacity hover:opacity-100"
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Partner logo strip */}
-      <div className="mt-10 border-t border-background/10 pt-8">
-        <p className="mb-5 text-center text-xs font-semibold uppercase tracking-widest text-background/30">
-          Certified Partner — Technology Alliances
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-8">
-          {[
-            { src: zoomLogo, alt: "Zoom" },
-            { src: ringcentralLogo, alt: "RingCentral" },
-            { src: gotoLogo, alt: "GoTo" },
-            { src: dialpadLogo, alt: "Dialpad" },
-            { src: niceLogo, alt: "NICE" },
-            { src: msTeamsLogo, alt: "Microsoft Teams" },
-          ].map(({ src, alt }) => (
-            <img
-              key={alt}
-              src={src}
-              alt={alt}
-              className="h-6 w-auto opacity-30 brightness-0 invert transition-opacity hover:opacity-60"
-            />
-          ))}
-        </div>
-        <div className="mt-8 text-center text-sm text-background/40">
-          © {new Date().getFullYear()} Fortay Connect. All rights reserved.
-        </div>
+      <div className="mt-8 border-t border-background/10 pt-6 text-center text-sm text-background/40">
+        © {new Date().getFullYear()} Fortay Connect. All rights reserved.
       </div>
     </div>
   </footer>
