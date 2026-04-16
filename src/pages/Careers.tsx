@@ -24,7 +24,7 @@ const values = [
   {
     icon: Users,
     title: "Collaborative by Nature",
-    description: "We work as one team — with each other and with our clients. No silos, no egos, just shared goals and mutual respect.",
+    description: "We work as one team, with each other and with our clients. No silos, no egos, just shared goals and mutual respect.",
   },
   {
     icon: Globe,
@@ -34,7 +34,7 @@ const values = [
   {
     icon: Heart,
     title: "Integrity First",
-    description: "We recommend what's right, not what's easy. Our clients trust us because we are vendor-neutral and commercially honest.",
+    description: "We recommend what's right, not what's easy. Our clients trust us because we are platform-neutral and commercially honest.",
   },
 ];
 
@@ -161,7 +161,7 @@ const Careers = () => (
             </motion.p>
             <motion.div variants={fadeUp} className="mt-10 rounded-2xl border border-border bg-card p-10">
               <p className="font-display text-lg font-bold text-foreground">
-                No open roles right now — but don't let that stop you.
+                No open roles right now, but don't let that stop you.
               </p>
               <p className="mt-3 text-sm text-muted-foreground">
                 Send us your CV and a short note about what excites you about AI and CX. We'll keep you on file for future opportunities.
@@ -182,4 +182,4 @@ const Careers = () => (
   </div>
 );
 
-export default Careers;
+export default Careers

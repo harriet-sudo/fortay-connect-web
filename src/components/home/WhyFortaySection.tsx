@@ -30,14 +30,14 @@ const usps = [
     icon: MapPin,
     stat: "🇬🇧",
     title: "UK Engineers & Consultants",
-    description: "Our team is entirely UK-based — accessible, accountable, and deeply familiar with the UK market.",
+    description: "Our team is entirely UK-based, accessible, accountable, and deeply familiar with the UK market.",
     color: "purple",
   },
   {
     icon: FlaskConical,
     stat: "✓",
     title: "We Stress-Test Everything",
-    description: "While vendors push monthly AI releases, we're already validating real-world outcomes. You get proven capabilities, not marketing promises.",
+    description: "While platforms push monthly AI releases, we're already validating real-world outcomes. You get proven capabilities, not marketing promises.",
     color: "teal",
   },
   {
@@ -75,7 +75,7 @@ const WhyFortaySection = () => (
           <span className="text-background/40 font-medium">Measurable accountability.</span>
         </h2>
         <p className="mt-4 text-background/50">
-          The reasons our clients stay with us — and the things that set us apart from every other consultancy.
+          The reasons our clients stay with us, and the things that set us apart from every other consultancy.
         </p>
       </motion.div>
 
@@ -117,4 +117,4 @@ const WhyFortaySection = () => (
   </section>
 );
 
-export default WhyFortaySection;
+export default WhyFortaySection

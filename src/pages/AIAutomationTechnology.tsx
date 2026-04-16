@@ -126,7 +126,7 @@ const realWorldWorkflows = [
     num: "04",
     title: "Agentic CRM Automation",
     description:
-      "AI detects deal stage shifts, risk phrases, renewal signals and churn indicators — then automatically updates opportunity fields, creates internal tasks, sends Slack alerts and assigns next actions.",
+      "AI detects deal stage shifts, risk phrases, renewal signals and churn indicators, then automatically updates opportunity fields, creates internal tasks, sends Slack alerts and assigns next actions.",
     highlight: "Pipeline accuracy improves without rep dependency.",
   },
 ];
@@ -195,7 +195,7 @@ const commercialImpacts = [
 
 /* ─── Why Fortay ─── */
 const whyFortayPoints = [
-  "Vendor-agnostic automation advisory",
+  "Platform-neutral automation advisory",
   "AI maturity assessment",
   "Integration architecture across CRM, UC and contact centre",
   "Governance and compliance framework design",
@@ -621,7 +621,7 @@ const AIAutomationTechnologyPage = () => (
                 Tools Provide Capability. <span className="text-primary">Architecture Creates Leverage.</span>
               </motion.h2>
               <motion.p variants={fadeUp} className="mt-4 text-muted-foreground leading-relaxed">
-                Microsoft Copilot drafts emails. Zoom AI Companion summarises meetings. But without orchestration — systems remain disconnected, admin persists, data remains fragmented.
+                Microsoft Copilot drafts emails. Zoom AI Companion summarises meetings. But without orchestration, systems remain disconnected, admin persists, data remains fragmented.
               </motion.p>
               <motion.p variants={fadeUp} className="mt-4 font-display text-lg font-bold text-foreground">
                 Fortay Connect designs the automation architecture that connects AI tools into <span className="text-primary">structured execution.</span>
@@ -816,7 +816,7 @@ const AIAutomationTechnologyPage = () => (
               <span className="text-primary">Execution?</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-4 text-lg text-background/60">
-              If you are serious about building intelligent workflows that act across your organisation — securely and strategically — let's design the architecture.
+              If you are serious about building intelligent workflows that act across your organisation, securely and strategically, let's design the architecture.
             </motion.p>
             <motion.div variants={fadeUp} className="mt-8 flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">

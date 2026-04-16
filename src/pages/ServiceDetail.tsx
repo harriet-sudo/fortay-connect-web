@@ -52,13 +52,13 @@ const serviceData: Record<string, ServiceData> = {
       "You need to see what modern platforms (including AI) can actually do",
       "You want to drive efficiencies in multiple business areas in a risk-free way",
     ],
-    problemHeading: "Modern communication platforms can transform performance — but only when they're designed right.",
+    problemHeading: "Modern communication platforms can transform performance, but only when they're designed right.",
     problemBody: "Advisory helps you avoid costly missteps: buying tools that don't integrate, designing journeys that don't scale, or rolling out AI without controls. We'll map your current state, define outcomes, and build a clear, prioritised roadmap.",
     whatWeDoTitle: "What we actually do",
     whatWeDo: [
       {
         title: "Audit your current setup",
-        body: "We dig into everything — processes, inefficiencies, and gaps. Through discovery, we help you understand what the real problems actually are. No assumptions made, just current-state assessment + gap analysis.",
+        body: "We dig into everything, processes, inefficiencies, and gaps. Through discovery, we help you understand what the real problems actually are. No assumptions made, just current-state assessment + gap analysis.",
       },
       {
         title: "Create your 3-year roadmap",
@@ -66,7 +66,7 @@ const serviceData: Record<string, ServiceData> = {
       },
       {
         title: "Deep platform analysis",
-        body: "We look beyond features to what really matters — how AI and modern platforms can transform your customer experiences. We gauge mutual fit to ensure solutions match your needs. Vendor-agnostic comparison + recommendation.",
+        body: "We look beyond features to what really matters: how AI and modern platforms can transform your customer experiences. We gauge mutual fit to ensure solutions match your needs. Platform-neutral comparison and recommendation.",
       },
     ],
     testimonials: [
@@ -74,7 +74,7 @@ const serviceData: Record<string, ServiceData> = {
         company: "CA Auto Finance",
         name: "Justine Long",
         role: "Head of Operations",
-        quote: "We had vendors trying to sell us something we didn't understand. Mark was completely impartial and focused on finding what we actually needed. He took all the technical jargon and made it simple to understand the real business impact. More importantly, he caught things we would have completely missed — that expertise probably saved us from making a very expensive mistake.",
+        quote: "We had suppliers trying to sell us something we didn't understand. Mark was completely impartial and focused on finding what we actually needed. He took all the technical jargon and made it simple to understand the real business impact. More importantly, he caught things we would have completely missed. That expertise probably saved us from making a very expensive mistake.",
         stats: [
           { value: "40%", label: "cost reduction" },
           { value: "3→1", label: "platforms consolidated" },
@@ -94,12 +94,12 @@ const serviceData: Record<string, ServiceData> = {
       },
     ],
     faqs: [
-      { q: "How do I know if I need advisory services?", a: "If you're planning a major communication tech change, you need a strategy first. Most companies come to Fortay Connect when they realise going straight to technology selection is risky — especially with 200+ users and complex needs." },
-      { q: "What exactly happens in the advisory phase?", a: "We analyse your current setup, interview stakeholders, map out requirements, and build your transformation strategy. Think of it as the blueprint phase — getting this right prevents expensive mistakes later." },
+      { q: "How do I know if I need advisory services?", a: "If you're planning a major communication tech change, you need a strategy first. Most companies come to Fortay Connect when they realise going straight to technology selection is risky, especially with 200+ users and complex needs." },
+      { q: "What exactly happens in the advisory phase?", a: "We analyse your current setup, interview stakeholders, map out requirements, and build your transformation strategy. Think of it as the blueprint phase, getting this right prevents expensive mistakes later." },
       { q: "What's included in your initial audit?", a: "A deep dive into your current costs, systems, pain points, and opportunities. We analyse workflows, culture, locations, integrations, user feedback, and business goals to build a complete picture." },
       { q: "How long does the advisory phase take?", a: "Typically 4–6 weeks from first workshop to final strategy presentation. We advise starting this process 6 months before procurement." },
       { q: "What deliverables do we get?", a: "A complete transformation strategy: current state analysis, detailed requirements mapping, 3-year technology roadmap, budget and resource planning, and an executive presentation deck." },
-      { q: "Do we need advisory if we know which platform we want?", a: "Even when you have a platform in mind, proper planning prevents expensive surprises. One client thought they just needed new phones — our analysis helped them transform their entire customer experience." },
+      { q: "Do we need advisory if we know which platform we want?", a: "Even when you have a platform in mind, proper planning prevents expensive surprises. One client thought they just needed new phones, our analysis helped them transform their entire customer experience." },
     ],
   },
 
@@ -107,10 +107,10 @@ const serviceData: Record<string, ServiceData> = {
     title: "Technology Selection",
     badge: "Services",
     headline: "Choose the right communications platform without the guesswork",
-    subline: "We help you choose the best-fit platform by validating features, pressure-testing integrations, and mapping each option to your real use cases — so you can commit with confidence and scale for years.",
+    subline: "We help you choose the best-fit platform by validating features, pressure-testing integrations, and mapping each option to your real use cases, so you can commit with confidence and scale for years.",
     heroCta: "Get Your Free Technology Audit",
     thisIsForYou: [
-      "Every vendor demo looks suspiciously perfect",
+      "Every supplier demo looks suspiciously perfect",
       "You need to know what's actually negotiable",
       "You need help mapping features to your specific use cases",
       "You want detailed implementation plans before committing",
@@ -118,7 +118,7 @@ const serviceData: Record<string, ServiceData> = {
       "You want to future-proof decisions with a technology deep dive",
     ],
     problemHeading: "Stop drowning in endless feature comparisons.",
-    problemBody: "Every demo looks perfect — until you try to integrate it, roll it out, and measure adoption. We help you cut through the noise by focusing on what matters: your workflows, your customer journeys, and your systems. Then we validate the shortlist with practical testing so you don't end up locked into the wrong platform.",
+    problemBody: "Every demo looks perfect, until you try to integrate it, roll it out, and measure adoption. We help you cut through the noise by focusing on what matters: your workflows, your customer journeys, and your systems. Then we validate the shortlist with practical testing so you don't end up locked into the wrong platform.",
     whatWeDoTitle: "How we help you choose right",
     whatWeDo: [
       {
@@ -139,7 +139,7 @@ const serviceData: Record<string, ServiceData> = {
         company: "Garden Court Chambers",
         name: "Dan Bunce",
         role: "IT Systems Project Manager",
-        quote: "With cloud-based comms, there are fewer points of failure as someone, somewhere, will have an internet connection and be able to take calls. Previously if we had an outage, we lost calls — which is a major problem for barristers.",
+        quote: "With cloud-based comms, there are fewer points of failure as someone, somewhere, will have an internet connection and be able to take calls. Previously if we had an outage, we lost calls, which is a major problem for barristers.",
         stats: [
           { value: "100%", label: "call reliability" },
           { value: "Cloud", label: "fully migrated" },
@@ -150,7 +150,7 @@ const serviceData: Record<string, ServiceData> = {
         company: "CA Auto Finance",
         name: "Justine Long",
         role: "Head of Operations",
-        quote: "Mark was completely impartial and focused on finding what we actually needed. He took all the technical jargon and made it simple to understand the real business impact. He caught things we would have completely missed — expertise that probably saved us from a very expensive mistake.",
+        quote: "Mark was completely impartial and focused on finding what we actually needed. He took all the technical jargon and made it simple to understand the real business impact. He caught things we would have completely missed, expertise that probably saved us from a very expensive mistake.",
         stats: [
           { value: "40%", label: "cost reduction" },
           { value: "3→1", label: "platforms consolidated" },
@@ -159,12 +159,12 @@ const serviceData: Record<string, ServiceData> = {
       },
     ],
     faqs: [
-      { q: "How do you determine the best fit for my business?", a: "We analyse multiple areas: your current and future business requirements, technical needs (especially integrations) and the vendor's long-term stability. We go deep on things like R&D investment and product roadmaps." },
-      { q: "Can you help negotiate contracts?", a: "Yes, and this is where we often save clients significant money. We know exactly what's negotiable beyond standard pricing — from feature bundles to SLAs to implementation support." },
-      { q: "What's involved in technology testing?", a: "We run practical proof-of-concept trials focusing on your specific use cases — not just generic demos. These systems are live and operational which catches potential issues early." },
+      { q: "How do you determine the best fit for my business?", a: "We analyse multiple areas: your current and future business requirements, technical needs (especially integrations) and the supplier's long-term stability. We go deep on things like R&D investment and product roadmaps." },
+      { q: "Can you help negotiate contracts?", a: "Yes, and this is where we often save clients significant money. We know exactly what's negotiable beyond standard pricing, from feature bundles to SLAs to implementation support." },
+      { q: "What's involved in technology testing?", a: "We run practical proof-of-concept trials focusing on your specific use cases, not just generic demos. These systems are live and operational which catches potential issues early." },
       { q: "Do you only work with certain technology partners?", a: "While we're certified partners with all major platforms (RingCentral, Zoom, Teams, etc.), our recommendations are completely independent. We have analysis and relationships with 30+ partners." },
-      { q: "What should I look for in a provider's stability?", a: "Three critical factors: financial health (including debt levels), R&D investment (shows innovation commitment), and market trajectory. We analyse these because they predict whether a vendor will still be innovating in 3–5 years." },
-      { q: "What about system integration?", a: "Integration assessment happens before vendor selection, not after. We map all your connection points (CRM, productivity tools, etc.) and verify compatibility." },
+      { q: "What should I look for in a provider's stability?", a: "Three critical factors: financial health (including debt levels), R&D investment (shows innovation commitment), and market trajectory. We analyse these because they predict whether a supplier will still be innovating in 3 to 5 years." },
+      { q: "What about system integration?", a: "Integration assessment happens before platform selection, not after. We map all your connection points (CRM, productivity tools, etc.) and verify compatibility." },
     ],
   },
 
@@ -172,7 +172,7 @@ const serviceData: Record<string, ServiceData> = {
     title: "Deployment Services",
     badge: "Services",
     headline: "Rolling out new systems doesn't have to disrupt your business",
-    subline: "Fortay Connect takes the stress out of deployment with staged transitions, deep integrations and comprehensive training — delivered with a security-first approach so teams adopt the new system quickly and confidently.",
+    subline: "Fortay Connect takes the stress out of deployment with staged transitions, deep integrations and comprehensive training, delivered with a security-first approach so teams adopt the new system quickly and confidently.",
     heroCta: "Get Your Free Technology Audit",
     thisIsForYou: [
       "You need zero downtime during transition",
@@ -191,7 +191,7 @@ const serviceData: Record<string, ServiceData> = {
       },
       {
         title: "Deep system integration",
-        body: "Your CRM, contact centre, and existing tools — all working together seamlessly. We handle complex technical details like number porting while keeping you informed through weekly project syncs.",
+        body: "Your CRM, contact centre, and existing tools, all working together seamlessly. We handle complex technical details like number porting while keeping you informed through weekly project syncs.",
       },
       {
         title: "Security first, always",
@@ -225,7 +225,7 @@ const serviceData: Record<string, ServiceData> = {
     faqs: [
       { q: "How long does a typical deployment take?", a: "Most projects take 4–9 months from start to finish. But more importantly, we stage the rollout so your business keeps running smoothly throughout. No 'big bang' implementations that risk disruption." },
       { q: "What steps do you take to minimise downtime?", a: "The new system is built alongside your existing one. As it's cloud-based it will be live and operational during testing. Once built we can go live immediately with no downtime." },
-      { q: "How do you handle system integration?", a: "Before touching any systems, we map every integration point — CRM, contact centre, business tools — and create a detailed connection plan. We test your environment extensively before going live." },
+      { q: "How do you handle system integration?", a: "Before touching any systems, we map every integration point, CRM, contact centre, business tools, and create a detailed connection plan. We test your environment extensively before going live." },
       { q: "Do you provide training?", a: "Yes, and we go beyond basic 'how to use' sessions. We create role-specific training plans, offer hands-on workshops, and provide follow-up support until your team is fully confident." },
     ],
   },
@@ -245,7 +245,7 @@ const serviceData: Record<string, ServiceData> = {
       "You need to deliver measurable ROI to the board",
     ],
     problemHeading: "Standard support isn't enough when technology evolves this quickly.",
-    problemBody: "Ticket-based support keeps the lights on — it doesn't keep you improving. We proactively monitor performance, optimise new features, and drive adoption across UC, CX and AI so your platforms keep delivering value long after go-live. Expect governance, regular optimisation cycles and clear reporting — not reactive firefighting.",
+    problemBody: "Ticket-based support keeps the lights on, it doesn't keep you improving. We proactively monitor performance, optimise new features, and drive adoption across UC, CX and AI so your platforms keep delivering value long after go-live. Expect governance, regular optimisation cycles and clear reporting, not reactive firefighting.",
     whatWeDoTitle: "What you get with Fortay Managed Services",
     whatWeDo: [
       {
@@ -258,7 +258,7 @@ const serviceData: Record<string, ServiceData> = {
       },
       {
         title: "Expert Resolution",
-        body: "Our own UK-based expert team (no outsourcing), direct access to accredited platform experts, prioritised issue resolution, complete issue tracking, and bespoke platform for queries and tickets. Zoom CX Support Certified — the first in the UK.",
+        body: "Our own UK-based expert team (no outsourcing), direct access to accredited platform experts, prioritised issue resolution, complete issue tracking, and bespoke platform for queries and tickets. Zoom CX Support Certified, the first in the UK.",
       },
     ],
     testimonials: [
@@ -277,7 +277,7 @@ const serviceData: Record<string, ServiceData> = {
         company: "Your World Recruitment",
         name: "Simon Knox",
         role: "IT Director",
-        quote: "The issue was that there was a delay — and in recruitment any kind of a delay is too long. Avaya Cloud Office works and does what we need it to do, which is to integrate seamlessly with our VDI environment so that our real time telephony is a seamless and effortless experience for our recruiters.",
+        quote: "The issue was that there was a delay, and in recruitment any kind of a delay is too long. Avaya Cloud Office works and does what we need it to do, which is to integrate seamlessly with our VDI environment so that our real time telephony is a seamless and effortless experience for our recruiters.",
         stats: [
           { value: "0ms", label: "effective latency" },
           { value: "Global", label: "recruitment enabled" },
@@ -286,11 +286,11 @@ const serviceData: Record<string, ServiceData> = {
       },
     ],
     faqs: [
-      { q: "What is a modern managed service?", a: "A proactive service that focuses on analysing the data from your platform to maintain success or to innovate further. Contact centres are not static — they need to adapt quickly to stay relevant to changes in the market, customer requirements, plus staff or business changes." },
-      { q: "Is it Fortay services or the technology partners?", a: "We work closely with all technology partners — our support services complement each other. We advise clients to always open a ticket with the technology provider and share the ticket reference with us so we can use our relationships to escalate and work together to resolve." },
+      { q: "What is a modern managed service?", a: "A proactive service that focuses on analysing the data from your platform to maintain success or to innovate further. Contact centres are not static, they need to adapt quickly to stay relevant to changes in the market, customer requirements, plus staff or business changes." },
+      { q: "Is it Fortay services or the technology partners?", a: "We work closely with all technology partners, our support services complement each other. We advise clients to always open a ticket with the technology provider and share the ticket reference with us so we can use our relationships to escalate and work together to resolve." },
       { q: "Why are Fortay services different?", a: "Fortay engineers are all UK-based and have all the details of your system (having probably built it). You get engineers you know and trust, who act as an extension of your tech team." },
       { q: "Can you support multiple platforms?", a: "Yes. We support all major platforms (RingCentral, Zoom, Teams, etc.) and handle the integrations between them. One central point of contact for everything." },
-      { q: "Is this break-fix support?", a: "No — we help optimise your system, implement new features, and ensure you're getting value from your investment. Think of us as your ongoing optimisation partner." },
+      { q: "Is this break-fix support?", a: "No, we help optimise your system, implement new features, and ensure you're getting value from your investment. Think of us as your ongoing optimisation partner." },
     ],
   },
 };
@@ -346,7 +346,7 @@ const TestimonialsBlock = ({ testimonials }: { testimonials: ServiceData["testim
                 <p className="mt-3 text-sm font-semibold text-foreground">
                   {current.name}{" "}
                   <span className="font-normal text-muted-foreground">
-                    — {current.role}, {current.company}
+                   , {current.role}, {current.company}
                   </span>
                 </p>
               </div>
@@ -588,7 +588,7 @@ const ServiceDetail = ({ slug }: { slug: string }) => {
                 Ready to move forward?
               </h2>
               <p className="mt-3 text-base text-primary-foreground/80">
-                Book a strategy call with our team — no obligation, no vendor bias.
+                Book a strategy call with our team. No obligation, no supplier bias.
               </p>
               <div className="mt-7 flex flex-wrap justify-center gap-4">
                 <a

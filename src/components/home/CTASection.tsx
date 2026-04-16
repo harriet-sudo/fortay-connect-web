@@ -22,7 +22,7 @@ const CTASection = () => (
     <div className="container relative flex flex-col items-center justify-between gap-4 sm:flex-row">
       <p className="text-sm font-semibold text-foreground md:text-base">
         <span className="font-bold">Find out what your CX stack is costing you.</span>
-        {" "}Free audit — no strings attached.
+        {" "}Free audit, no strings attached.
       </p>
       <a
         href={BOOKING_URL}

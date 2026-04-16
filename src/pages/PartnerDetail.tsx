@@ -29,7 +29,7 @@ const partners: Record<string, PartnerData> = {
     name: "Zoom",
     logo: zoomLogo,
     tagline: "Unified Communications & AI-Powered Customer Experience",
-    description: "As a certified Zoom partner, Fortay Connect delivers the full Zoom platform — from Zoom Phone and Zoom Contact Centre to Zoom AI Companion — helping organisations unify communications and elevate customer experience with AI-native tools.",
+    description: "As a certified Zoom partner, Fortay Connect delivers the full Zoom platform, from Zoom Phone and Zoom Contact Centre to Zoom AI Companion, helping organisations unify communications and elevate customer experience with AI-native tools.",
     heroGradient: "from-blue-600/20 to-blue-900/40",
     capabilities: [
       { icon: Phone, title: "Zoom Phone", description: "Enterprise cloud phone system with intelligent call routing, analytics and global PSTN connectivity." },
@@ -126,7 +126,7 @@ const partners: Record<string, PartnerData> = {
     name: "Dialpad",
     logo: dialpadLogo,
     tagline: "AI-Native Business Communications",
-    description: "Fortay Connect partners with Dialpad to deliver AI-native communications. Dialpad is built from the ground up with artificial intelligence at its core — providing real-time transcription, coaching and analytics across every business conversation.",
+    description: "Fortay Connect partners with Dialpad to deliver AI-native communications. Dialpad is built from the ground up with artificial intelligence at its core, providing real-time transcription, coaching and analytics across every business conversation.",
     heroGradient: "from-purple-600/20 to-purple-900/40",
     capabilities: [
       { icon: Brain, title: "Dialpad Ai", description: "Real-time transcription, sentiment analysis and AI-powered coaching built into every call." },
@@ -269,7 +269,7 @@ const PartnerDetail = ({ slug }: { slug: string }) => {
                   Why Fortay Connect for {partner.name}?
                 </h2>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  We don't just resell — we architect, deploy and manage {partner.name} solutions aligned to your commercial outcomes.
+                  We don't just resell, we architect, deploy and manage {partner.name} solutions aligned to your commercial outcomes.
                 </p>
               </motion.div>
               <div className="space-y-4">

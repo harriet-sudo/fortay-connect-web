@@ -21,13 +21,13 @@ const values = [
   icon: Target,
   title: "Outcomes over opinions",
   description:
-  "Every recommendation is anchored to a measurable business outcome — cost reduction, efficiency gain, or revenue impact."
+  "Every recommendation is anchored to a measurable business outcome, cost reduction, efficiency gain, or revenue impact."
 },
 {
   icon: Shield,
-  title: "Vendor-neutral, always",
+  title: "Platform-neutral, always",
   description:
-  "We have no single-vendor allegiance. We evaluate every platform against your specific needs, not our commercial interests."
+  "We have no single-platform allegiance. We evaluate every platform against your specific needs, not our commercial interests."
 },
 {
   icon: Users,
@@ -86,7 +86,7 @@ const About = () =>
             variants={fadeUp}
             className="mx-auto mt-5 max-w-xl text-lg text-background/60">
 
-              Why we built Fortay Connect — and why it matters for your business.
+              Why we built Fortay Connect, and why it matters for your business.
             </motion.p>
           </motion.div>
         </div>
@@ -124,10 +124,10 @@ const About = () =>
                 But we saw this problem long before the world changed. We lived it. Harriet spent years
                 watching major enterprises struggle with cloud transformations at Google and AWS. Mark
                 devoted 15 years to architecting communications solutions at Vodafone and Mitel. The gap
-                between what vendors promised and what businesses actually needed kept growing.
+                between what suppliers promised and what businesses actually needed kept growing.
               </p>
               <p>
-                Communication technology should create advantages, not headaches. But when every vendor
+                Communication technology should create advantages, not headaches. But when every supplier
                 claims transformation and every platform promises revolution, how do you cut through
                 the noise?
               </p>
@@ -135,7 +135,7 @@ const About = () =>
                 That's why we built <strong className="text-foreground">Fortay Connect</strong> in 2019.
                 We wanted to create what we wished had existed: a truly independent communications
                 consultancy that puts your business outcomes first. Our name comes from combining our
-                surnames (Forrest + Taylor), but it represents something bigger — our commitment to
+                surnames (Forrest + Taylor), but it represents something bigger, our commitment to
                 getting things right.
               </p>
               <p>
@@ -222,7 +222,7 @@ const About = () =>
             <h2 className="mt-4 font-display text-3xl font-bold text-foreground md:text-4xl">
               Why businesses choose Fortay Connect
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">We're not a reseller. We're not a technology vendor. We're independent consultants who exist to get you the right result.
+            <p className="mt-4 text-lg text-muted-foreground">We're not a reseller. We're not a technology supplier. We're independent consultants who exist to get you the right result.
 
 
           </p>
@@ -251,7 +251,7 @@ const About = () =>
         </div>
       </section>
 
-      {/* ── CTA — BOOK A MEETING ── */}
+      {/* ── CTA, BOOK A MEETING ── */}
       <section className="bg-foreground py-20 md:py-28">
         <div className="container">
           <motion.div

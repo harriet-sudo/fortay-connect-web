@@ -10,17 +10,20 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";
 import FAQSection from "@/components/home/FAQSection";
 import AssessmentTeaser from "@/components/home/AssessmentTeaser";
+import SectionBridge from "@/components/home/SectionBridge";
 
 const Index = () => (
   <>
     <main>
       <HeroSection />
+      <SectionBridge from="dark" to="softPurple" />
       <SoundFamiliarSection />
       <TestimonialsSection />
       <WhatWeDoSection />
+      <DifferentiatorsSection />
       <ProcessSection />
       <SocialProofSection />
-      <DifferentiatorsSection />
+      <SectionBridge from="light" to="dark" />
       <AssessmentTeaser />
       <CTASection />
       <FAQSection />

@@ -9,7 +9,7 @@ const glossaryTerms = [
   { term: "AI (Artificial Intelligence)", definition: "Technology that enables machines to simulate human intelligence, including learning, reasoning and problem-solving. In CX, AI powers chatbots, virtual agents and predictive analytics." },
   { term: "AHT (Average Handling Time)", definition: "The average duration of a customer interaction, including hold time and after-call work. A key contact centre performance metric." },
   { term: "API (Application Programming Interface)", definition: "A set of protocols that allows different software systems to communicate and share data, enabling integrations between platforms." },
-  { term: "CCaaS (Contact Centre as a Service)", definition: "A cloud-based solution that provides contact centre functionality — including voice, chat, email and social channels — without on-premise hardware." },
+  { term: "CCaaS (Contact Centre as a Service)", definition: "A cloud-based solution that provides contact centre functionality, including voice, chat, email and social channels, without on-premise hardware." },
   { term: "Conversational AI", definition: "AI-powered technology that enables natural, human-like conversations through voice or text. Includes chatbots, virtual agents and voice assistants." },
   { term: "CRM (Customer Relationship Management)", definition: "Software used to manage customer interactions, track sales pipelines and store customer data. Common examples include Salesforce and HubSpot." },
   { term: "CSAT (Customer Satisfaction Score)", definition: "A metric that measures customer satisfaction with a specific interaction or experience, typically gathered through post-interaction surveys." },
@@ -21,7 +21,7 @@ const glossaryTerms = [
   { term: "IVR (Interactive Voice Response)", definition: "An automated telephony system that interacts with callers using voice and keypad inputs to route calls or provide self-service options." },
   { term: "NLP (Natural Language Processing)", definition: "A branch of AI that enables machines to understand, interpret and respond to human language in a meaningful way. Powers conversational AI and sentiment analysis." },
   { term: "NPS (Net Promoter Score)", definition: "A loyalty metric that measures how likely customers are to recommend a company to others, scored on a scale of -100 to +100." },
-  { term: "Omnichannel", definition: "A customer engagement strategy that provides a seamless, consistent experience across all communication channels — voice, email, chat, social media and more." },
+  { term: "Omnichannel", definition: "A customer engagement strategy that provides a seamless, consistent experience across all communication channels, voice, email, chat, social media and more." },
   { term: "PBX (Private Branch Exchange)", definition: "A private telephone network used within an organisation. Legacy PBX systems are often on-premise; modern alternatives are cloud-based." },
   { term: "QA (Quality Assurance)", definition: "The process of monitoring and evaluating customer interactions to ensure they meet defined quality and compliance standards." },
   { term: "RPA (Robotic Process Automation)", definition: "Software that automates repetitive, rule-based tasks such as data entry, form processing and system updates across applications." },
@@ -89,7 +89,7 @@ const Glossary = () => {
               </h1>
               <p className="mt-4 text-lg text-background/60">
                 The most common vocabulary, metrics and phrases used across customer experience,
-                contact centre and AI technology — defined clearly.
+                contact centre and AI technology, defined clearly.
               </p>
 
               {/* Search bar */}

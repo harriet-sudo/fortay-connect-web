@@ -31,7 +31,7 @@ const partners = [
     cardAccent: "border-teal/20 hover:border-teal/50",
     tagline: "Unified Communications & AI-Powered CX",
     description:
-      "As a certified Zoom Platinum Partner, Fortay Connect delivers the full Zoom platform — from Zoom Phone and Zoom Contact Centre to AI Companion — unifying communications and elevating customer experience at enterprise scale.",
+      "As a certified Zoom Platinum Partner, Fortay Connect delivers the full Zoom platform, from Zoom Phone and Zoom Contact Centre to AI Companion, unifying communications and elevating customer experience at enterprise scale.",
     capabilities: ["Zoom Phone", "Zoom Contact Centre", "Zoom AI Companion", "Zoom Workplace", "Revenue Accelerator"],
     route: "/partners/zoom",
   },
@@ -46,7 +46,7 @@ const partners = [
     cardAccent: "border-purple/20 hover:border-purple/50",
     tagline: "Enterprise Cloud Communications & Microsoft Teams Voice",
     description:
-      "As a RingCentral Gold Partner, Fortay Connect architects RingEX, RingCX and RingSense AI deployments — with deep expertise in Microsoft Teams Direct Routing and enterprise UC migration.",
+      "As a RingCentral Gold Partner, Fortay Connect architects RingEX, RingCX and RingSense AI deployments, with deep expertise in Microsoft Teams Direct Routing and enterprise UC migration.",
     capabilities: ["RingEX", "RingCX", "RingSense AI", "AI Receptionist", "Teams Direct Routing"],
     route: "/partners/ringcentral",
   },
@@ -76,7 +76,7 @@ const partners = [
     cardAccent: "border-purple/20 hover:border-purple/50",
     tagline: "AI-Native Business Communications",
     description:
-      "Dialpad is built AI-first — with real-time transcription, live coaching and sentiment analysis embedded natively. Fortay Connect advises and deploys Dialpad for organisations prioritising revenue intelligence and modern agent experience.",
+      "Dialpad is built AI-first, with real-time transcription, live coaching and sentiment analysis embedded natively. Fortay Connect advises and deploys Dialpad for organisations prioritising revenue intelligence and modern agent experience.",
     capabilities: ["Dialpad Talk", "Dialpad Contact Centre", "AI Coaching", "Real-time Transcription", "Salesforce Integration"],
     route: "/partners/dialpad",
   },
@@ -98,7 +98,7 @@ const partners = [
 ];
 
 const whyFortay = [
-  "Vendor-neutral — we recommend the right platform for you, not commission incentives",
+  "Platform-neutral. We recommend the right platform for you, not commission incentives",
   "Certified across multiple partner ecosystems for independent comparison",
   "UK-based engineers and consultants throughout deployment",
   "Free Proof of Concept before capital commitment",
@@ -137,7 +137,7 @@ const Partners = () => (
             variants={fadeUp}
             className="mt-6 text-lg text-background/60 max-w-2xl"
           >
-            Fortay Connect is certified across the leading UCaaS, CCaaS and AI platforms. We select and deploy the right technology for each client — not the most profitable one for us.
+            Fortay Connect is certified across the leading UCaaS, CCaaS and AI platforms. We select and deploy the right technology for each client, not the most profitable one for us.
           </motion.p>
           <motion.div
             initial="hidden"
@@ -148,7 +148,7 @@ const Partners = () => (
           >
             <Button size="lg" asChild className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold shadow-lg shadow-primary/20 px-8">
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Book a Vendor Comparison Session <ArrowRight className="ml-2 h-4 w-4" />
+                Book a Platform Comparison Session <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button size="lg" variant="teal" asChild className="rounded-full">
@@ -177,7 +177,7 @@ const Partners = () => (
               Select a partner to explore
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Each platform has distinct strengths. Our job is to match the right one to your organisation — architecturally, commercially, and operationally.
+              Each platform has distinct strengths. Our job is to match the right one to your organisation, architecturally, commercially, and operationally.
             </p>
           </motion.div>
 
@@ -258,7 +258,7 @@ const Partners = () => (
               Partner-certified. Architecturally independent.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Certifications exist so we can deliver effectively — not so we can push a preferred product.
+              Certifications exist so we can deliver effectively, not so we can push a preferred product.
             </p>
             <ul className="mt-8 space-y-3">
               {whyFortay.map((item) => (
@@ -286,7 +286,7 @@ const Partners = () => (
               Not sure which platform is right for you?
             </h2>
             <p className="mt-4 text-background/60">
-              Book a vendor comparison session and we'll assess your requirements against the full ecosystem — without bias.
+              Book a platform comparison session and we'll assess your requirements against the full ecosystem, without bias.
             </p>
             <Button
               size="lg"
@@ -294,7 +294,7 @@ const Partners = () => (
               className="mt-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 shadow-lg shadow-primary/20"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Book a Free Vendor Comparison <ArrowRight className="ml-2 h-4 w-4" />
+                Book a Free Platform Comparison <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </motion.div>
@@ -304,4 +304,4 @@ const Partners = () => (
   </>
 );
 
-export default Partners;
+export default Partners

@@ -19,9 +19,9 @@ const pillars = [
 ];
 
 const soundFamiliarItems = [
-  "You're juggling multiple vendors with no single source of truth",
+  "You're juggling multiple platforms with no single source of truth",
   "Your contact centre tech is holding your CX team back",
-  "AI feels like a buzzword — not a business outcome",
+  "AI feels like a buzzword, not a business outcome",
   "Leadership wants transformation but IT isn't aligned",
   "You're overpaying for platforms that don't talk to each other",
 ];
@@ -54,7 +54,7 @@ const SoundFamiliarSection = () => (
         variants={fadeUp}
         className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground md:text-4xl lg:text-5xl xl:text-6xl"
       >
-        CX, Communications and AI Transformation —{" "}
+        CX, Communications and AI Transformation,{" "}
         <span className="text-purple">Designed for Measurable Impact.</span>
       </motion.h2>
 
@@ -66,7 +66,7 @@ const SoundFamiliarSection = () => (
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         className="grid gap-6 md:grid-cols-2 md:items-stretch"
       >
-        {/* Video — left half */}
+        {/* Video, left half */}
         <motion.div
           variants={fadeUp}
           className="group relative overflow-hidden rounded-2xl border border-border/40 bg-muted/30 min-h-[320px]"
@@ -87,7 +87,7 @@ const SoundFamiliarSection = () => (
           )}
         </motion.div>
 
-        {/* Sound Familiar / This is for you if — right half */}
+        {/* Sound Familiar / This is for you if, right half */}
         <motion.div
           variants={fadeUp}
           className="flex flex-col justify-center rounded-2xl border border-purple/20 bg-[hsl(var(--purple)/0.06)] px-7 py-8 space-y-6"
@@ -159,7 +159,7 @@ const SoundFamiliarSection = () => (
         className="space-y-8"
       >
         <motion.p variants={fadeUp} className="mx-auto max-w-3xl text-center text-base leading-relaxed text-foreground/70 md:text-lg">
-          When these evolve <span className="font-semibold text-foreground">without alignment</span>, cost increases and performance becomes harder to control. Siloed technology decisions, misaligned vendors and undefined KPIs are the most common barriers to scalable growth.
+          When these evolve <span className="font-semibold text-foreground">without alignment</span>, cost increases and performance becomes harder to control. Siloed technology decisions, misaligned suppliers and undefined KPIs are the most common barriers to scalable growth.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mx-auto max-w-3xl space-y-4 rounded-2xl border border-purple/20 bg-[hsl(var(--purple)/0.08)] px-8 py-7 text-center">
@@ -167,9 +167,9 @@ const SoundFamiliarSection = () => (
             WHY FORTAY CONNECT HELPS
           </span>
           <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
-            We work with leadership teams to <span className="font-semibold text-foreground">define objectives</span>, <span className="font-semibold text-foreground">align systems</span> and deliver transformation that is measurable, governed and commercially accountable — from strategy through to vendor selection, deployment and adoption.
+            We work with leadership teams to <span className="font-semibold text-foreground">define objectives</span>, <span className="font-semibold text-foreground">align systems</span> and deliver transformation that is measurable, governed and commercially accountable, from strategy through to platform selection, deployment and adoption.
           </p>
-          <p className="text-sm font-semibold text-purple">Independent advice. Vendor-neutral outcomes.</p>
+          <p className="text-sm font-semibold text-purple">Independent advice. Platform-neutral outcomes.</p>
         </motion.div>
       </motion.div>
 

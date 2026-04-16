@@ -158,7 +158,7 @@ const ctaExploring = [
 const FinancialServicesPage = () => (
   <div className="min-h-screen bg-background">
     <main>
-      {/* Hero — full-width dark with decorative circles */}
+      {/* Hero, full-width dark with decorative circles */}
       <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
         <DecorativeCircle color="teal" className="-top-32 -right-32 opacity-20" />
         <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
@@ -220,7 +220,7 @@ const FinancialServicesPage = () => (
 
       <SocialProofSection />
 
-      {/* The Reality — cards grid instead of plain list */}
+      {/* The Reality, cards grid instead of plain list */}
       <section className="py-20">
         <div className="container">
           <motion.div
@@ -265,7 +265,7 @@ const FinancialServicesPage = () => (
             variants={fadeUp}
           >
             <p className="text-sm italic text-muted-foreground">
-              And every vendor says the same thing:
+              And every supplier says the same thing:
               <br />
               <span className="font-medium text-foreground">"Seamless. Intelligent. Transformational."</span>
             </p>
@@ -276,7 +276,7 @@ const FinancialServicesPage = () => (
         </div>
       </section>
 
-      {/* Where Firms Struggle — numbered cards with large accent numbers */}
+      {/* Where Firms Struggle, numbered cards with large accent numbers */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="purple" className="-top-28 -right-20 opacity-15" size="h-56 w-56 md:h-72 md:w-72" />
         <div className="container relative z-10">
@@ -315,7 +315,7 @@ const FinancialServicesPage = () => (
         </div>
       </section>
 
-      {/* Our Approach — side-by-side with visual */}
+      {/* Our Approach, side-by-side with visual */}
       <section className="relative overflow-hidden py-20">
         <DecorativeCircle color="teal" variant="disc" className="-bottom-20 -right-16 opacity-20" size="h-40 w-40 md:h-56 md:w-56" />
         <div className="container relative z-10">
@@ -367,7 +367,7 @@ const FinancialServicesPage = () => (
         </div>
       </section>
 
-      {/* AI Virtual Agents — dark with chat mockup */}
+      {/* AI Virtual Agents, dark with chat mockup */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="teal" className="-top-24 -left-20 opacity-15" />
         <div className="container relative z-10">
@@ -453,7 +453,7 @@ const FinancialServicesPage = () => (
         </div>
       </section>
 
-      {/* Compliance — with shield visual */}
+      {/* Compliance, with shield visual */}
       <section className="relative overflow-hidden py-20">
         <DecorativeCircle color="purple" variant="ring" className="-bottom-32 -right-20 opacity-20" size="h-48 w-48 md:h-64 md:w-64" />
         <div className="container relative z-10">
@@ -505,7 +505,7 @@ const FinancialServicesPage = () => (
         </div>
       </section>
 
-      {/* Analytics — dashboard mockup */}
+      {/* Analytics, dashboard mockup */}
       <section className="bg-muted/30 py-20">
         <div className="container">
           <motion.div
@@ -556,7 +556,7 @@ const FinancialServicesPage = () => (
 
       <TrustedBySection />
 
-      {/* Business Impact — big metric cards */}
+      {/* Business Impact, big metric cards */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="teal" variant="disc" className="-bottom-24 -left-16 opacity-15" size="h-40 w-40 md:h-56 md:w-56" />
         <div className="container relative z-10">
@@ -681,4 +681,4 @@ const FinancialServicesPage = () => (
   </div>
 );
 
-export default FinancialServicesPage;
+export default FinancialServicesPage

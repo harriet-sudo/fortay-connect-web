@@ -20,7 +20,7 @@ const industryData: Record<string, {
     icon: Building2,
     headline: "Secure, compliant CX transformation for financial institutions",
     overview:
-      "Financial services organisations face unique pressures — from strict regulatory requirements to rising customer expectations for seamless digital experiences. We help banks, insurers, and wealth managers deploy AI-powered communications that drive efficiency while maintaining full compliance.",
+      "Financial services organisations face unique pressures, from strict regulatory requirements to rising customer expectations for seamless digital experiences. We help banks, insurers, and wealth managers deploy AI-powered communications that drive efficiency while maintaining full compliance.",
     challenges: [
       { title: "Regulatory Compliance", description: "Navigating FCA, PCI-DSS, and GDPR requirements across all customer communication channels." },
       { title: "Customer Authentication", description: "Balancing security with frictionless customer experiences across voice, chat, and digital channels." },
@@ -58,7 +58,7 @@ const industryData: Record<string, {
     icon: Factory,
     headline: "Modernise communications across your manufacturing operations",
     overview:
-      "Manufacturing businesses operate across multiple sites, time zones, and teams — from the factory floor to the boardroom. We help manufacturers replace fragmented communication tools with unified platforms that improve collaboration, streamline supply chain interactions, and modernise customer-facing operations.",
+      "Manufacturing businesses operate across multiple sites, time zones, and teams, from the factory floor to the boardroom. We help manufacturers replace fragmented communication tools with unified platforms that improve collaboration, streamline supply chain interactions, and modernise customer-facing operations.",
     challenges: [
       { title: "Multi-Site Coordination", description: "Keeping teams aligned across factories, warehouses, offices, and remote locations." },
       { title: "Supply Chain Communication", description: "Managing supplier and partner interactions efficiently across complex supply networks." },

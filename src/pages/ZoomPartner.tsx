@@ -57,7 +57,7 @@ const excels = [
 
 const alternatives = [
   "Deep contact centre customisation is the sole priority",
-  "Existing investment in a specific vendor's ecosystem",
+  "Existing investment in a specific supplier's ecosystem",
   "Legacy on-premise infrastructure with no cloud roadmap",
   "Highly specialist vertical compliance requirements",
 ];
@@ -65,13 +65,13 @@ const alternatives = [
 const faqs = [
   { q: "What does Zoom Platinum Partner status mean?", a: "Platinum status reflects advanced certification, proven deployment capability and ongoing delivery performance within the Zoom partner ecosystem. It is the highest tier awarded to UK delivery partners." },
   { q: "Is Zoom Phone suitable for enterprise businesses?", a: "Yes. Zoom Phone provides enterprise-grade global cloud telephony with intelligent routing, compliance frameworks, analytics and deep integration capabilities." },
-  { q: "What is Zoom Contact Centre?", a: "Zoom Contact Centre is a cloud-based omnichannel CX platform supporting voice, chat, messaging and AI-driven engagement — built natively within the Zoom ecosystem." },
+  { q: "What is Zoom Contact Centre?", a: "Zoom Contact Centre is a cloud-based omnichannel CX platform supporting voice, chat, messaging and AI-driven engagement, built natively within the Zoom ecosystem." },
   { q: "Does Zoom include AI capabilities?", a: "Yes. Zoom AI Companion provides transcription, summarisation, conversational intelligence and workflow enhancement across meetings and contact centre environments." },
   { q: "Can Zoom integrate with CRM systems?", a: "Yes. Zoom integrates with Salesforce, HubSpot, Microsoft Dynamics and other enterprise platforms via native connectors and open APIs." },
   { q: "Why use a partner instead of purchasing direct?", a: "Licences alone do not deliver transformation. Architecture, migration, integration and optimisation are what determine ROI. That is what Fortay Connect provides." },
 ];
 
-// Section label pill — matches site-wide purple pill style
+// Section label pill, matches site-wide purple pill style
 const SectionPill = ({ children }: { children: React.ReactNode }) => (
   <p className="mb-4 inline-block rounded-full border border-purple/20 bg-purple/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-purple">
     {children}
@@ -83,7 +83,7 @@ const ZoomPartner = () => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
 
-        {/* ── HERO — matches bg-foreground dark hero used site-wide ── */}
+        {/* ── HERO, matches bg-foreground dark hero used site-wide ── */}
         <section className="relative overflow-hidden bg-foreground py-28 md:py-36">
           <DecorativeCircle color="teal" variant="ring" className="-top-20 -right-20 opacity-20" size="h-96 w-96" />
           <DecorativeCircle color="purple" variant="ring" className="-bottom-24 -left-24 opacity-15" size="h-80 w-80" />
@@ -93,7 +93,7 @@ const ZoomPartner = () => {
 
               <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
                 <Star className="h-3.5 w-3.5 fill-primary" />
-                Zoom Platinum Partner — UK
+                Zoom Platinum Partner, UK
               </p>
 
               <img src={zoomLogo} alt="Zoom" className="mb-6 h-10 w-auto brightness-0 invert opacity-90" />
@@ -182,7 +182,7 @@ const ZoomPartner = () => {
                   <span className="text-primary">Every channel unified.</span>
                 </h2>
                 <p className="mt-5 text-muted-foreground leading-relaxed">
-                  Zoom unifies global voice, omnichannel CX, video collaboration and AI Companion within a single infrastructure. Its strength lies in ecosystem cohesion — voice, video, messaging and AI operate together without integration overhead.
+                  Zoom unifies global voice, omnichannel CX, video collaboration and AI Companion within a single infrastructure. Its strength lies in ecosystem cohesion, voice, video, messaging and AI operate together without integration overhead.
                 </p>
               </motion.div>
 
@@ -204,7 +204,7 @@ const ZoomPartner = () => {
           </div>
         </section>
 
-        {/* ── R&D INVESTMENT — dark section ── */}
+        {/* ── R&D INVESTMENT, dark section ── */}
         <section className="relative overflow-hidden bg-foreground py-20 md:py-28">
           <DecorativeCircle color="teal" variant="ring" className="-bottom-20 -right-20 opacity-15" size="h-80 w-80" />
           <DecorativeCircle color="purple" variant="disc" className="-top-12 -left-12 opacity-5" size="h-64 w-64" />
@@ -214,7 +214,7 @@ const ZoomPartner = () => {
                 Innovation Commitment
               </p>
               <h2 className="font-display text-3xl font-bold text-background md:text-4xl">Zoom's AI-First Investment</h2>
-              <p className="mt-4 text-background/50 max-w-xl mx-auto">For organisations making long-term infrastructure decisions, innovation velocity matters. AI is embedded across the platform — not bolted on.</p>
+              <p className="mt-4 text-background/50 max-w-xl mx-auto">For organisations making long-term infrastructure decisions, innovation velocity matters. AI is embedded across the platform, not bolted on.</p>
             </motion.div>
 
             <div className="grid gap-6 md:grid-cols-3 max-w-4xl mx-auto">
@@ -312,7 +312,7 @@ const ZoomPartner = () => {
 
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
               className="text-center mt-10 text-sm text-muted-foreground">
-              We ensure Zoom delivers measurable outcomes — not just deployment completion.
+              We ensure Zoom delivers measurable outcomes, not just deployment completion.
             </motion.p>
           </div>
         </section>
@@ -343,7 +343,7 @@ const ZoomPartner = () => {
                   <div className="p-7">
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">Deployed</p>
                     <div className="space-y-2">
-                      {["Zoom Phone — multi-site", "Zoom Contact Centre with intelligent routing", "AI Companion configuration", "Secure call recording framework", "CRM automation workflows"].map(r => (
+                      {["Zoom Phone, multi-site", "Zoom Contact Centre with intelligent routing", "AI Companion configuration", "Secure call recording framework", "CRM automation workflows"].map(r => (
                         <div key={r} className="flex items-start gap-2">
                           <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />
                           <p className="text-xs text-muted-foreground">{r}</p>
@@ -407,7 +407,7 @@ const ZoomPartner = () => {
         />
         
 
-        {/* ── POC CTA — dark hero style ── */}
+        {/* ── POC CTA, dark hero style ── */}
         <section className="relative overflow-hidden bg-foreground py-24 md:py-32">
           <DecorativeCircle color="teal" variant="ring" className="-top-20 -right-20 opacity-20" size="h-96 w-96" />
           <DecorativeCircle color="purple" variant="ring" className="-bottom-20 -left-20 opacity-15" size="h-80 w-80" />
@@ -424,7 +424,7 @@ const ZoomPartner = () => {
                   <span className="text-primary">Your Environment</span>
                 </h2>
                 <p className="mt-5 text-background/60 leading-relaxed">
-                  Rather than a generic demo, we offer a free POC account. Test Zoom Phone or Contact Centre within your real workflows — validate integrations, assess call quality, explore analytics.
+                  Rather than a generic demo, we offer a free POC account. Test Zoom Phone or Contact Centre within your real workflows, validate integrations, assess call quality, explore analytics.
                 </p>
 
                 <div className="mt-8 grid sm:grid-cols-2 gap-3 text-left mb-10 max-w-xl mx-auto">
@@ -458,4 +458,4 @@ const ZoomPartner = () => {
   );
 };
 
-export default ZoomPartner;
+export default ZoomPartner

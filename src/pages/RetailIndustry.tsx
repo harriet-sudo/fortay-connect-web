@@ -125,7 +125,7 @@ const chatbotCapabilities = [
 ];
 
 const voiceAgentFeatures = [
-  "Answer calls instantly — no hold music, no queue",
+  "Answer calls instantly, no hold music, no queue",
   "Authenticate customers securely",
   "Handle routine enquiries and order updates",
   "Route VIP or high-value customers intelligently",
@@ -196,7 +196,7 @@ const businessImpacts = [
 ];
 
 const whyFortayPoints = [
-  "Vendor-agnostic advisory across AI, UCaaS and CCaaS platforms",
+  "Platform-neutral advisory across AI, UCaaS and CCaaS platforms",
   "Secure integration with ecommerce and order management systems",
   "ROI modelling aligned to conversion and retention metrics",
   "Scalable infrastructure built for peak-season elasticity",
@@ -253,7 +253,7 @@ const RetailIndustryPage = () => (
             </motion.p>
             <motion.p variants={fadeUp} className="mt-4 max-w-2xl text-background/70">
               Fortay Connect helps UK retailers deploy AI-powered CX, virtual agents and
-              omnichannel communications infrastructure that responds instantly at scale —
+              omnichannel communications infrastructure that responds instantly at scale,
               protecting conversion, margin and loyalty during everyday demand and peak-season
               pressure alike.
             </motion.p>
@@ -301,7 +301,7 @@ const RetailIndustryPage = () => (
               Retail Has a Conversion Problem, Not a Traffic Problem
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Retailers invest heavily in acquisition — paid media, influencer campaigns, product launches.
+              Retailers invest heavily in acquisition, paid media, influencer campaigns, product launches.
               But when traffic arrives:
             </p>
           </motion.div>
@@ -443,7 +443,7 @@ const RetailIndustryPage = () => (
         </div>
       </section>
 
-      {/* AI Chatbots — dark with ecommerce chat mockup */}
+      {/* AI Chatbots, dark with ecommerce chat mockup */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="teal" className="-top-24 -left-20 opacity-15" />
         <div className="container relative z-10">
@@ -476,12 +476,12 @@ const RetailIndustryPage = () => (
                   </div>
                   <div className="flex justify-end">
                     <div className="max-w-[75%] rounded-2xl rounded-tr-md bg-primary/20 px-4 py-2.5 text-xs text-background/80">
-                      Yes please — charcoal. And can I still return if it doesn't fit?
+                      Yes please, charcoal. And can I still return if it doesn't fit?
                     </div>
                   </div>
                   <div className="flex justify-start">
                     <div className="max-w-[75%] rounded-2xl rounded-tl-md bg-background/10 px-4 py-2.5 text-xs text-background/80">
-                      ✓ Charcoal L is in stock. Free returns within 30 days. I've added it to your basket — ready to checkout?
+                      ✓ Charcoal L is in stock. Free returns within 30 days. I've added it to your basket, ready to checkout?
                     </div>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-background/30">

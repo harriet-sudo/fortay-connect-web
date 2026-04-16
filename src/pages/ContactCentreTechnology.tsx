@@ -108,7 +108,7 @@ export default function ContactCentreTechnology() {
               When response slows, revenue leaks. When queues grow, loyalty weakens. When journeys fragment, customers churn.
             </motion.p>
             <motion.p variants={fadeUp} className="text-white font-semibold mb-10">
-              This is architectural redesign — <span className="text-teal">not a platform refresh.</span>
+              This is architectural redesign, <span className="text-teal">not a platform refresh.</span>
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="bg-teal text-navy font-semibold hover:bg-teal/90">

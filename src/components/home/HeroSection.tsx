@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, PoundSterling, Cpu, HeartHandshake, Target } from "lucide-react";
 import Link from "next/link";
 import DecorativeCircle from "@/components/DecorativeCircle";
 
@@ -38,7 +38,7 @@ const fadeUp = {
 const stats = [
   { target: 200, suffix: "+", label: "Transformations delivered" },
   { target: 6, suffix: "+", label: "Year avg. client retention" },
-  { target: 0, suffix: "", prefix: "£Millions", label: "In savings identified" },
+  { target: 0, suffix: "", prefix: "\u00a3Millions", label: "In savings identified" },
 ];
 
 function useCounter(target: number, duration = 2000) {
@@ -62,7 +62,7 @@ function useCounter(target: number, duration = 2000) {
           requestAnimationFrame(animate);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -104,7 +104,7 @@ const HeroSection = () => (
           variants={fadeUp}
           className="mb-6 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary"
         >
-          Enterprise CX, Communications & AI Advisory
+          Enterprise CX, Communications &amp; AI Advisory
         </motion.p>
 
         <motion.h1
@@ -118,9 +118,9 @@ const HeroSection = () => (
 
         <motion.p
           variants={fadeUp}
-          className="mx-auto mt-6 max-w-2xl text-lg text-background/60 md:text-xl"
+          className="mx-auto mt-6 max-w-3xl text-lg text-background/70 md:text-xl"
         >
-          Never-ending apps, fragmented customer journeys and disjointed workflows. We design and govern enterprise transformation across CX, communications and AI to simplify engagements, align operations and deliver measurable commercial performance.
+          <span className="font-semibold text-primary">CA Auto Finance:</span> three platforms consolidated to one, costs down 40%, six weeks audit to live. That is what enterprise transformation looks like when it is done properly.
         </motion.p>
 
         <motion.div
@@ -142,6 +142,75 @@ const HeroSection = () => (
           >
             Take the CX Assessment
           </Link>
+        </motion.div>
+
+        {/* Qualifier bullets */}
+        <motion.ul
+          variants={fadeUp}
+          className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-background/60 md:text-sm"
+        >
+          {[
+            "Platform neutral",
+            "No-obligation audit",
+            "UK-based team",
+            "98% client retention",
+          ].map((q) => (
+            <li key={q} className="inline-flex items-center gap-1.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-primary" strokeWidth={2.2} />
+              {q}
+            </li>
+          ))}
+        </motion.ul>
+
+        {/* ICP role cards */}
+        <motion.div
+          variants={fadeUp}
+          className="mx-auto mt-14 grid max-w-5xl grid-cols-2 gap-3 md:grid-cols-5"
+        >
+          {[
+            {
+              icon: Target,
+              role: "COO",
+              pain: "Three platforms doing what one could. Rising costs. No single source of operational truth.",
+            },
+            {
+              icon: TrendingUp,
+              role: "CRO",
+              pain: "CX spend climbing. Conversion plateauing. No clear line from technology to revenue.",
+            },
+            {
+              icon: Cpu,
+              role: "CTO",
+              pain: "Three suppliers, three roadmaps, three contracts. Consolidation without downtime.",
+            },
+            {
+              icon: HeartHandshake,
+              role: "Head of CX",
+              pain: "AI pilots that never scale. Suppliers promising. Customers still waiting on hold.",
+            },
+            {
+              icon: PoundSterling,
+              role: "Transformation Director",
+              pain: "Board expects outcomes in quarters. Budget is real. Delivery window is short.",
+            },
+          ].map((card) => (
+            <div
+              key={card.role}
+              className="group flex flex-col gap-2 rounded-lg border border-background/10 bg-background/5 p-4 text-left transition-all duration-200 hover:border-primary/30 hover:bg-background/10"
+            >
+              <div className="flex items-center gap-2">
+                <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary/15 text-primary">
+                  <card.icon className="h-4 w-4" strokeWidth={2} />
+                </div>
+                <p className="text-[11px] font-bold uppercase tracking-widest text-primary">
+                  {card.role}
+                </p>
+              </div>
+              <p className="text-[13px] leading-snug text-background/70 md:text-sm">
+                {card.pain}
+              </p>
+            </div>
+          ))}
         </motion.div>
 
         {/* Stats */}

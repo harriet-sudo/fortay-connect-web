@@ -97,7 +97,7 @@ const coachingFeatures = [
     title: "AI-Powered Sales Coaching",
     description:
       "Automatic scoring against sales frameworks, tracking talk-to-listen ratios, identifying missed qualification questions and highlighting upsell opportunities.",
-    highlight: "Managers focus on improvement — not call searching. Reps improve faster.",
+    highlight: "Managers focus on improvement, not call searching. Reps improve faster.",
   },
   {
     icon: Globe,
@@ -112,7 +112,7 @@ const coachingFeatures = [
     num: "03",
     title: "Risk & Compliance Visibility",
     description:
-      "AI flags non-compliant statements, risk-trigger phrases, inconsistent messaging and escalation signals — critical in regulated industries.",
+      "AI flags non-compliant statements, risk-trigger phrases, inconsistent messaging and escalation signals, critical in regulated industries.",
     highlight: "Risk becomes visible before it becomes exposure.",
   },
   {
@@ -185,7 +185,7 @@ const aiNativeItems = [
 
 /* ─── Why Fortay ─── */
 const whyFortayPoints = [
-  "Vendor-agnostic platform advisory",
+  "Platform-neutral technology advisory",
   "AI readiness assessment",
   "Secure integration into CRM and UC platforms",
   "Sales framework alignment",
@@ -205,9 +205,9 @@ const ctaExploring = [
 
 /* ─── Transcript mockup ─── */
 const salesTranscript = [
-  { from: "rep", text: "You mentioned last quarter there were concerns about renewal pricing — has anything changed?" },
+  { from: "rep", text: "You mentioned last quarter there were concerns about renewal pricing. Has anything changed?" },
   { from: "ai", text: "⚠️ Risk signal detected: Pricing objection pattern. 3rd mention across stakeholder group." },
-  { from: "prospect", text: "We're evaluating two other vendors. The flexibility on contract terms will be decisive." },
+  { from: "prospect", text: "We're evaluating two other platforms. The flexibility on contract terms will be decisive." },
   { from: "ai", text: "🏁 Competitor mention logged. Action: Surface win/loss analysis for similar deals." },
 ];
 
@@ -253,7 +253,7 @@ const SalesAgentsTechnologyPage = () => (
             </motion.div>
             <motion.div variants={fadeUp} className="mt-6 rounded-xl border border-background/10 bg-background/5 p-5 backdrop-blur-sm">
               <p className="text-sm text-background/60">
-                The real intelligence — what was actually said — is rarely captured or analysed at scale. Conversational Intelligence changes that.
+                The real intelligence, what was actually said, is rarely captured or analysed at scale. Conversational Intelligence changes that.
               </p>
               <p className="mt-3 font-display text-lg font-bold">
                 This is not call recording. <span className="text-primary">It is revenue intelligence infrastructure.</span>
@@ -431,7 +431,7 @@ const SalesAgentsTechnologyPage = () => (
               Real-Time Revenue Visibility
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-4 text-muted-foreground">
-              Instead of asking, "How did that call go?" — you can see:
+              Instead of asking, "How did that call go?", you can see:
             </motion.p>
             <motion.div variants={fadeUp} className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {visibilityInsights.map((item) => (
@@ -725,4 +725,4 @@ const SalesAgentsTechnologyPage = () => (
   </div>
 );
 
-export default SalesAgentsTechnologyPage;
+export default SalesAgentsTechnologyPage

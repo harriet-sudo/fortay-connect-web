@@ -327,7 +327,7 @@ const ManufacturingIndustryPage = () => (
         </div>
       </section>
 
-      {/* Meanwhile — the reality */}
+      {/* Meanwhile, the reality */}
       <section className="border-y border-border bg-muted/30 py-20">
         <div className="container">
           <motion.div
@@ -475,7 +475,7 @@ const ManufacturingIndustryPage = () => (
         </div>
       </section>
 
-      {/* AI Virtual Agent — dark with chat mockup */}
+      {/* AI Virtual Agent, dark with chat mockup */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="teal" className="-top-24 -left-20 opacity-15" />
         <div className="container relative z-10">

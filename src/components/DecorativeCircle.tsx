@@ -4,7 +4,7 @@ import { forwardRef } from "react";
 
 /**
  * Bold decorative circle/ring elements in brand teal & purple.
- * Use as section-bridging graphic accents — always behind content.
+ * Use as section-bridging graphic accents, always behind content.
  */
 
 type Props = {

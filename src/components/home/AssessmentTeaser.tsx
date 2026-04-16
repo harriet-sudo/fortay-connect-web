@@ -19,7 +19,7 @@ const AssessmentTeaser = () => (
 
     <div className="container relative z-10">
       <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-2">
-        {/* Left — copy */}
+        {/* Left, copy */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -34,7 +34,7 @@ const AssessmentTeaser = () => (
           </h2>
           <p className="mt-4 text-lg text-background/60">
             Take our 2-minute assessment and get a personalised score with
-            actionable recommendations — no strings attached.
+            actionable recommendations, no strings attached.
           </p>
           <ul className="mt-6 space-y-3">
             {steps.map((s) => (
@@ -54,7 +54,7 @@ const AssessmentTeaser = () => (
           </div>
         </motion.div>
 
-        {/* Right — visual card */}
+        {/* Right, visual card */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}

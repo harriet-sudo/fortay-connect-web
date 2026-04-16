@@ -64,7 +64,7 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* Certifications & Partner logos — on a clean light panel */}
+      {/* Certifications & Partner logos, on a clean light panel */}
       <div className="mt-12 rounded-md bg-white/95 px-8 py-8">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           {/* Certifications */}
@@ -84,7 +84,7 @@ const Footer = () => (
           {/* Technology Alliances */}
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
-              Certified Partner — Technology Alliances
+              Certified Partner, Technology Alliances
             </p>
             <div className="flex flex-wrap items-center gap-6">
               {[

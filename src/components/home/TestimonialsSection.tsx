@@ -2,37 +2,50 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const testimonials = [
+type Testimonial = {
+  id: string;
+  company: string;
+  name: string;
+  role: string;
+  quote: string;
+  stats: { value: string; label: string }[];
+  storyHref?: string;
+};
+
+const testimonials: Testimonial[] = [
 {
   id: "ca-auto-finance",
   company: "CA Auto Finance",
   name: "Justine Long",
   role: "Head of Operations",
-  quote: "Mark was completely impartial and focused on what we actually needed — not what was easy to sell. He caught things we'd have completely missed.",
+  quote: "Mark was completely impartial and focused on what we actually needed, not what was easy to sell. He caught things we'd have completely missed.",
   stats: [
   { value: "40%", label: "cost reduction" },
-  { value: "3→1", label: "platforms consolidated" },
-  { value: "6 weeks", label: "audit to deployment" }]
+  { value: "3\u21921", label: "platforms consolidated" },
+  { value: "6 weeks", label: "audit to deployment" }],
+  storyHref: "/case-studies"
 },
 {
   id: "ashtons-legal",
   company: "Ashtons Legal",
   name: "Ben Hallatt",
   role: "COO",
-  quote: "We thought we just needed a phone upgrade. Fortay showed us we were thinking too small — and transformed how we interact with clients.",
+  quote: "We thought we just needed a phone upgrade. Fortay showed us we were thinking too small, and transformed how we interact with clients.",
   stats: [
   { value: "35%", label: "faster client response" },
   { value: "100+", label: "staff migrated" },
-  { value: "£80k", label: "annual savings" }]
+  { value: "\u00a380k", label: "annual savings" }]
 },
 {
   id: "manufacturing-co",
   company: "INEOS",
   name: "IT Director",
   role: "Global Manufacturing",
-  quote: "They didn't just sell us technology — they understood our business first and mapped everything to our actual workflows.",
+  quote: "They didn't just sell us technology, they understood our business first and mapped everything to our actual workflows.",
   stats: [
   { value: "5", label: "sites unified" },
   { value: "60%", label: "fewer tools" },
@@ -101,7 +114,7 @@ const TestimonialsSection = () => {
                   {current.quote}
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  — {current.name}, {current.role} at{" "}
+                  {current.name}, {current.role} at{" "}
                   <span className="font-semibold text-foreground">{current.company}</span>
                 </p>
               </div>
@@ -121,6 +134,18 @@ const TestimonialsSection = () => {
                 </div>
               )}
             </div>
+
+            {current.storyHref && (
+              <div className="mt-5 flex justify-center">
+                <Link
+                  href={current.storyHref}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                >
+                  Read the full story
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>

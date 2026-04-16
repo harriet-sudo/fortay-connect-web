@@ -9,7 +9,7 @@ import DecorativeCircle from "@/components/DecorativeCircle";
 
 const services = [
   { icon: Lightbulb, title: "CX & AI Advisory", slug: "cx-ai-advisory", description: "Strategic assessment of your current landscape with actionable recommendations for transformation.", accent: "teal" },
-  { icon: ListChecks, title: "Technology Selection", slug: "technology-selection", description: "Vendor-neutral evaluation and shortlisting to match the right platform to your business needs.", accent: "purple" },
+  { icon: ListChecks, title: "Technology Selection", slug: "technology-selection", description: "Platform-neutral evaluation and shortlisting to match the right platform to your business needs.", accent: "purple" },
   { icon: Rocket, title: "Deployment Services", slug: "deployment", description: "Seamless implementation with change management, training, and integration support.", accent: "teal" },
   { icon: Headset, title: "Managed Services", slug: "managed-services", description: "Ongoing optimisation, support, and strategic guidance to maximise your investment.", accent: "purple" },
 ];
@@ -27,7 +27,7 @@ const Services = () => (
               Our services
             </p>
             <h1 className="font-display text-4xl font-bold md:text-5xl lg:text-6xl">End-to-end CX & AI transformation</h1>
-            <p className="mt-4 text-lg text-background/50">From strategy to deployment and beyond — we're with you at every stage.</p>
+            <p className="mt-4 text-lg text-background/50">From strategy to deployment and beyond, we're with you at every stage.</p>
           </motion.div>
         </div>
       </section>
@@ -69,4 +69,4 @@ const Services = () => (
   </>
 );
 
-export default Services;
+export default Services

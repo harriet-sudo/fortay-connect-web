@@ -68,7 +68,7 @@ const questions: Question[] = [
     description: "AI can range from simple chatbots to advanced virtual agents and analytics.",
     icon: Bot,
     options: [
-      { value: "none", label: "Not using any AI — everything is manual", score: 1 },
+      { value: "none", label: "Not using any AI, everything is manual", score: 1 },
       { value: "exploring", label: "Exploring / evaluating AI tools", score: 2 },
       { value: "basic", label: "Using basic chatbot or auto-attendant", score: 3 },
       { value: "advanced", label: "Deploying conversational AI, sentiment analysis or virtual agents", score: 4 },
@@ -92,7 +92,7 @@ const questions: Question[] = [
     description: "Data-driven CX teams outperform reactive ones by 2–3×.",
     icon: BarChart3,
     options: [
-      { value: "none", label: "Little to no reporting — we rely on gut feel", score: 1 },
+      { value: "none", label: "Little to no reporting, we rely on gut feel", score: 1 },
       { value: "basic", label: "Basic call stats (volume, duration)", score: 2 },
       { value: "good", label: "Dashboards with CSAT, NPS and SLA tracking", score: 3 },
       { value: "advanced", label: "Real-time analytics with sentiment, forecasting and revenue attribution", score: 4 },
@@ -106,20 +106,20 @@ const questions: Question[] = [
     options: [
       { value: "minimal", label: "Not a major concern for us", score: 4 },
       { value: "standard", label: "Standard data protection (GDPR basics)", score: 3 },
-      { value: "important", label: "Important — we handle sensitive customer data", score: 2 },
-      { value: "critical", label: "Critical — FCA, SRA or sector-specific regulation applies", score: 1 },
+      { value: "important", label: "Important, we handle sensitive customer data", score: 2 },
+      { value: "critical", label: "Critical, FCA, SRA or sector-specific regulation applies", score: 1 },
     ],
   },
   {
     id: "readiness",
     question: "How ready is your leadership team to invest in CX transformation?",
-    description: "Organisational buy-in is often the biggest accelerator — or blocker.",
+    description: "Organisational buy-in is often the biggest accelerator, or blocker.",
     icon: Target,
     options: [
       { value: "unaware", label: "CX is not on the leadership agenda", score: 1 },
       { value: "interested", label: "Interest is growing but no budget allocated", score: 2 },
       { value: "planned", label: "Budget approved, actively evaluating options", score: 3 },
-      { value: "committed", label: "Committed — looking for the right partner now", score: 4 },
+      { value: "committed", label: "Committed, looking for the right partner now", score: 4 },
     ],
   },
 ];
@@ -143,7 +143,7 @@ const tierConfig: Record<Tier, { label: string; color: string; headline: string;
     color: "text-orange-500",
     headline: "You have a significant opportunity to transform your CX.",
     summary:
-      "Your current setup is leaving revenue on the table. The good news? Organisations at this stage often see the most dramatic improvements when they modernise — with quick wins achievable in weeks, not months.",
+      "Your current setup is leaving revenue on the table. The good news? Organisations at this stage often see the most dramatic improvements when they modernise, with quick wins achievable in weeks, not months.",
     recommendations: [
       "Start with a cloud communications migration to eliminate infrastructure bottlenecks",
       "Deploy a basic AI chatbot to handle your highest-volume repetitive queries",
@@ -154,7 +154,7 @@ const tierConfig: Record<Tier, { label: string; color: string; headline: string;
   developing: {
     label: "Developing",
     color: "text-amber-500",
-    headline: "You've started the journey — now it's time to accelerate.",
+    headline: "You've started the journey, now it's time to accelerate.",
     summary:
       "You have some foundations in place but there are clear gaps holding you back. Focusing on channel integration and AI-assisted automation will unlock measurable gains in response time, CSAT and cost-to-serve.",
     recommendations: [
@@ -167,7 +167,7 @@ const tierConfig: Record<Tier, { label: string; color: string; headline: string;
   advancing: {
     label: "Advancing",
     color: "text-primary",
-    headline: "You're ahead of most — let's make CX your competitive edge.",
+    headline: "You're ahead of most, let's make CX your competitive edge.",
     summary:
       "Your infrastructure is solid and you're already leveraging some AI. The next step is deepening intelligence, connecting CX to revenue outcomes and scaling what's working across your organisation.",
     recommendations: [
@@ -306,7 +306,7 @@ const Assessment = () => {
                   AI & CX Readiness Assessment
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Answer 7 quick questions about your current setup and we'll give you a personalised readiness score with actionable recommendations — takes about 2 minutes.
+                  Answer 7 quick questions about your current setup and we'll give you a personalised readiness score with actionable recommendations, takes about 2 minutes.
                 </p>
 
                 <div className="mx-auto mt-10 grid max-w-md gap-4 text-left">

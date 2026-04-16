@@ -146,7 +146,7 @@ const AIVirtualAgentsTechnologyPage = () =>
               <span className="text-primary">Commercial Control</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="mt-6 text-lg text-background/60">
-              AI automation should reduce cost, protect margin and improve customer experience — without introducing operational risk.
+              AI automation should reduce cost, protect margin and improve customer experience, without introducing operational risk.
             </motion.p>
             <motion.p variants={fadeUp} className="mt-4 font-display text-xl font-bold">
               This is structured automation.{" "}
@@ -165,7 +165,7 @@ const AIVirtualAgentsTechnologyPage = () =>
               </Button>
             </motion.div>
 
-            {/* Trusted by — inline in hero */}
+            {/* Trusted by, inline in hero */}
             <motion.div variants={fadeUp} className="mt-12 border-t border-background/10 pt-8">
               <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-background/30">Trusted by</p>
               <div className="relative overflow-hidden">
@@ -212,7 +212,7 @@ const AIVirtualAgentsTechnologyPage = () =>
             )}
             </motion.div>
             <motion.p variants={fadeUp} className="mt-8 font-display text-xl font-bold text-foreground">
-              Automation must be <span className="text-primary">architected</span> — not bolted on.
+              Automation must be <span className="text-primary">architected</span>, not bolted on.
             </motion.p>
           </motion.div>
         </div>
@@ -223,7 +223,7 @@ const AIVirtualAgentsTechnologyPage = () =>
         <DecorativeCircle color="teal" className="-top-24 -left-20 opacity-15" />
         <div className="container relative z-10 max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Left — copy */}
+            {/* Left, copy */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.p variants={fadeUp} className="mb-3 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
                 What Makes Fortay Different
@@ -243,11 +243,11 @@ const AIVirtualAgentsTechnologyPage = () =>
               )}
               </motion.div>
               <motion.p variants={fadeUp} className="mt-8 font-display text-lg font-bold">
-                AI becomes <span className="text-primary">controlled capacity</span> — not experimentation.
+                AI becomes <span className="text-primary">controlled capacity</span>, not experimentation.
               </motion.p>
             </motion.div>
 
-            {/* Right — chat mockup */}
+            {/* Right, chat mockup */}
             <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -304,7 +304,7 @@ const AIVirtualAgentsTechnologyPage = () =>
                 <span className="text-purple">AI is your lever.</span>
               </motion.h2>
               <motion.p variants={fadeUp} className="text-base text-muted-foreground">
-                If these challenges sound familiar, structured AI deployment could deliver measurable operational leverage — fast.
+                If these challenges sound familiar, structured AI deployment could deliver measurable operational leverage, fast.
               </motion.p>
               <motion.div variants={fadeUp}>
                 <a
@@ -359,7 +359,7 @@ const AIVirtualAgentsTechnologyPage = () =>
                   <h3 className="font-display text-lg font-bold text-foreground">{area.title}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-bold text-primary">{area.stat}</span> — {area.desc}
+                  <span className="font-bold text-primary">{area.stat}</span>, {area.desc}
                 </p>
               </motion.div>
           )}
@@ -376,7 +376,7 @@ const AIVirtualAgentsTechnologyPage = () =>
       </section>
 
       {/* ═══════════ GOVERNED AI ═══════════ */}
-      {/* ═══════════ GOVERNED AI — PROCESS ═══════════ */}
+      {/* ═══════════ GOVERNED AI, PROCESS ═══════════ */}
       <section className="relative overflow-hidden bg-background py-20">
         <DecorativeCircle color="purple" variant="ring" className="-top-16 -right-16 opacity-10" size="h-52 w-52" />
         <div className="container relative z-10 max-w-4xl">
@@ -397,10 +397,10 @@ const AIVirtualAgentsTechnologyPage = () =>
 
           <div className="space-y-8">
             {[
-          { icon: ShieldCheck, label: "Escalation Frameworks", body: "Structured escalation logic ensures every AI interaction has a clear, tested pathway to a human agent — with full context transfer. No dead ends. No customer frustration.", flip: false },
+          { icon: ShieldCheck, label: "Escalation Frameworks", body: "Structured escalation logic ensures every AI interaction has a clear, tested pathway to a human agent, with full context transfer. No dead ends. No customer frustration.", flip: false },
           { icon: CheckCircle2, label: "Secure Data Architecture", body: "AI systems are integrated with data security by design. Role-based access, encrypted data flows and compliant storage architecture underpin every deployment.", flip: true },
           { icon: Target, label: "Audit Trails", body: "Every interaction is logged, timestamped and auditable. Built for regulated environments and internal governance requirements from day one.", flip: false },
-          { icon: Users, label: "Role-Based Access Controls", body: "Granular access controls ensure only authorised personnel can configure, monitor and adjust AI behaviour — protecting operational integrity.", flip: true },
+          { icon: Users, label: "Role-Based Access Controls", body: "Granular access controls ensure only authorised personnel can configure, monitor and adjust AI behaviour, protecting operational integrity.", flip: true },
           { icon: Zap, label: "Continuous Optimisation", body: "Post-deployment, we monitor performance against defined KPIs and tune intent models, escalation triggers and response quality to improve over time.", flip: false }].
           map((step, i) =>
           <motion.div
@@ -473,7 +473,7 @@ const AIVirtualAgentsTechnologyPage = () =>
         <DecorativeCircle color="purple" variant="ring" className="-bottom-24 -right-16 opacity-20" size="h-56 w-56 md:h-72 md:w-72" />
         <div className="container relative z-10 max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            {/* Left — statement */}
+            {/* Left, statement */}
             <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -488,7 +488,7 @@ const AIVirtualAgentsTechnologyPage = () =>
                 <span className="text-purple">properly.</span>
               </h2>
               <p className="mt-5 text-lg text-muted-foreground">
-                Structured. Governed. Built to deliver commercial outcomes — not just automation for automation's sake.
+                Structured. Governed. Built to deliver commercial outcomes, not just automation for automation's sake.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" className="bg-foreground text-primary hover:bg-foreground/90">
@@ -499,7 +499,7 @@ const AIVirtualAgentsTechnologyPage = () =>
               </div>
             </motion.div>
 
-            {/* Right — use-case tags */}
+            {/* Right, use-case tags */}
             <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

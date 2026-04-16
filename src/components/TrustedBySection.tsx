@@ -25,7 +25,7 @@ const clients: { name: string; src: string }[] = [
 ];
 
 const TrustedBySection = () => (
-  <section className="border-y border-border bg-muted/20 py-10">
+  <section className="border-y border-border bg-[#F7F9FC] py-10">
     <div className="container">
       <motion.div
         initial={{ opacity: 0 }}
@@ -37,15 +37,15 @@ const TrustedBySection = () => (
         </p>
         <div className="relative overflow-hidden">
           {/* fade edges */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-background to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-background to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#F7F9FC] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#F7F9FC] to-transparent" />
           <div className="flex w-max animate-logo-scroll items-center gap-16">
             {[...clients, ...clients].map((client, i) => (
               <img
                 key={`${client.name}-${i}`}
                 src={client.src}
                 alt={client.name}
-                className="h-8 w-auto shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 md:h-10"
+                className="h-8 w-auto shrink-0 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 md:h-10"
               />
             ))}
           </div>

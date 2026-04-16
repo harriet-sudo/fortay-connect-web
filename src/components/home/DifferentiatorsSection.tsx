@@ -6,7 +6,7 @@ import DecorativeCircle from "@/components/DecorativeCircle";
 
 const cards = [
   { metric: "98%",       title: "Client Retention",            tag: "Measured beyond go-live.",    icon: ShieldCheck,  color: "teal" },
-  { metric: "100%",      title: "Architecturally Independent", tag: "No vendor allegiance.",        icon: Scale,        color: "purple" },
+  { metric: "100%",      title: "Architecturally Independent", tag: "No platform allegiance.",      icon: Scale,        color: "purple" },
   { metric: "Validated", title: "Stress-Tested Everything",    tag: "Proven capability only.",      icon: FlaskConical, color: "teal" },
   { metric: "30+",       title: "Years CX & Transformation",   tag: "Enterprise scale.",            icon: Clock,        color: "purple" },
   { metric: "UK‑Based",  title: "Accessible & Accountable",    tag: "No offshore hand-offs.",       icon: MapPin,       color: "teal" },

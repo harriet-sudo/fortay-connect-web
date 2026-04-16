@@ -13,7 +13,7 @@ const ROICalculator = () => (
             See how much you could save by consolidating your UC & CX platforms and introducing AI automation.
           </p>
           <div className="mt-10">
-            <p className="text-muted-foreground">Coming soon — the interactive calculator is being built.</p>
+            <p className="text-muted-foreground">Coming soon, the interactive calculator is being built.</p>
           </div>
         </motion.div>
       </div>

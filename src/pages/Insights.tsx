@@ -56,7 +56,7 @@ type Post = {
 const featured: Post = {
   title: "Unified Communications in 2026: Less Admin, More Automation, Better Outcomes",
   excerpt:
-    "UCaaS has quietly crossed a line. In 2026, unified communications isn't just about calls and chat — it's about less admin, more automation, and measurably better outcomes.",
+    "UCaaS has quietly crossed a line. In 2026, unified communications isn't just about calls and chat, it's about less admin, more automation, and measurably better outcomes.",
   date: "21st Jan 2026",
   tags: ["Unified Communications"],
   url: "https://www.fortayconnect.com/content/unified-communications-in-2026",
@@ -74,7 +74,7 @@ const posts: Post[] = [
   },
   {
     title: "Your Connectivity Blueprint",
-    excerpt: "A practical guide to designing your business connectivity strategy — from network infrastructure to cloud-first communications architecture.",
+    excerpt: "A practical guide to designing your business connectivity strategy, from network infrastructure to cloud-first communications architecture.",
     date: "21st Nov 2024",
     tags: ["White Paper", "Connectivity"],
     url: "https://www.fortayconnect.com/connectivity-blueprint",
@@ -82,7 +82,7 @@ const posts: Post[] = [
   },
   {
     title: "Unify Your Customer Service Across Every Channel",
-    excerpt: "Every channel, one voice. Discover how to deliver consistent, seamless customer experiences across voice, chat, email, and social — without the operational complexity.",
+    excerpt: "Every channel, one voice. Discover how to deliver consistent, seamless customer experiences across voice, chat, email, and social, without the operational complexity.",
     date: "3rd Mar 2025",
     tags: ["White Paper", "Omnichannel", "CX"],
     url: "https://www.fortayconnect.com/download-every-channel-one-voice",
@@ -122,7 +122,7 @@ const posts: Post[] = [
   },
   {
     title: "Zoom Customer Experience Support Certification: Fortay Connect Leads the UK",
-    excerpt: "We've got something big to share. Fortay Connect has achieved the Zoom Customer Experience Support Certification — leading the way in the UK for CX excellence.",
+    excerpt: "We've got something big to share. Fortay Connect has achieved the Zoom Customer Experience Support Certification, leading the way in the UK for CX excellence.",
     date: "9th Jan 2026",
     tags: ["News", "Zoom", "CX"],
     url: "https://www.fortayconnect.com/content/zoom-customer-experience-support-certification-fortay-connect-leads-the-uk",
@@ -186,7 +186,7 @@ const posts: Post[] = [
   },
   {
     title: "The Future Of AI Sales Analytics For Decision-Making: Trends To Watch",
-    excerpt: "Sales leaders are under relentless pressure: drive revenue, coach teams, and deliver accurate forecasts — often across sprawling, global operations.",
+    excerpt: "Sales leaders are under relentless pressure: drive revenue, coach teams, and deliver accurate forecasts, often across sprawling, global operations.",
     date: "16th Jul 2025",
     tags: ["News", "AI Sales Analytics"],
     url: "https://www.fortayconnect.com/content/ai-sales-analytics-decision-making",
@@ -202,7 +202,7 @@ const posts: Post[] = [
   },
   {
     title: "Fortay Connect: Leading The Zoom Revolution In The UK",
-    excerpt: "We're thrilled to announce that Fortay Connect has achieved a groundbreaking milestone: we are a Zoom Platinum Partner — only the second partner in the UK to reach this level.",
+    excerpt: "We're thrilled to announce that Fortay Connect has achieved a groundbreaking milestone: we are a Zoom Platinum Partner, only the second partner in the UK to reach this level.",
     date: "17th Dec 2024",
     tags: ["News", "Zoom"],
     url: "https://www.fortayconnect.com/content/fortay-connect-zoom-platinum-partner",
@@ -242,7 +242,7 @@ const posts: Post[] = [
   },
   {
     title: "Navigating Telephony in Microsoft Teams: A Complex Journey",
-    excerpt: "Microsoft Teams telephony presents a range of options — but choosing the right path requires careful consideration of your business needs and existing infrastructure.",
+    excerpt: "Microsoft Teams telephony presents a range of options, but choosing the right path requires careful consideration of your business needs and existing infrastructure.",
     date: "10th Oct 2023",
     tags: ["Unified Communications", "Microsoft Teams"],
     url: "https://www.fortayconnect.com/content/navigating-telephony-in-microsoft-teams",
@@ -258,7 +258,7 @@ const posts: Post[] = [
   },
   {
     title: "Fortay Connect awarded Gold Partner Status with RingCentral",
-    excerpt: "Fortay Connect is pleased to announce that they are recognised as a RingCentral Reach Gold Partner — representing the Top 1% of RingCentral's partner ecosystem.",
+    excerpt: "Fortay Connect is pleased to announce that they are recognised as a RingCentral Reach Gold Partner, representing the Top 1% of RingCentral's partner ecosystem.",
     date: "3rd Mar 2023",
     tags: ["News", "RingCentral"],
     url: "https://www.fortayconnect.com/content/fortay-connect-ringcentral-gold-partner",
@@ -274,7 +274,7 @@ const posts: Post[] = [
   },
   {
     title: "Cloud Contact Centre: The Case For Cloud Contact Centers",
-    excerpt: "Exploring the compelling business case for migrating your contact centre to the cloud — from cost savings to flexibility and scalability.",
+    excerpt: "Exploring the compelling business case for migrating your contact centre to the cloud, from cost savings to flexibility and scalability.",
     date: "21st Dec 2022",
     tags: ["Resources", "Contact Centre"],
     url: "https://www.fortayconnect.com/content/cloud-contact-centre",
@@ -289,7 +289,7 @@ const posts: Post[] = [
     image: imgAvayaLunch,
   },
   {
-    title: "Mitel and RingCentral — Virtual Lunch and Learn",
+    title: "Mitel and RingCentral, Virtual Lunch and Learn",
     excerpt: "Join us for an exclusive virtual event exploring the Mitel and RingCentral partnership and what it means for your unified communications strategy.",
     date: "5th Sep 2022",
     tags: ["Events", "RingCentral"],
@@ -306,7 +306,7 @@ const posts: Post[] = [
   },
   {
     title: "DTX & UCX Manchester",
-    excerpt: "Fortay Connect at DTX & UCX Manchester — exploring the latest in unified communications, contact centre technology, and digital transformation.",
+    excerpt: "Fortay Connect at DTX & UCX Manchester, exploring the latest in unified communications, contact centre technology, and digital transformation.",
     date: "13th Apr 2022",
     tags: ["Events", "Unified Communications"],
     url: "https://www.fortayconnect.com/content/dtx-ucx-manchester",
@@ -323,7 +323,7 @@ const posts: Post[] = [
   },
   {
     title: "First Class Trip to Cloud",
-    excerpt: "Your guide to a smooth cloud migration journey — from legacy telephony to modern unified communications in the cloud.",
+    excerpt: "Your guide to a smooth cloud migration journey, from legacy telephony to modern unified communications in the cloud.",
     date: "14th Jan 2022",
     tags: ["Events", "Unified Communications"],
     url: "https://www.fortayconnect.com/content/first-class-trip-to-cloud",
@@ -331,7 +331,7 @@ const posts: Post[] = [
   },
   {
     title: "Jonathan Palmer Race Day",
-    excerpt: "An exclusive networking event at the Jonathan Palmer race circuit — bringing together partners, clients, and the Fortay Connect team.",
+    excerpt: "An exclusive networking event at the Jonathan Palmer race circuit, bringing together partners, clients, and the Fortay Connect team.",
     date: "7th Oct 2021",
     tags: ["Events", "RingCentral"],
     url: "https://www.fortayconnect.com/content/jonathan-palmer-race-day",
@@ -440,7 +440,7 @@ const Insights = () => {
             <p className="mt-4 text-lg text-muted-foreground">Impressions, topics &amp; trends from the world of CX and communications.</p>
           </motion.div>
 
-          {/* Subscribe CTA — top of page */}
+          {/* Subscribe CTA, top of page */}
           <motion.div
             className="mx-auto mb-16 max-w-3xl overflow-hidden rounded-2xl bg-foreground"
             initial="hidden"
@@ -608,7 +608,7 @@ const Insights = () => {
           )}
         </div>
 
-          {/* Subscribe section removed — moved to top */}
+          {/* Subscribe section removed, moved to top */}
       </main>
     </>
   );

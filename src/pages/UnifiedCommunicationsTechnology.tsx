@@ -104,7 +104,7 @@ const aiFeatures = [
     title: "Conversation Analytics & Insight",
     description:
       "AI surfaces sentiment trends, objection patterns, risk signals, performance insights and escalation indicators.",
-    highlight: "Leadership sees what is actually happening — not just what is reported.",
+    highlight: "Leadership sees what is actually happening, not just what is reported.",
   },
 ];
 
@@ -171,7 +171,7 @@ const teamImpacts = [
       "Keyword monitoring",
       "Escalation alerts",
     ],
-    tagline: "Risk becomes visible — and manageable.",
+    tagline: "Risk becomes visible, and manageable.",
   },
 ];
 
@@ -204,7 +204,7 @@ const businessImpacts = [
 
 /* ─── Why Fortay ─── */
 const whyFortayPoints = [
-  "Vendor-agnostic UCaaS advisory",
+  "Platform-neutral UCaaS advisory",
   "Global deployment strategy",
   "AI readiness assessment",
   "Secure configuration and governance",
@@ -224,7 +224,7 @@ const ctaExploring = [
 
 /* ─── Meeting mockup ─── */
 const meetingTranscript = [
-  { from: "participant", text: "We need to revisit the renewal pricing — three clients have raised concerns this quarter" },
+  { from: "participant", text: "We need to revisit the renewal pricing, three clients have raised concerns this quarter" },
   { from: "ai", text: "📝 Action captured: Review renewal pricing strategy. Flagged: 3 client escalations this quarter." },
   { from: "participant", text: "Can we pull up the calls where pricing was mentioned?" },
   { from: "ai", text: "🔍 Found 14 conversations mentioning pricing objections in the last 30 days. Summary report generated." },
@@ -565,7 +565,7 @@ const UnifiedCommunicationsTechnologyPage = () => (
                   Calls, transcripts and summaries sync automatically. No duplication. No toggle tax. No manual CRM updates.
                 </p>
                 <p className="mt-3 text-sm font-bold text-primary">
-                  Communication becomes operationally embedded — not administratively burdensome.
+                  Communication becomes operationally embedded, not administratively burdensome.
                 </p>
               </motion.div>
             </motion.div>
@@ -591,7 +591,7 @@ const UnifiedCommunicationsTechnologyPage = () => (
               Time Reclaimed Across the Organisation
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-4 text-muted-foreground">
-              AI-native Unified Communications impacts every team — not just CX or sales.
+              AI-native Unified Communications impacts every team, not just CX or sales.
             </motion.p>
           </motion.div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

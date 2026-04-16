@@ -12,19 +12,19 @@ import DecorativeCircle from "@/components/DecorativeCircle";
 const faqs = [
   {
     q: "What types of organisations do you work with?",
-    a: "Mid-market and enterprise organisations across the UK — typically 50 to 5,000+ employees. We specialise in financial services, manufacturing, retail, professional services, and sport. If you're evaluating or modernising your communications stack, we'll know your landscape.",
+    a: "Mid-market and enterprise organisations across the UK, typically 50 to 5,000+ employees. We specialise in financial services, manufacturing, retail, professional services, and sport. If you're evaluating or modernising your communications stack, we'll know your landscape.",
   },
   {
-    q: "Are you tied to any specific technology vendors?",
-    a: "No. We're proudly vendor-neutral. We evaluate all leading UC, CX, and AI platforms on merit and recommend what's right for your organisation — not what earns us the best margin.",
+    q: "Are you tied to any specific technology suppliers?",
+    a: "No. We're proudly platform-neutral. We evaluate all leading UC, CX, and AI platforms on merit and recommend what's right for your organisation, not what earns us the best margin.",
   },
   {
     q: "How quickly can you mobilise, and what does a typical engagement look like?",
-    a: "Advisory and technology selection typically runs 2–4 weeks. Full deployment programmes span 3–6 months depending on scope and complexity. You'll get a clear timeline and milestones before any work begins.",
+    a: "Advisory and technology selection typically runs 2 to 4 weeks. Full deployment programmes span 3 to 6 months depending on scope and complexity. You'll get a clear timeline and milestones before any work begins.",
   },
   {
-    q: "Do you cover strategy, vendor selection, and implementation — or just one?",
-    a: "End-to-end. From initial discovery and business case through vendor selection, commercial negotiation, deployment, and ongoing managed services. You can engage us at any stage.",
+    q: "Do you cover strategy, platform selection, and implementation, or just one?",
+    a: "End-to-end. From initial discovery and business case through platform selection, commercial negotiation, deployment, and ongoing managed services. You can engage us at any stage.",
   },
   {
     q: "What's the cost of an initial consultation?",
@@ -59,7 +59,7 @@ const FAQSection = () => (
           </h2>
         </div>
         <p className="text-base leading-relaxed text-white/50 md:text-lg md:pb-1">
-          Straight answers for COOs, CIOs, and CTOs evaluating communications transformation. No sales language.
+          Straight answers for the leaders evaluating enterprise transformation. No sales language.
         </p>
       </motion.div>
 

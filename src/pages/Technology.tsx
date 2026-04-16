@@ -28,7 +28,7 @@ const Technology = () => (
               Technology
             </p>
             <h1 className="font-display text-4xl font-bold md:text-5xl lg:text-6xl">Solutions we deliver</h1>
-            <p className="mt-4 text-lg text-background/50">From AI-powered virtual agents to unified communications — explore the platforms and solutions we specialise in.</p>
+            <p className="mt-4 text-lg text-background/50">From AI-powered virtual agents to unified communications, explore the platforms and solutions we specialise in.</p>
           </motion.div>
         </div>
       </section>

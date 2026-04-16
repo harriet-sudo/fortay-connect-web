@@ -115,7 +115,7 @@ const breakdowns = [
     num: "02",
     title: "High-Cost Resource on Low-Value Tasks",
     description:
-      "Qualified solicitors booking appointments, chasing documents, answering routine queries — instead of billing.",
+      "Qualified solicitors booking appointments, chasing documents, answering routine queries, instead of billing.",
   },
   {
     icon: ShieldCheck,
@@ -158,7 +158,7 @@ const contactCentreFeatures = [
   "Provide call and conversation analytics",
   "Enable compliance flagging and QA monitoring",
   "Deliver performance dashboards by office or team",
-  "Support omnichannel engagement — voice, webchat and messaging",
+  "Support omnichannel engagement, voice, webchat and messaging",
 ];
 
 const partnerVisibility = [
@@ -207,7 +207,7 @@ const businessImpacts = [
 ];
 
 const whyFortayPoints = [
-  "Vendor-agnostic advisory across UCaaS, CCaaS and AI",
+  "Platform-neutral advisory across UCaaS, CCaaS and AI",
   "Deep understanding of regulated professional services",
   "Commercial ROI modelling before implementation",
   "Secure integration with legal case management systems",
@@ -287,7 +287,7 @@ const LegalIndustryPage = () => (
 
       <TrustedBySection />
 
-      {/* The Pressure + Pain Points — combined */}
+      {/* The Pressure + Pain Points, combined */}
       <section className="relative overflow-hidden bg-foreground py-16">
         <div className="container">
           <motion.div
@@ -375,7 +375,7 @@ const LegalIndustryPage = () => (
         </div>
       </section>
 
-      {/* AI Receptionist — dark with chat mockup */}
+      {/* AI Receptionist, dark with chat mockup */}
       <section className="relative overflow-hidden bg-foreground py-20 text-background">
         <DecorativeCircle color="teal" className="-top-24 -left-20 opacity-15" />
         <div className="container relative z-10">
@@ -418,7 +418,7 @@ const LegalIndustryPage = () => (
                   </div>
                   <div className="flex justify-start">
                     <div className="max-w-[75%] rounded-2xl rounded-tl-md bg-background/10 px-4 py-2.5 text-xs text-background/80">
-                      ✓ Appointment booked with Sarah Mitchell, Conveyancing — 9:15am tomorrow. Confirmation sent to your email.
+                      ✓ Appointment booked with Sarah Mitchell, Conveyancing, 9:15am tomorrow. Confirmation sent to your email.
                     </div>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-background/30">
@@ -731,11 +731,11 @@ const LegalIndustryPage = () => (
           </motion.div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { stat: "98%", title: "Client Retention", description: "Long-term partnerships built on trust, results, and continuous value delivery — not churn-and-burn contracts." },
+              { stat: "98%", title: "Client Retention", description: "Long-term partnerships built on trust, results, and continuous value delivery, not churn-and-burn contracts." },
               { stat: "30+", title: "Years in CX & Transformation", description: "Three decades of hands-on expertise across contact centre, unified communications, and AI-led transformation." },
               { stat: "100%", title: "Technology Agnostic", description: "No commissions, no partner bias. Our only agenda is what's right for your firm and your clients." },
-              { stat: "🇬🇧", title: "UK Engineers & Consultants", description: "Our team is entirely UK-based — accessible, accountable, and deeply familiar with the UK regulatory landscape." },
-              { stat: "✓", title: "We Stress-Test Everything", description: "While vendors push monthly AI releases, we validate real-world outcomes first. You get proven capabilities, not promises." },
+              { stat: "🇬🇧", title: "UK Engineers & Consultants", description: "Our team is entirely UK-based. Accessible, accountable, and deeply familiar with the UK regulatory landscape." },
+              { stat: "✓", title: "We Stress-Test Everything", description: "While suppliers push monthly AI releases, we validate real-world outcomes first. You get proven capabilities, not promises." },
               { stat: "Free", title: "Proof of Concept", description: "We prove value before you invest. Our free POC gives you confidence the solution works in your environment." },
             ].map((item, i) => (
               <motion.div

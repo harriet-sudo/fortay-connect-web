@@ -29,7 +29,7 @@ const fadeUp = {
   visible: (i = 0) => ({ opacity: 1, y: 0, transition: { delay: i * 0.08, duration: 0.5 } }),
 };
 
-// Reusable purple pill label — matches site-wide style
+// Reusable purple pill label, matches site-wide style
 const SectionPill = ({ children }: { children: React.ReactNode }) => (
   <p className="mb-4 inline-block rounded-full border border-purple/20 bg-purple/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-purple">
     {children}
@@ -84,18 +84,18 @@ const insightCards = [
   {
     img: rcGoldImg,
     title: "Fortay Connect awarded Gold Partner Status with RingCentral",
-    summary: "Recognised as a RingCentral Reach Gold Partner — representing the top 1% of RingCentral's partner ecosystem.",
+    summary: "Recognised as a RingCentral Reach Gold Partner, representing the top 1% of RingCentral's partner ecosystem.",
     slug: "fortay-connect-ringcentral-gold-partner",
   },
   {
     img: msRcImg,
-    title: "Microsoft Teams & RingCentral — Better Together",
+    title: "Microsoft Teams & RingCentral, Better Together",
     summary: "How Direct Routing and RingCentral combine to deliver enterprise voice inside Teams without disruption.",
     slug: "microsoft-teams-and-ringcentral",
   },
   {
     img: mitelRcImg,
-    title: "Mitel and RingCentral — Virtual Lunch and Learn",
+    title: "Mitel and RingCentral, Virtual Lunch and Learn",
     summary: "Exploring the Mitel and RingCentral partnership and what it means for your unified communications strategy.",
     slug: "mitel-and-ringcentral-virtual-lunch-and-learn",
   },
@@ -106,7 +106,7 @@ const faqs = [
   { q: "Can RingCentral integrate with Microsoft Teams?", a: "Yes. RingCentral supports Teams voice integration via Direct Routing, enabling enterprise telephony within Teams without replacing the Teams experience." },
   { q: "What is RingCX?", a: "RingCX is RingCentral's cloud contact centre platform delivering omnichannel engagement, intelligent routing and workforce engagement management." },
   { q: "How does RingSense AI work?", a: "RingSense analyses conversations to surface sentiment, coaching insights, performance analytics and automated summaries across calls and meetings." },
-  { q: "What is AI Receptionist?", a: "AI Receptionist automates inbound call answering, identity verification and intelligent routing — reducing administrative overhead and improving caller experience." },
+  { q: "What is AI Receptionist?", a: "AI Receptionist automates inbound call answering, identity verification and intelligent routing, reducing administrative overhead and improving caller experience." },
   { q: "Is RingCentral suitable for regulated industries?", a: "Yes. With correct configuration, RingCentral supports secure and compliant enterprise deployment including recording, data residency and audit frameworks." },
   { q: "Why use a certified partner instead of purchasing directly?", a: "Licences alone do not ensure architecture, integration, migration success or optimisation. Execution defines whether the investment delivers ROI." },
 ];
@@ -116,13 +116,13 @@ const aiFeatures = [
     icon: Brain,
     title: "RingSense AI",
     short: "Conversation analytics and coaching insights.",
-    detail: "RingSense analyses every conversation automatically — surfacing sentiment trends, identifying coaching opportunities, flagging compliance risks and generating call summaries. Managers gain visibility without manual review. Agents improve faster with targeted feedback.",
+    detail: "RingSense analyses every conversation automatically, surfacing sentiment trends, identifying coaching opportunities, flagging compliance risks and generating call summaries. Managers gain visibility without manual review. Agents improve faster with targeted feedback.",
   },
   {
     icon: Mic,
     title: "AI Receptionist",
     short: "Automated inbound answering and intelligent triage.",
-    detail: "AI Receptionist answers inbound calls, verifies caller identity and routes them intelligently — without human intervention. It handles high call volumes, reduces hold times and ensures consistent first-touch experience across every site.",
+    detail: "AI Receptionist answers inbound calls, verifies caller identity and routes them intelligently, without human intervention. It handles high call volumes, reduces hold times and ensures consistent first-touch experience across every site.",
   },
   {
     icon: MessageSquare,
@@ -140,7 +140,7 @@ const aiFeatures = [
     icon: BarChart3,
     title: "Performance Insights",
     short: "AI-powered team and individual performance tracking.",
-    detail: "Dashboards surface individual and team performance metrics derived from AI analysis — call outcomes, talk ratios, resolution rates and coaching compliance. Leaders can allocate training resources precisely where needed.",
+    detail: "Dashboards surface individual and team performance metrics derived from AI analysis, call outcomes, talk ratios, resolution rates and coaching compliance. Leaders can allocate training resources precisely where needed.",
   },
   {
     icon: Zap,
@@ -214,10 +214,10 @@ const RingCentralPartner = () => {
           <div className="container relative z-10">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
 
-              {/* Gold badge — primary teal pill matching site */}
+              {/* Gold badge, primary teal pill matching site */}
               <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
                 <Building2 className="h-3.5 w-3.5" />
-                RingCentral Gold Partner — UK
+                RingCentral Gold Partner, UK
               </p>
 
               <img src={ringcentralLogo} alt="RingCentral" className="mb-6 h-10 w-auto brightness-0 invert opacity-90" />
@@ -228,7 +228,7 @@ const RingCentralPartner = () => {
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg text-background/60 leading-relaxed">
-                RingCentral is a global leader in enterprise cloud communications — combining enterprise telephony, deep Microsoft Teams integration, AI-powered analytics and omnichannel CX within one structured platform.
+                RingCentral is a global leader in enterprise cloud communications, combining enterprise telephony, deep Microsoft Teams integration, AI-powered analytics and omnichannel CX within one structured platform.
               </p>
 
               <p className="mt-2 text-base text-background/40">
@@ -310,7 +310,7 @@ const RingCentralPartner = () => {
                   <span className="text-primary">One unified platform.</span>
                 </h2>
                 <p className="mt-5 text-muted-foreground leading-relaxed">
-                  RingCentral excels where organisations require enterprise cloud telephony reliability, Microsoft Teams voice integration, global scalability, AI-powered analytics and omnichannel CX. It is particularly strong for organisations standardised on Microsoft 365 — enhancing that investment rather than replacing it.
+                  RingCentral excels where organisations require enterprise cloud telephony reliability, Microsoft Teams voice integration, global scalability, AI-powered analytics and omnichannel CX. It is particularly strong for organisations standardised on Microsoft 365, enhancing that investment rather than replacing it.
                 </p>
               </motion.div>
 
@@ -332,7 +332,7 @@ const RingCentralPartner = () => {
           </div>
         </section>
 
-        {/* ── TEAMS INTEGRATION — dark section ── */}
+        {/* ── TEAMS INTEGRATION, dark section ── */}
         <section className="relative overflow-hidden bg-foreground py-20 md:py-28">
           <DecorativeCircle color="teal" variant="ring" className="-bottom-20 -right-20 opacity-15" size="h-80 w-80" />
           <DecorativeCircle color="purple" variant="disc" className="-top-12 -left-12 opacity-5" size="h-64 w-64" />
@@ -364,7 +364,7 @@ const RingCentralPartner = () => {
                 </div>
               </motion.div>
 
-              {/* Visual split — Teams + RC */}
+              {/* Visual split, Teams + RC */}
               <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
                 className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl border border-background/10 bg-background/5 p-6 flex flex-col gap-3">
@@ -430,10 +430,10 @@ const RingCentralPartner = () => {
 
                 <div>
                   <p className="text-lg italic leading-relaxed text-background/80 md:text-xl">
-                    "Saved us from an expensive mistake. The expertise was completely impartial — focused on finding what we actually needed. Moving to RingCentral with Fortay's guidance gave us a platform that genuinely scales with the business."
+                    "Saved us from an expensive mistake. The expertise was completely impartial, focused on finding what we actually needed. Moving to RingCentral with Fortay's guidance gave us a platform that genuinely scales with the business."
                   </p>
                   <p className="mt-4 text-sm text-background/40">
-                    — Justine Long, Head of Operations at{" "}
+                   , Justine Long, Head of Operations at{" "}
                     <span className="font-semibold text-background/70">CA Auto Finance</span>
                   </p>
                 </div>
@@ -531,7 +531,7 @@ const RingCentralPartner = () => {
 
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
               className="text-center mt-10 text-sm text-muted-foreground">
-              We ensure RingCentral is implemented as infrastructure — not just telephony.
+              We ensure RingCentral is implemented as infrastructure, not just telephony.
             </motion.p>
           </div>
         </section>
@@ -542,7 +542,7 @@ const RingCentralPartner = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mx-auto max-w-2xl text-center mb-14">
               <SectionPill>RingCentral Insight</SectionPill>
               <h2 className="font-display text-3xl font-bold md:text-4xl">Recognition & Resources</h2>
-              <p className="mt-4 text-muted-foreground">Certified expertise across EX and CX — with insight to back it up.</p>
+              <p className="mt-4 text-muted-foreground">Certified expertise across EX and CX, with insight to back it up.</p>
             </motion.div>
 
             <div className="grid gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
@@ -604,7 +604,7 @@ const RingCentralPartner = () => {
                   <span className="text-primary">Your Environment</span>
                 </h2>
                 <p className="mt-5 text-background/60 leading-relaxed">
-                  Rather than a generic demo, we offer a free POC account. We configure it around your workflows — testing Teams voice integration, AI Receptionist, RingSense analytics and RingCX routing in your real environment.
+                  Rather than a generic demo, we offer a free POC account. We configure it around your workflows, testing Teams voice integration, AI Receptionist, RingSense analytics and RingCX routing in your real environment.
                 </p>
 
                 <div className="mt-8 grid sm:grid-cols-2 gap-3 text-left mb-10 max-w-xl mx-auto">
