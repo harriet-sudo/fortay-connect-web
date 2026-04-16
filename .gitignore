@@ -25,3 +25,9 @@ dist-ssr
 .next
 
 .vercel
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+
+# Claude Code internals
+.claude/
