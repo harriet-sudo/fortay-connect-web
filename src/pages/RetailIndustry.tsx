@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import SocialProofSection from "@/components/home/SocialProofSection";
+import TrustedBySection from "@/components/TrustedBySection";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import DecorativeCircle from "@/components/DecorativeCircle";
@@ -33,6 +33,7 @@ import {
   ShoppingBag,
   Smartphone,
   Timer,
+  ChevronDown,
 } from "lucide-react";
 
 const astonVillaLogo = "/assets/logos/aston-villa.webp";
@@ -282,7 +283,7 @@ const RetailIndustryPage = () => (
         </div>
       </section>
 
-      <SocialProofSection />
+      <TrustedBySection />
 
       {/* The Conversion Problem */}
       <section className="py-20">
@@ -771,7 +772,7 @@ const RetailIndustryPage = () => (
       </section>
 
       {/* Who We Work With */}
-      <section className="border-y border-border bg-muted/30 py-16">
+      <section className="border-y border-border bg-muted/30 py-20 md:py-28">
         <div className="container">
           <motion.div
             initial="hidden"
@@ -837,6 +838,35 @@ const RetailIndustryPage = () => (
                 <span className="text-primary">You'll get a conversion engine.</span>
               </p>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="container max-w-3xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mb-12 text-center">
+            <motion.p variants={fadeUp} className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">FAQ</motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl font-bold text-foreground md:text-4xl">
+              Common Questions from Retail Leaders
+            </motion.h2>
+          </motion.div>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
+            {[
+              { q: "Can you handle seasonal volume spikes like Black Friday?", a: "Our architecture is designed for elastic scaling. We size infrastructure for peak demand so your CX does not degrade during Black Friday, Boxing Day, or product launches. You scale up instantly, then scale back without paying for idle capacity." },
+              { q: "Do your AI solutions integrate with our ecommerce platform?", a: "We integrate with all major ecommerce, OMS, and CRM platforms including Shopify, Magento, Salesforce Commerce Cloud, and custom builds. Our approach starts with your existing stack, not a blank slate." },
+              { q: "How quickly can we deploy AI chatbots for customer service?", a: "Basic chatbot deployment can be live within 4 to 6 weeks. More advanced conversational AI with full order tracking, returns handling, and CRM integration typically takes 8 to 12 weeks." },
+              { q: "What ROI should we expect from CX transformation?", a: "CA Auto Finance achieved a 40% cost reduction across their CX operations. Results vary by scope, but we model expected ROI before recommending any investment so you have a clear business case." },
+              { q: "Are you tied to a single platform provider?", a: "No. We are accredited partners with multiple platforms but our recommendations are always independent. We evaluate every option against your specific requirements, not our margin." },
+            ].map((faq, i) => (
+              <motion.details key={i} variants={fadeUp} className="group rounded-xl border border-border bg-card">
+                <summary className="flex cursor-pointer items-center justify-between p-5 font-display text-base font-bold text-foreground [&::-webkit-details-marker]:hidden">
+                  {faq.q}
+                  <ChevronDown className="h-5 w-5 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">{faq.a}</div>
+              </motion.details>
+            ))}
           </motion.div>
         </div>
       </section>
