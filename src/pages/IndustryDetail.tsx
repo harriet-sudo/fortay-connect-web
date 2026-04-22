@@ -144,7 +144,7 @@ const IndustryDetail = ({ slug }: { slug: string }) => {
         </section>
 
         {/* Overview */}
-        <section className="py-16">
+        <section className="py-20 md:py-28">
           <div className="container max-w-3xl">
             <p className="text-lg leading-relaxed text-muted-foreground">
               {industry.overview}
@@ -153,7 +153,7 @@ const IndustryDetail = ({ slug }: { slug: string }) => {
         </section>
 
         {/* Challenges */}
-        <section className="border-t border-border bg-muted/30 py-16">
+        <section className="border-t border-border bg-muted/30 py-20 md:py-28">
           <div className="container">
             <h2 className="font-display text-3xl font-bold text-foreground">
               Challenges We Address
@@ -181,7 +181,7 @@ const IndustryDetail = ({ slug }: { slug: string }) => {
         </section>
 
         {/* Solutions */}
-        <section className="py-16">
+        <section className="py-20 md:py-28">
           <div className="container">
             <h2 className="font-display text-3xl font-bold text-foreground">
               How We Help
@@ -209,7 +209,7 @@ const IndustryDetail = ({ slug }: { slug: string }) => {
         </section>
 
         {/* CTA */}
-        <section className="border-t border-border bg-foreground py-16 text-background">
+        <section className="border-t border-border bg-foreground py-20 md:py-28 text-background">
           <div className="container text-center">
             <h2 className="font-display text-3xl font-bold">
               Ready to transform your {industry.title.toLowerCase()} CX?

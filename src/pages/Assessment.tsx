@@ -301,12 +301,15 @@ const Assessment = () => {
                 <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
                   <ClipboardCheck className="h-10 w-10 text-primary" />
                 </div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">Free assessment</p>
+                <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">Free tool</p>
                 <h1 className="font-display text-4xl font-bold text-foreground md:text-5xl">
-                  AI & CX Readiness Assessment
+                  How Mature Is Your CX Operation?
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Answer 7 quick questions about your current setup and we'll give you a personalised readiness score with actionable recommendations, takes about 2 minutes.
+                  Seven questions. Two minutes. A personalised readiness score with actionable recommendations you can take to the board.
+                </p>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  Completed by 500+ UK operations and CX leaders.
                 </p>
 
                 <div className="mx-auto mt-10 grid max-w-md gap-4 text-left">

@@ -53,6 +53,18 @@ type Post = {
   isLogo?: boolean;
 };
 
+// Blog articles under fortayconnect.com/content/* are now served by the
+// Next.js /insights/[slug] route (content lives in src/data/articles.ts,
+// migrated to Sanity). Whitepapers and lead magnets still live on HubSpot
+// and should continue to open externally.
+function resolveHref(url: string): { href: string; external: boolean } {
+  const contentPrefix = "https://www.fortayconnect.com/content/";
+  if (url.startsWith(contentPrefix)) {
+    return { href: `/insights/${url.slice(contentPrefix.length)}`, external: false };
+  }
+  return { href: url, external: true };
+}
+
 const featured: Post = {
   title: "Unified Communications in 2026: Less Admin, More Automation, Better Outcomes",
   excerpt:
@@ -516,11 +528,12 @@ const Insights = () => {
           </div>
 
           {/* Featured post (hidden when searching) */}
-          {!search.trim() && (
+          {!search.trim() && (() => {
+            const { href: featuredHref, external: featuredExternal } = resolveHref(featured.url);
+            return (
             <motion.a
-              href={featured.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={featuredHref}
+              {...(featuredExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="group mb-12 block cursor-pointer overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
               initial="hidden"
               animate="visible"
@@ -550,19 +563,21 @@ const Insights = () => {
                 </div>
               </div>
             </motion.a>
-          )}
+            );
+          })()}
 
           {/* Post grid */}
           {visiblePosts.length === 0 ? (
             <p className="py-16 text-center text-muted-foreground">No articles found matching "{search}"</p>
           ) : (
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {visiblePosts.map((post, i) => (
+              {visiblePosts.map((post, i) => {
+                const { href: postHref, external: postExternal } = resolveHref(post.url);
+                return (
                 <motion.a
                   key={post.url}
-                  href={post.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={postHref}
+                  {...(postExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="group cursor-pointer overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
                   initial="hidden"
                   whileInView="visible"
@@ -590,7 +605,8 @@ const Insights = () => {
                     <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{post.excerpt}</p>
                   </div>
                 </motion.a>
-              ))}
+                );
+              })}
             </div>
           )}
 

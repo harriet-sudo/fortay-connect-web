@@ -139,7 +139,7 @@ const Industries = () => (
       </section>
 
       {/* CTA */}
-      <section className="border-t border-border bg-muted/30 py-16">
+      <section className="border-t border-border bg-muted/30 py-20 md:py-28">
         <div className="container text-center">
           <h2 className="font-display text-3xl font-bold text-foreground">
             Don't see your industry?

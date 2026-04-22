@@ -18,6 +18,7 @@ import {
   BarChart3,
   CheckCircle2,
   AlertTriangle,
+  ChevronDown,
   Download,
   Zap,
   MessageSquare,
@@ -636,6 +637,40 @@ const FinancialServicesPage = () => (
                 <span className="text-primary">You'll get a roadmap.</span>
               </p>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="container max-w-3xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mb-12 text-center">
+            <motion.p variants={fadeUp} className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">FAQ</motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl font-bold text-foreground md:text-4xl">
+              Common Questions from Financial Services Leaders
+            </motion.h2>
+          </motion.div>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
+            {[
+              { q: "Do you work with FCA-regulated firms?", a: "Yes. We design compliant CX infrastructure including call recording, audit trails, and data handling that meets FCA requirements. CA Auto Finance is one example of our work in regulated financial services." },
+              { q: "Can you integrate with our existing core banking systems?", a: "We assess your entire technology stack before recommending changes. Our approach minimises disruption to existing integrations and we have deployed alongside all major core banking, lending, and insurance platforms." },
+              { q: "How long does a typical financial services CX transformation take?", a: "It depends on scope, but CA Auto Finance went from audit to live in six weeks. Most engagements deliver first measurable outcomes within 8 to 12 weeks." },
+              { q: "Are you a reseller for specific platforms?", a: "We are accredited partners with multiple platforms, but our recommendations are always independent. We earn no commission that would bias our advice. That is why clients trust us to run competitive evaluations." },
+              { q: "What ROI should we expect?", a: "CA Auto Finance achieved a 40% cost reduction. Results vary by scope and starting point, but we model expected ROI before recommending any investment so you have a clear business case for the board." },
+            ].map((faq, i) => (
+              <motion.details key={i} variants={fadeUp} className="group rounded-xl border border-border bg-card">
+                <summary className="flex cursor-pointer items-center justify-between p-5 font-display text-base font-bold text-foreground [&::-webkit-details-marker]:hidden">
+                  {faq.q}
+                  <ChevronDown className="h-5 w-5 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">{faq.a}</div>
+              </motion.details>
+            ))}
+          </motion.div>
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-8 text-center">
+            <a href="/case-studies/ca-auto-finance" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              Read the CA Auto Finance case study <ArrowRight className="h-4 w-4" />
+            </a>
           </motion.div>
         </div>
       </section>
