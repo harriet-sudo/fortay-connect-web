@@ -52,6 +52,7 @@ import {
   Headphones,
   Building2,
   XCircle,
+  ChevronDown,
 } from "lucide-react";
 
 const astonVillaLogo = "/assets/logos/aston-villa.webp";
@@ -288,7 +289,7 @@ const LegalIndustryPage = () => (
       <TrustedBySection />
 
       {/* The Pressure + Pain Points, combined */}
-      <section className="relative overflow-hidden bg-foreground py-16">
+      <section className="relative overflow-hidden bg-foreground py-20 md:py-28">
         <div className="container">
           <motion.div
             className="mx-auto mb-10 max-w-2xl text-center"
@@ -763,6 +764,35 @@ const LegalIndustryPage = () => (
               We design for reputation and profitability.{" "}
               <span className="text-primary">Not hype.</span>
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="container max-w-3xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mb-12 text-center">
+            <motion.p variants={fadeUp} className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">FAQ</motion.p>
+            <motion.h2 variants={fadeUp} className="font-display text-3xl font-bold text-foreground md:text-4xl">
+              Common Questions from Legal Leaders
+            </motion.h2>
+          </motion.div>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
+            {[
+              { q: "Does your technology meet SRA compliance requirements?", a: "Yes. We design infrastructure that meets SRA, GDPR, and Law Society obligations including call recording, data sovereignty, client confidentiality, and full audit trails. Compliance is built in from day one, not bolted on." },
+              { q: "Can AI handle legal client intake without compromising confidentiality?", a: "Our AI intake solutions operate within your security perimeter with full encryption, role-based access, and audit trails. Every interaction is logged and retrievable for regulatory purposes." },
+              { q: "Will this integrate with our practice management system?", a: "We integrate with all major PMS platforms including Clio, Leap, Actionstep, and bespoke systems. Our assessment maps your entire technology landscape before recommending changes." },
+              { q: "How do you justify the investment to partners?", a: "We build the business case with you, modelling billable time recovery, missed enquiry conversion, and cost-per-matter reduction. You will have a board-ready ROI case before any commitment." },
+              { q: "What makes you different from a telecoms reseller?", a: "We do not sell licences. We design outcomes. Our recommendations are platform-neutral and we stay accountable through deployment and beyond. Our average client relationship lasts six years." },
+            ].map((faq, i) => (
+              <motion.details key={i} variants={fadeUp} className="group rounded-xl border border-border bg-card">
+                <summary className="flex cursor-pointer items-center justify-between p-5 font-display text-base font-bold text-foreground [&::-webkit-details-marker]:hidden">
+                  {faq.q}
+                  <ChevronDown className="h-5 w-5 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">{faq.a}</div>
+              </motion.details>
+            ))}
           </motion.div>
         </div>
       </section>

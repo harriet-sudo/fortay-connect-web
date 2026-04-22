@@ -19,7 +19,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Fortay Connect | CX, Communications & AI Transformation Consultancy",
   description:
-    "Specialist AI & CX consultancy helping businesses transform their customer experience and communications with contact centre, unified communications, and AI solutions.",
+    "Fortay Connect delivers CX, communications and AI transformation for UK enterprises. Platform neutral. Outcome focused. 200+ transformations delivered. 98% client retention.",
 };
 
 export default function RootLayout({

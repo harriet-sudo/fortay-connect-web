@@ -1,12 +1,6 @@
 import Link from "next/link";
 const logo = "/assets/logo.png";
 const certsStrip = "/assets/certs-strip.png";
-const zoomLogo = "/assets/logos/zoom.png";
-const ringcentralLogo = "/assets/logos/ringcentral.png";
-const gotoLogo = "/assets/logos/goto.svg";
-const dialpadLogo = "/assets/logos/dialpad.svg";
-const niceLogo = "/assets/logos/nice.png";
-const msTeamsLogo = "/assets/logos/ms-teams.svg";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -17,7 +11,7 @@ const Footer = () => (
         <div className="md:col-span-1">
           <img src={logo} alt="Fortay Connect" className="h-8 w-auto brightness-0 invert" />
           <p className="mt-4 text-sm text-background/60">
-            Specialist AI & CX consultancy helping businesses transform their customer experience and communications.
+            Fortay Connect delivers CX, communications and AI transformation for UK enterprises. Platform neutral. Outcome focused. 98% client retention.
           </p>
         </div>
 
@@ -64,46 +58,17 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* Certifications & Partner logos, on a clean light panel */}
-      <div className="mt-12 rounded-md bg-white/95 px-8 py-8">
-        <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          {/* Certifications */}
-          <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
-              Our Certifications &amp; Partner Accreditations
-            </p>
-            <div className="flex items-center">
-              <img
-                src={certsStrip}
-                alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
-                className="max-h-20 w-auto object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Technology Alliances */}
-          <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
-              Certified Partner, Technology Alliances
-            </p>
-            <div className="flex flex-wrap items-center gap-6">
-              {[
-                { src: zoomLogo, alt: "Zoom" },
-                { src: ringcentralLogo, alt: "RingCentral" },
-                { src: gotoLogo, alt: "GoTo" },
-                { src: dialpadLogo, alt: "Dialpad" },
-                { src: niceLogo, alt: "NICE" },
-                { src: msTeamsLogo, alt: "Microsoft Teams" },
-              ].map(({ src, alt }) => (
-                <img
-                  key={alt}
-                  src={src}
-                  alt={alt}
-                  className="h-7 w-auto opacity-70 transition-opacity hover:opacity-100"
-                />
-              ))}
-            </div>
-          </div>
+      {/* Certifications panel */}
+      <div className="mt-12 rounded-md bg-white/95 px-8 py-6">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
+          Our Certifications &amp; Partner Accreditations
+        </p>
+        <div className="flex items-center">
+          <img
+            src={certsStrip}
+            alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
+            className="max-h-20 w-auto object-contain"
+          />
         </div>
       </div>
 
