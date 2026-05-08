@@ -36,8 +36,8 @@ const steps = [
       "Ensure architectural integrity across integrations",
       "De-risk AI deployment through governance frameworks",
     ],
-    note: "This is strategic oversight, not implementation.",
-    outcome: "Technology decisions aligned to long-term commercial intent.",
+    note: "Strategic leadership through delivery. Implementation runs with your team and platform engineers, not handed off.",
+    outcome: "Platform decisions aligned to long term commercial intent.",
   },
   {
     number: "03",
@@ -53,8 +53,8 @@ const steps = [
       "Align workflows and operational readiness",
       "Establish performance reporting frameworks",
     ],
-    note: "This is structured execution, not supplier management.",
-    outcome: "Disciplined deployment with measurable performance from day one.",
+    note: "Engineering accountability sits with us. Day to day deployment with your team and platform engineers.",
+    outcome: "Measurable performance from day one of go live.",
   },
   {
     number: "04",

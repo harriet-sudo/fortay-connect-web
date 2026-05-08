@@ -8,43 +8,43 @@ const usps = [
   {
     icon: ShieldCheck,
     stat: "98%",
-    title: "Customer Retention",
-    description: "Our clients don't leave. Long-term partnerships built on trust, results, and continuous value delivery.",
+    title: "Client retention",
+    description: "Clients stay with us for 6 years on average. They get quarterly reviews against named KPIs and a Customer Success Manager who knows their stack.",
     color: "teal",
   },
   {
     icon: Clock,
     stat: "30+",
-    title: "Years in CX & Transformation",
-    description: "Three decades of hands-on expertise across contact centre, unified communications, and AI-led transformation.",
+    title: "Years across CX, comms and AI",
+    description: "Two founders who have personally deployed every platform we recommend, from Avaya migrations to Boost AI virtual agents. No theory.",
     color: "purple",
   },
   {
     icon: Scale,
     stat: "100%",
-    title: "Technology Agnostic",
-    description: "No commissions, no partner bias. Our only agenda is what's right for your business and your customers.",
+    title: "Platform neutral",
+    description: "We carry SPIFF arrangements with every major UC, CX and AI provider. That removes the bias to push one over another and lets us recommend the right fit.",
     color: "teal",
   },
   {
     icon: MapPin,
-    stat: "🇬🇧",
-    title: "UK Engineers & Consultants",
-    description: "Our team is entirely UK-based, accessible, accountable, and deeply familiar with the UK market.",
+    stat: "UK",
+    title: "Engineers and consultants in your time zone",
+    description: "Every engineer who touches your deployment is based in the UK. No 9am handover from a night shift somewhere else. Same hours, same accountability.",
     color: "purple",
   },
   {
     icon: FlaskConical,
     stat: "✓",
-    title: "We Stress-Test Everything",
-    description: "While platforms push monthly AI releases, we're already validating real-world outcomes. You get proven capabilities, not marketing promises.",
+    title: "Tested in your environment first",
+    description: "We test every capability in your environment for two weeks before we recommend it. Platforms release monthly. We validate quarterly. You only deploy what we have already broken and rebuilt.",
     color: "teal",
   },
   {
     icon: Puzzle,
     stat: "Free",
-    title: "Proof of Concept",
-    description: "We prove value before you invest. Our free POC gives you confidence that the solution works in your environment.",
+    title: "Proof of concept on us",
+    description: "We will run a 30 day POC against your real call volumes and your real data. No invoice. If it does not perform, you have lost nothing but two weeks.",
     color: "purple",
   },
 ];
@@ -71,11 +71,11 @@ const WhyFortaySection = () => (
           Why Fortay Connect
         </p>
         <h2 className="font-display text-3xl font-bold text-background md:text-4xl">
-          Structural authority.{" "}
-          <span className="text-background/40 font-medium">Measurable accountability.</span>
+          Six reasons our clients stay{" "}
+          <span className="text-background/40 font-medium">an average of six years.</span>
         </h2>
         <p className="mt-4 text-background/50">
-          The reasons our clients stay with us, and the things that set us apart from every other consultancy.
+          Most consultancies sell once and disappear. We measure ourselves on what happens at month 24, not month 2.
         </p>
       </motion.div>
 
