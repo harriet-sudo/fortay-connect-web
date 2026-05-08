@@ -9,4 +9,8 @@ export default defineCliConfig({
   },
   // Enables auto-updates of Studio when running `sanity dev`.
   autoUpdates: true,
+  deployment: {
+    // Pinned so `sanity deploy` does not re-prompt for the application id.
+    appId: "oret814k7q2kfip63slvoqi8",
+  },
 });

@@ -12,23 +12,27 @@ import DecorativeCircle from "@/components/DecorativeCircle";
 const faqs = [
   {
     q: "What types of organisations do you work with?",
-    a: "Mid-market and enterprise organisations across the UK, typically 50 to 5,000+ employees. We specialise in financial services, manufacturing, retail, professional services, and sport. If you're evaluating or modernising your communications stack, we'll know your landscape.",
+    a: "Commercial mid market through enterprise, typically 200 to 5,000 employees, in financial services, legal, professional services, retail and manufacturing. We do not work with public sector. If your contact centre or comms estate has more than one moving piece and a transformation lead with a board mandate, you are in scope.",
   },
   {
-    q: "Are you tied to any specific technology suppliers?",
-    a: "No. We're proudly platform-neutral. We evaluate all leading UC, CX, and AI platforms on merit and recommend what's right for your organisation, not what earns us the best margin.",
+    q: "Are you tied to any specific technology providers?",
+    a: "No. We are platform neutral. We carry SPIFF arrangements with every major UC, CX and AI provider, which removes the bias to push one over another. We recommend what is right for the way your organisation actually runs, then we tell you why.",
   },
   {
     q: "How quickly can you mobilise, and what does a typical engagement look like?",
-    a: "Advisory and technology selection typically runs 2 to 4 weeks. Full deployment programmes span 3 to 6 months depending on scope and complexity. You'll get a clear timeline and milestones before any work begins.",
+    a: "Advisory and platform selection runs 2 to 4 weeks. Full deployment programmes run 3 to 6 months depending on user count, sites and integrations. You get a fixed timeline with named milestones before any work starts. The G.Network engagement we ran was five days from kick off to a written platform recommendation.",
   },
   {
-    q: "Do you cover strategy, platform selection, and implementation, or just one?",
-    a: "End-to-end. From initial discovery and business case through platform selection, commercial negotiation, deployment, and ongoing managed services. You can engage us at any stage.",
+    q: "Do you cover strategy, platform selection, deployment and ongoing optimisation, or just one?",
+    a: "All four under one accountable team. You can pick us up at any stage and we will pick you up at any stage. The 98% retention number is because most clients run all four with us across multiple years.",
   },
   {
-    q: "What's the cost of an initial consultation?",
-    a: "The first conversation is free. We'll listen, assess, and be straight with you about whether and how we can add value. If there's a fit, we'll propose an engagement model that's proportionate to your challenge.",
+    q: "What is the cost of an initial conversation?",
+    a: "Nothing. The first call is free and we will tell you in that call whether you are a fit for what we do. If you are, we will propose an engagement that fits the scope. If you are not, we will tell you who is and why.",
+  },
+  {
+    q: "What happens if we do not pick a platform you partner with?",
+    a: "Then we tell you that, in writing, and you make the call. Our SPIFF arrangements span every major UC, CX and AI provider, so the bias is to recommend the right fit. The two times we have ever recommended a platform we do not partner with, we still ran the procurement for the client because the relationship was worth more than the commission.",
   },
 ];
 
