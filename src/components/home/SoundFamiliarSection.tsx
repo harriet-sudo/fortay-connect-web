@@ -13,9 +13,9 @@ const fadeUp = {
 };
 
 const pillars = [
-  { icon: Users, label: "Customer Experience", detail: "drives revenue", description: "Design and deploy omnichannel contact centre solutions that turn every interaction into an opportunity.", color: "text-teal", bg: "bg-teal/10" },
-  { icon: Cpu, label: "Communications Infrastructure", detail: "drives operational efficiency", description: "Consolidate voice, video, messaging and collaboration onto a single platform that drives productivity and cuts costs.", color: "text-purple", bg: "bg-purple/10" },
-  { icon: TrendingUp, label: "AI & Automation", detail: "drives productivity", description: "Implement conversational AI, intelligent routing and workflow automation to scale without adding headcount.", color: "text-primary", bg: "bg-primary/10" }
+  { icon: Users, label: "Customer experience", detail: "drives revenue", description: "Omnichannel contact centres designed for the volume you actually run, not the brochure version.", color: "text-teal", bg: "bg-teal/10" },
+  { icon: Cpu, label: "Communications infrastructure", detail: "drives operational efficiency", description: "Voice, video, messaging and collaboration on one platform. Fewer suppliers, lower cost, less to manage.", color: "text-purple", bg: "bg-purple/10" },
+  { icon: TrendingUp, label: "AI and automation", detail: "drives productivity", description: "Virtual agents and intelligent routing tested for 30 days against your real call volumes before we sign anything off.", color: "text-primary", bg: "bg-primary/10" }
 ];
 
 const soundFamiliarItems = [
@@ -24,6 +24,7 @@ const soundFamiliarItems = [
   "AI feels like a buzzword, not a business outcome",
   "Leadership wants transformation but IT isn't aligned",
   "You're overpaying for platforms that don't talk to each other",
+  "You bought the kit but adoption never happened",
 ];
 
 const SoundFamiliarSection = () => (
@@ -54,8 +55,8 @@ const SoundFamiliarSection = () => (
         variants={fadeUp}
         className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground md:text-4xl lg:text-5xl xl:text-6xl"
       >
-        CX, Communications and AI Transformation,{" "}
-        <span className="text-purple">Designed for Measurable Impact.</span>
+        CX, communications and AI transformation{" "}
+        <span className="text-purple">that pays back inside one year.</span>
       </motion.h2>
 
       {/* Split screen: Video (left) + Sound Familiar (right) */}
@@ -112,18 +113,15 @@ const SoundFamiliarSection = () => (
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              href="/contact"
+              href="/assessment"
               className="inline-flex items-center gap-2 rounded-full bg-purple px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-purple/30 transition-all hover:brightness-110"
             >
-              Book a strategy call
+              Take the 5 minute CX assessment
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link
-              href="/assessment"
-              className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-teal/20 transition-all hover:bg-teal/90"
-            >
-              Take the assessment
-            </Link>
+            <p className="self-center text-xs italic text-foreground/50">
+              Personalised audit at the end. No call booked unless you want one.
+            </p>
           </div>
         </motion.div>
       </motion.div>
@@ -159,17 +157,17 @@ const SoundFamiliarSection = () => (
         className="space-y-8"
       >
         <motion.p variants={fadeUp} className="mx-auto max-w-3xl text-center text-base leading-relaxed text-foreground/70 md:text-lg">
-          When these evolve <span className="font-semibold text-foreground">without alignment</span>, cost increases and performance becomes harder to control. Siloed technology decisions, misaligned suppliers and undefined KPIs are the most common barriers to scalable growth.
+          When CX, communications and AI grow without alignment, the cost of running them <span className="font-semibold text-foreground">climbs roughly 30% above what it should</span>, response times slow, and the AI mandate from the board sits stuck behind misaligned suppliers and undefined KPIs.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mx-auto max-w-3xl space-y-4 rounded-2xl border border-purple/20 bg-[hsl(var(--purple)/0.08)] px-8 py-7 text-center">
           <span className="inline-block rounded-full border border-purple/40 bg-purple/15 px-5 py-1.5 text-xs font-bold uppercase tracking-widest text-purple">
-            WHY FORTAY CONNECT HELPS
+            What we do about it
           </span>
           <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
-            We work with leadership teams to <span className="font-semibold text-foreground">define objectives</span>, <span className="font-semibold text-foreground">align systems</span> and deliver transformation that is measurable, governed and commercially accountable, from strategy through to platform selection, deployment and adoption.
+            We write a roadmap with <span className="font-semibold text-foreground">quarterly KPI targets</span>, hold platform decisions to it, and report results to your board every 90 days. Strategy through platform selection, deployment, adoption and ongoing optimisation. One team, one accountable contract.
           </p>
-          <p className="text-sm font-semibold text-purple">Independent advice. Platform-neutral outcomes.</p>
+          <p className="text-sm font-semibold text-purple">Independent advice. Platform neutral outcomes. No commission bias.</p>
         </motion.div>
       </motion.div>
 

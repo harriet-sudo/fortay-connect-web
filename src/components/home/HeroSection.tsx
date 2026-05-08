@@ -151,9 +151,9 @@ const HeroSection = () => (
         >
           {[
             "Platform neutral",
-            "No-obligation audit",
-            "UK-based team",
-            "98% client retention",
+            "Free 30 day proof of concept",
+            "UK based engineering team",
+            "98% client retention, 6 year average",
           ].map((q) => (
             <li key={q} className="inline-flex items-center gap-1.5">
               <CheckCircle2 className="h-3.5 w-3.5 text-primary" strokeWidth={2.2} />

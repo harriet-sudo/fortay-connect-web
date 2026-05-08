@@ -69,8 +69,27 @@ export const ARTICLE_QUERY = groq`
     excerpt,
     body,
     coverImage,
-    "author": author->{name, role, headshot},
+    "author": author->{name, role, headshot, linkedinUrl},
     seo
+  }
+`;
+
+// Related articles: same category or overlapping tags, excluding current.
+export const RELATED_ARTICLES_QUERY = groq`
+  *[_type == "article" && isPublished == true && slug.current != $slug
+    && (category == $category || count((tags[])[@ in $tags]) > 0)
+  ] | order(
+    count((tags[])[@ in $tags]) desc,
+    date desc
+  )[0...3] {
+    _id,
+    "slug": slug.current,
+    title,
+    date,
+    category,
+    tags,
+    excerpt,
+    coverImage
   }
 `;
 

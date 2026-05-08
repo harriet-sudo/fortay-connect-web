@@ -19,6 +19,7 @@ import {
   ARTICLES_LIST_QUERY,
   ARTICLE_QUERY,
   ARTICLE_SLUGS_QUERY,
+  RELATED_ARTICLES_QUERY,
 } from "./queries";
 import {
   caseStudies as localCaseStudies,
@@ -58,9 +59,30 @@ function normaliseCaseStudy(doc: any): CaseStudy {
 // Normalise a Sanity article document. Note: the local ArticleData.body
 // is a markdown string, but Sanity stores portable text. We return the
 // raw portable text as a JSON string here for the simplest integration.
-// Downstream rendering should switch to @portabletext/react once
-// components are updated.
-function normaliseArticle(doc: any): ArticleData & { isPortableText?: boolean } {
+// Downstream rendering uses @portabletext/react via PortableTextBody.
+export type ArticleView = ArticleData & {
+  isPortableText?: boolean;
+  coverImage?: any;
+  category?: string;
+  author?: {
+    name?: string;
+    role?: string;
+    headshot?: any;
+    linkedinUrl?: string;
+  };
+};
+
+export type RelatedArticle = {
+  slug: string;
+  title: string;
+  date: string;
+  category?: string;
+  tags?: string[];
+  excerpt?: string;
+  coverImage?: any;
+};
+
+function normaliseArticle(doc: any): ArticleView {
   const isPortableText = Array.isArray(doc.body);
   return {
     slug: doc.slug ?? "",
@@ -70,6 +92,9 @@ function normaliseArticle(doc: any): ArticleData & { isPortableText?: boolean } 
     excerpt: doc.excerpt ?? "",
     body: isPortableText ? JSON.stringify(doc.body) : (doc.body ?? ""),
     isPortableText,
+    coverImage: doc.coverImage,
+    category: doc.category,
+    author: doc.author,
   };
 }
 
@@ -114,7 +139,7 @@ export async function getAllCaseStudySlugs(): Promise<string[]> {
   }
 }
 
-export async function getAllArticles(): Promise<ArticleData[]> {
+export async function getAllArticles(): Promise<ArticleView[]> {
   if (!isSanityConfigured) return localArticles;
   try {
     const docs = await client.fetch(ARTICLES_LIST_QUERY);
@@ -128,7 +153,7 @@ export async function getAllArticles(): Promise<ArticleData[]> {
 
 export async function getArticleBySlug(
   slug: string,
-): Promise<ArticleData | null> {
+): Promise<ArticleView | null> {
   if (!isSanityConfigured) {
     return localArticles.find((a) => a.slug === slug) ?? null;
   }
@@ -141,6 +166,45 @@ export async function getArticleBySlug(
   } catch (err) {
     console.warn("[sanity] getArticleBySlug failed, falling back:", err);
     return localArticles.find((a) => a.slug === slug) ?? null;
+  }
+}
+
+export async function getRelatedArticles(
+  slug: string,
+  category: string | undefined,
+  tags: string[] | undefined,
+): Promise<RelatedArticle[]> {
+  if (!isSanityConfigured) {
+    // Local fallback: pick the next 3 articles after the current one by
+    // tag overlap, then date.
+    const t = new Set(tags ?? []);
+    const scored = localArticles
+      .filter((a) => a.slug !== slug)
+      .map((a) => ({
+        a,
+        score: (a.tags ?? []).filter((tag) => t.has(tag)).length,
+      }))
+      .sort((x, y) => y.score - x.score)
+      .slice(0, 3)
+      .map(({ a }) => ({
+        slug: a.slug,
+        title: a.title,
+        date: a.date,
+        tags: a.tags,
+        excerpt: a.excerpt,
+      }));
+    return scored;
+  }
+  try {
+    const docs = await client.fetch(RELATED_ARTICLES_QUERY, {
+      slug,
+      category: category ?? "",
+      tags: tags ?? [],
+    });
+    return (docs ?? []) as RelatedArticle[];
+  } catch (err) {
+    console.warn("[sanity] getRelatedArticles failed:", err);
+    return [];
   }
 }
 
