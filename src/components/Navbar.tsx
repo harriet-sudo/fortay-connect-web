@@ -8,26 +8,7 @@ const logo = "/assets/logo.png";
 
 const navLinks = [
 {
-  label: "Solutions",
-  to: "/technology",
-  children: [
-    { label: "Technology", to: "/technology", children: [
-      { label: "AI Virtual Agents", to: "/technology/ai-virtual-agents" },
-      { label: "Contact Centre", to: "/technology/contact-centre" },
-      { label: "AI & Automation", to: "/technology/ai-automation" },
-      { label: "Sales Agents", to: "/technology/sales-agents" },
-      { label: "Unified Communications", to: "/technology/unified-communications" },
-    ]},
-    { label: "Industries", to: "/industries", children: [
-      { label: "Financial Services", to: "/industries/financial-services" },
-      { label: "Retail", to: "/industries/retail" },
-      { label: "Manufacturing", to: "/industries/manufacturing" },
-      { label: "Legal", to: "/industries/legal" },
-    ]},
-  ],
-},
-{
-  label: "Services",
+  label: "What we do",
   to: "/services",
   children: [
     { label: "CX & AI Advisory", to: "/services/cx-ai-advisory" },
@@ -36,21 +17,28 @@ const navLinks = [
     { label: "Managed Services", to: "/services/managed-services" },
   ],
 },
-{ label: "Customers", to: "/case-studies" },
 {
-  label: "Company",
-  to: "/about",
+  label: "Technology",
+  to: "/technology",
   children: [
-    { label: "About Us", to: "/about" },
-    { label: "Partners", to: "/partners", children: [
-      { label: "Zoom", to: "/partners/zoom" },
-      { label: "RingCentral", to: "/partners/ringcentral" },
-      { label: "GoTo", to: "/partners/goto" },
-      { label: "Dialpad", to: "/partners/dialpad" },
-    ]},
-    { label: "Careers", to: "/careers" },
+    { label: "AI Virtual Agents", to: "/technology/ai-virtual-agents" },
+    { label: "Contact Centre", to: "/technology/contact-centre" },
+    { label: "AI & Automation", to: "/technology/ai-automation" },
+    { label: "Sales Agents", to: "/technology/sales-agents" },
+    { label: "Unified Communications", to: "/technology/unified-communications" },
   ],
 },
+{
+  label: "Industries",
+  to: "/industries",
+  children: [
+    { label: "Financial Services", to: "/industries/financial-services" },
+    { label: "Retail", to: "/industries/retail" },
+    { label: "Manufacturing", to: "/industries/manufacturing" },
+    { label: "Legal", to: "/industries/legal" },
+  ],
+},
+{ label: "Customers", to: "/case-studies" },
 {
   label: "Insights",
   to: "/insights",
@@ -58,6 +46,14 @@ const navLinks = [
     { label: "All Insights", to: "/insights" },
     { label: "Blogs", to: "/insights?category=Blogs" },
     { label: "White Papers", to: "/insights?category=White+Papers" },
+  ],
+},
+{
+  label: "Company",
+  to: "/about",
+  children: [
+    { label: "About Us", to: "/about" },
+    { label: "Careers", to: "/careers" },
   ],
 },
 ];

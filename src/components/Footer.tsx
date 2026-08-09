@@ -7,7 +7,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 const Footer = () => (
   <footer className="bg-foreground text-background">
     <div className="container py-16">
-      <div className="grid gap-12 md:grid-cols-5">
+      <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         <div className="md:col-span-1">
           <img src={logo} alt="Fortay Connect" className="h-8 w-auto brightness-0 invert" />
           <p className="mt-4 text-sm text-background/60">
@@ -44,6 +44,17 @@ const Footer = () => (
             <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             <li><Link href="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
             
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider text-background/40">Partners</h4>
+          <ul className="space-y-2 text-sm text-background/60">
+            <li><Link href="/partners/zoom" className="hover:text-primary transition-colors">Zoom</Link></li>
+            <li><Link href="/partners/ringcentral" className="hover:text-primary transition-colors">RingCentral</Link></li>
+            <li><Link href="/partners/goto" className="hover:text-primary transition-colors">GoTo</Link></li>
+            <li><Link href="/partners/dialpad" className="hover:text-primary transition-colors">Dialpad</Link></li>
+            <li><Link href="/partners" className="hover:text-primary transition-colors">All Partners</Link></li>
           </ul>
         </div>
 
