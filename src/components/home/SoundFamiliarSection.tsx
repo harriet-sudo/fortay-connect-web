@@ -13,9 +13,9 @@ const fadeUp = {
 };
 
 const pillars = [
-  { icon: Users, label: "Customer Experience", detail: "drives revenue", description: "Design and deploy omnichannel contact centre solutions that turn every interaction into an opportunity.", color: "text-teal", bg: "bg-teal/10" },
+  { icon: Users, label: "Customer Experience", detail: "drives revenue", description: "Design and deploy omnichannel contact centre solutions that turn every interaction into an opportunity.", color: "text-purple", bg: "bg-purple/10" },
   { icon: Cpu, label: "Communications Infrastructure", detail: "drives operational efficiency", description: "Consolidate voice, video, messaging and collaboration onto a single platform that drives productivity and cuts costs.", color: "text-purple", bg: "bg-purple/10" },
-  { icon: TrendingUp, label: "AI & Automation", detail: "drives productivity", description: "Implement conversational AI, intelligent routing and workflow automation to scale without adding headcount.", color: "text-primary", bg: "bg-primary/10" }
+  { icon: TrendingUp, label: "AI & Automation", detail: "drives productivity", description: "Implement conversational AI, intelligent routing and workflow automation to scale without adding headcount.", color: "text-purple", bg: "bg-purple/10" }
 ];
 
 const soundFamiliarItems = [

@@ -31,3 +31,4 @@ tsconfig.tsbuildinfo
 
 # Claude Code internals
 .claude/
+config.bat
