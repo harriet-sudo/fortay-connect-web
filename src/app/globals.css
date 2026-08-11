@@ -123,14 +123,5 @@
   }
 }
 
-@layer base {
-  /* Centre all section pill/bubble labels site-wide.
-     These are identified by the combination of rounded-full + uppercase + tracking-widest */
-  .rounded-full.uppercase.tracking-widest {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
+/* Pills follow their container's alignment: left in left-aligned heroes,
+   centred where the section itself is centred (via text-center / justify-center). */

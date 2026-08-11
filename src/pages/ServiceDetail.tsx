@@ -446,7 +446,7 @@ const ServiceDetail = ({ slug }: { slug: string }) => {
               {/* Left: headline + opener */}
               <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
                 <motion.p variants={fadeUp} className="mb-3 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
-                  {service.badge}
+                  {service.title}
                 </motion.p>
                 <motion.h1 variants={fadeUp} className="font-display text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
                   {service.headline}

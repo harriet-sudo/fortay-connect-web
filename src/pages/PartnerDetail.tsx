@@ -16,6 +16,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 interface PartnerData {
   name: string;
   logo: string;
+  heroImage: string;
   tagline: string;
   description: string;
   heroGradient: string;
@@ -29,6 +30,7 @@ const partners: Record<string, PartnerData> = {
   zoom: {
     name: "Zoom",
     logo: zoomLogo,
+    heroImage: "/assets/blog/ai-companion-zoom.jpg",
     tagline: "Unified Communications & AI-Powered Customer Experience",
     description: "As a certified Zoom partner, Fortay Connect delivers the full Zoom platform, from Zoom Phone and Zoom Contact Centre to Zoom AI Companion, helping organisations unify communications and elevate customer experience with AI-native tools.",
     heroGradient: "from-blue-600/20 to-blue-900/40",
@@ -62,6 +64,7 @@ const partners: Record<string, PartnerData> = {
   ringcentral: {
     name: "RingCentral",
     logo: ringcentralLogo,
+    heroImage: "/assets/blog/ms-ringcentral.jpg",
     tagline: "Intelligent Cloud Communications & Contact Centre",
     description: "Fortay Connect is a Gold-tier RingCentral partner, delivering RingCentral's unified communications and contact centre solutions to help businesses streamline operations, reduce costs and deliver exceptional customer experiences.",
     heroGradient: "from-orange-600/20 to-orange-900/40",
@@ -94,6 +97,7 @@ const partners: Record<string, PartnerData> = {
   goto: {
     name: "GoTo",
     logo: gotoLogo,
+    heroImage: "/assets/blog/cloud-cc.jpg",
     tagline: "Simplified Business Communications & IT Support",
     description: "Fortay Connect partners with GoTo to deliver streamlined cloud communications and IT management solutions. GoTo Connect brings together phone, meetings and messaging in a single platform built for simplicity and reliability.",
     heroGradient: "from-teal-600/20 to-teal-900/40",
@@ -126,6 +130,7 @@ const partners: Record<string, PartnerData> = {
   dialpad: {
     name: "Dialpad",
     logo: dialpadLogo,
+    heroImage: "/assets/blog/ai-sales-analytics.jpg",
     tagline: "AI-Native Business Communications",
     description: "Fortay Connect partners with Dialpad to deliver AI-native communications. Dialpad is built from the ground up with artificial intelligence at its core, providing real-time transcription, coaching and analytics across every business conversation.",
     heroGradient: "from-purple-600/20 to-purple-900/40",
@@ -183,32 +188,44 @@ const PartnerDetail = ({ slug }: { slug: string }) => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
+        <section className="relative overflow-hidden bg-foreground py-14 text-background md:py-20">
           <DecorativeCircle color="teal" className="-top-32 -right-32 opacity-20" />
-          <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
+          <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-72 md:w-72" />
           <div className="container relative z-10">
-            <Link href="/partners" className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
+            <Link href="/partners" className="mb-6 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
               <ArrowLeft className="h-4 w-4" /> All Partners
             </Link>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
-              <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
-                <Building2 className="h-4 w-4" /> {partner.name} Certified Partner, UK
-              </span>
-              <img src={partner.logo} alt={partner.name} className="mb-6 h-10 w-auto brightness-0 invert md:h-12" />
-              <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
-                Certified {partner.name}{" "}
-                <span className="text-primary">Deployment &amp; CX Specialists</span>
-              </h1>
-              <p className="mt-4 text-lg font-medium text-primary/80">{partner.tagline}</p>
-              <p className="mt-6 text-lg leading-relaxed text-background/60">{partner.description}</p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                    Discuss {partner.name} Solutions <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              </div>
-            </motion.div>
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              {/* Left: content */}
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+                <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+                  <Building2 className="h-3.5 w-3.5" /> {partner.name} Certified Partner, UK
+                </span>
+                <img src={partner.logo} alt={partner.name} className="mb-5 h-8 w-auto brightness-0 invert" />
+                <h1 className="font-display text-3xl font-extrabold leading-[1.1] tracking-tight md:text-4xl lg:text-5xl">
+                  Certified {partner.name}{" "}
+                  <span className="text-primary">Deployment &amp; CX Specialists</span>
+                </h1>
+                <p className="mt-3 text-base font-medium text-primary/80 md:text-lg">{partner.tagline}</p>
+                <p className="mt-4 text-base leading-relaxed text-background/60">{partner.description}</p>
+                <div className="mt-7 flex flex-wrap gap-4">
+                  <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                      Discuss {partner.name} Solutions <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </motion.div>
+              {/* Right: image */}
+              <motion.div
+                initial={{ opacity: 0, x: 24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.55, delay: 0.15 }}
+                className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-background/10 shadow-2xl shadow-black/40"
+              >
+                <img src={partner.heroImage} alt={`${partner.name} solutions`} className="h-full w-full object-cover" />
+              </motion.div>
+            </div>
           </div>
         </section>
 
