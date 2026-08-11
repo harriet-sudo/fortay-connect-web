@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Shield, Zap, Globe, HeadphonesIcon, BarChart3, Phone, Video, MessageSquare, Bot, Brain } from "lucide-react";
+import { ArrowRight, ArrowLeft, Building2, CheckCircle, Shield, Zap, Globe, HeadphonesIcon, BarChart3, Phone, Video, MessageSquare, Bot, Brain } from "lucide-react";
 import { motion } from "framer-motion";
+import DecorativeCircle from "@/components/DecorativeCircle";
 
 const zoomLogo = "/assets/logos/zoom.png";
 const ringcentralLogo = "/assets/logos/ringcentral.png";
@@ -182,20 +183,26 @@ const PartnerDetail = ({ slug }: { slug: string }) => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Hero */}
-        <section className={`relative overflow-hidden bg-gradient-to-br ${partner.heroGradient} py-24 md:py-32`}>
+        <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
+          <DecorativeCircle color="teal" className="-top-32 -right-32 opacity-20" />
+          <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
           <div className="container relative z-10">
+            <Link href="/partners" className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
+              <ArrowLeft className="h-4 w-4" /> All Partners
+            </Link>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
-              <div className="mb-8 flex items-center gap-4">
-                <img src={partner.logo} alt={partner.name} className="h-12 w-auto" />
-                <span className="text-sm font-medium text-primary">Certified Partner</span>
-              </div>
-              <h1 className="font-display text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-                {partner.name}
+              <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
+                <Building2 className="h-4 w-4" /> {partner.name} Certified Partner, UK
+              </span>
+              <img src={partner.logo} alt={partner.name} className="mb-6 h-10 w-auto brightness-0 invert md:h-12" />
+              <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+                Certified {partner.name}{" "}
+                <span className="text-primary">Deployment &amp; CX Specialists</span>
               </h1>
-              <p className="mt-2 text-lg text-primary/80 font-medium">{partner.tagline}</p>
-              <p className="mt-6 text-lg text-muted-foreground leading-relaxed">{partner.description}</p>
+              <p className="mt-4 text-lg font-medium text-primary/80">{partner.tagline}</p>
+              <p className="mt-6 text-lg leading-relaxed text-background/60">{partner.description}</p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button size="lg" asChild>
+                <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                   <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                     Discuss {partner.name} Solutions <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
