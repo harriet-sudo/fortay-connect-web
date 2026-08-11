@@ -5,7 +5,7 @@ import PageFAQSection from "@/components/PageFAQSection";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import DecorativeCircle from "@/components/DecorativeCircle";
-import { CheckCircle2, TrendingUp, Users, AlertTriangle, ShieldAlert } from "lucide-react";
+import { CheckCircle2, TrendingUp, Users, AlertTriangle, ShieldAlert, ArrowLeft, ArrowRight, ClipboardCheck, Headphones } from "lucide-react";
 
 const BOOKING_URL = "https://meetings.hubspot.com/fortayconnect";
 
@@ -78,44 +78,43 @@ export default function ContactCentreTechnology() {
     <div className="min-h-screen bg-background">
 
       {/* Hero */}
-      <section className="relative overflow-hidden pt-32 pb-20"
-        style={{ background: "linear-gradient(170deg, hsl(268 55% 18%) 0%, hsl(var(--navy)) 60%, hsl(var(--navy)) 100%)" }}>
-        <DecorativeCircle size="lg" color="purple" className="-top-32 -right-32 opacity-20" />
-        <DecorativeCircle size="md" color="teal" className="bottom-0 left-10 opacity-10" />
-        <div className="container relative z-10 max-w-4xl text-center">
-          <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.div variants={fadeUp}>
-              <span className="inline-block rounded-full bg-teal/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-teal mb-6">
+      <section className="relative overflow-hidden bg-foreground py-24 md:py-32 text-background">
+        <DecorativeCircle color="teal" className="-top-32 -right-32 opacity-20" />
+        <DecorativeCircle color="purple" variant="ring" className="-bottom-40 -left-28 opacity-30" size="h-56 w-56 md:h-80 md:w-80" />
+        <div className="container relative z-10">
+          <Link href="/technology" className="mb-8 inline-flex items-center gap-1 text-sm text-background/50 transition-colors hover:text-primary">
+            <ArrowLeft className="h-4 w-4" /> All Technology
+          </Link>
+          <motion.div initial="hidden" animate="visible" variants={stagger} className="max-w-3xl">
+            <motion.div variants={fadeUp} className="mb-6 inline-flex items-center gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/20">
+                <Headphones className="h-7 w-7 text-primary" />
+              </div>
+              <span className="rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-primary">
                 Contact Centre
               </span>
             </motion.div>
-            <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <motion.h1 variants={fadeUp} className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
               AI-Enabled Contact Centres{" "}
-              <span className="text-teal">Designed for Scale, Compliance & Revenue Growth</span>
+              <span className="text-primary">Designed for Scale, Compliance &amp; Revenue Growth</span>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
-              Customer experience is no longer a support function.{" "}
-              <strong className="text-white">It is a commercial control centre.</strong>
+            <motion.p variants={fadeUp} className="mt-6 text-lg text-background/60">
+              Customer experience is no longer a support function. It is a commercial control centre.
             </motion.p>
-            <motion.div variants={fadeUp} className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 max-w-3xl mx-auto">
-              {["Your most visible brand interaction", "Your richest source of operational data", "Your fastest indicator of strain", "Your clearest lever for margin control"].map((pill) => (
-                <div key={pill} className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/80 text-center">
-                  {pill}
-                </div>
-              ))}
-            </motion.div>
-            <motion.p variants={fadeUp} className="text-white/60 italic mb-2">
-              When response slows, revenue leaks. When queues grow, loyalty weakens. When journeys fragment, customers churn.
+            <motion.p variants={fadeUp} className="mt-4 font-display text-xl font-bold">
+              This is architectural redesign,{" "}
+              <span className="text-primary">not a platform refresh.</span>
             </motion.p>
-            <motion.p variants={fadeUp} className="text-white font-semibold mb-10">
-              This is architectural redesign, <span className="text-teal">not a platform refresh.</span>
-            </motion.p>
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-teal text-navy font-semibold hover:bg-teal/90">
-                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book CX Strategy Session</a>
+            <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Book CX Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                <Link href="/assessment">Take CX Assessment</Link>
+              <Button size="lg" variant="teal" asChild>
+                <Link href="/assessment">
+                  <ClipboardCheck className="mr-2 h-4 w-4" /> Take CX Assessment
+                </Link>
               </Button>
             </motion.div>
           </motion.div>
