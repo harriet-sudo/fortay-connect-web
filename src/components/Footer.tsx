@@ -69,18 +69,16 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* Certifications panel */}
-      <div className="mt-12 rounded-md bg-white/95 px-8 py-6">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">
+      {/* Certifications */}
+      <div className="mt-12">
+        <p className="mb-5 text-xs font-semibold uppercase tracking-widest text-background/40">
           Our Certifications &amp; Partner Accreditations
         </p>
-        <div className="flex items-center">
-          <img
-            src={certsStrip}
-            alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
-            className="max-h-20 w-auto object-contain"
-          />
-        </div>
+        <img
+          src={certsStrip}
+          alt="Zoom Platinum Partner, Dialpad Certified Deployment Partner, Avaya Cloud Office Certified Delivery Partner, RingCentral Certified Delivery Partner"
+          className="h-24 w-auto max-w-full object-contain md:h-28"
+        />
       </div>
 
       <div className="mt-8 border-t border-background/10 pt-6 text-center text-sm text-background/40">

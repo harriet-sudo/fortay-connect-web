@@ -165,20 +165,21 @@ const AIVirtualAgentsTechnologyPage = () =>
               </Button>
             </motion.div>
 
-            {/* Trusted by, inline in hero */}
-            <motion.div variants={fadeUp} className="mt-12 border-t border-background/10 pt-8">
-              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-background/30">Trusted by</p>
-              <div className="relative overflow-hidden">
-                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-foreground to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-foreground to-transparent" />
-                <div className="flex w-max animate-logo-scroll items-center gap-14">
-                  {[...clients, ...clients].map((c, i) =>
-                <img key={`${c.name}-${i}`} src={c.src} alt={c.name} className="h-7 w-auto shrink-0 object-contain brightness-0 invert opacity-40 hover:opacity-80 transition-opacity duration-300 md:h-9" />
-                )}
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
+
+          {/* Trusted by, full width */}
+          <div className="mt-14 border-t border-background/10 pt-8">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-background/30">Trusted by</p>
+            <div className="relative overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-foreground to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-foreground to-transparent" />
+              <div className="flex w-max animate-logo-scroll items-center gap-14">
+                {[...clients, ...clients].map((c, i) =>
+                  <img key={`${c.name}-${i}`} src={c.src} alt={c.name} className="h-7 w-auto shrink-0 object-contain brightness-0 invert opacity-40 hover:opacity-80 transition-opacity duration-300 md:h-9" />
+                )}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
