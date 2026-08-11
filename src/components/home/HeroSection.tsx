@@ -4,28 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const alcumusLogo = "/assets/logos/alcumus.webp";
-const ashtonsLogo = "/assets/logos/ashtons-legal.webp";
-const astonVillaLogo = "/assets/logos/aston-villa.webp";
-const caAutoFinanceLogo = "/assets/logos/ca-auto-finance.webp";
-const dextLogo = "/assets/logos/dext.webp";
-const ineosLogo = "/assets/logos/ineos.webp";
-const nottinghamForestLogo = "/assets/logos/nottingham-forest.png";
-const pkfLogo = "/assets/logos/pkf.png";
-const gardenCourtLogo = "/assets/logos/garden-court-chambers.svg";
-
-const clients = [
-  { name: "Alcumus", src: alcumusLogo },
-  { name: "Ashtons Legal", src: ashtonsLogo },
-  { name: "Aston Villa FC", src: astonVillaLogo },
-  { name: "CA Auto Finance", src: caAutoFinanceLogo },
-  { name: "Dext", src: dextLogo },
-  { name: "INEOS", src: ineosLogo },
-  { name: "Nottingham Forest", src: nottinghamForestLogo },
-  { name: "PKF", src: pkfLogo },
-  { name: "Garden Court Chambers", src: gardenCourtLogo },
-];
-
 const proof = [
   { figure: "200+", label: "transformations delivered" },
   { figure: "6 yrs", label: "average client retention" },
@@ -95,29 +73,6 @@ const HeroSection = () => (
       </div>
     </div>
 
-    {/* Trusted by */}
-    <div className="border-t border-background/10 py-10">
-      <div className="container">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-background/40">
-          Trusted by
-        </p>
-        <div className="relative overflow-hidden">
-          {/* fade edges */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-foreground to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-foreground to-transparent" />
-          <div className="flex w-max animate-logo-scroll items-center gap-16">
-            {[...clients, ...clients].map((client, i) => (
-              <img
-                key={`${client.name}-${i}`}
-                src={client.src}
-                alt={client.name}
-                className="h-8 w-auto shrink-0 object-contain opacity-70 brightness-0 invert transition-all duration-300 hover:opacity-100 md:h-10"
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 );
 
